@@ -7,7 +7,7 @@
     >
       <template #cell-name="{ row }">
         <a
-          :href="`https://ccs.ru/ticket?id=${row.id}`"
+          :href="`https://tp.point.online/tickets?id=${row.id}`"
           target="_blank"
           class="ticket-link"
         >
@@ -56,7 +56,7 @@ const fetchTickets = async () => {
     loading.value = true
     error.value = null
 
-    const response = await fetch('https://esb.ccs.ru/getids')
+    const response = await fetch('https://esb.ccs.ru/webhook/b32bf8e6-2860-4ad0-b922-ed6302f752c4?login=15500242')
 
     if (!response.ok) {
       throw new Error(`HTTP error! status: ${response.status}`)
