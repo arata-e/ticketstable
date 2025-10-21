@@ -1,7 +1,5 @@
 
-/// <reference path="app.config.d.ts" />
-/// <reference path="runtime-config.d.ts" />
-/// <reference path="middleware.d.ts" />
+
 
 import type { RuntimeConfig } from 'nuxt/schema'
 import type { H3Event } from 'h3'

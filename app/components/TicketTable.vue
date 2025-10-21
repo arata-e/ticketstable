@@ -1,21 +1,5 @@
 <template>
   <div class="ticket-table-container">
-    <B24Table
-      v-if="!loading && !error"
-      :columns="columns"
-      :data="tickets"
-    >
-      <template #cell-name="{ row }">
-        <a
-          :href="`https://tp.point.online/tickets?id=${row.id}`"
-          target="_blank"
-          class="ticket-link"
-        >
-          {{ row.name }}
-        </a>
-      </template>
-    </B24Table>
-
     <div v-if="loading" class="loading">
       Loading...
     </div>
@@ -23,6 +7,31 @@
     <div v-if="error" class="error">
       Error: {{ error }}
     </div>
+
+    <B24TableWrapper v-if="!loading && !error" bordered zebra row-hover>
+      <table>
+        <thead>
+          <tr>
+            <th style="width: 100px">ID</th>
+            <th>Name</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr v-for="ticket in tickets" :key="ticket.id">
+            <td>{{ ticket.id }}</td>
+            <td>
+              <a
+                :href="`https://tp.point.online/tickets?id=${ticket.id}`"
+                target="_blank"
+                class="ticket-link"
+              >
+                {{ ticket.name }}
+              </a>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </B24TableWrapper>
   </div>
 </template>
 
@@ -37,19 +46,6 @@ interface Ticket {
 const tickets = ref<Ticket[]>([])
 const loading = ref(true)
 const error = ref<string | null>(null)
-
-const columns = [
-  {
-    key: 'id',
-    label: 'ID',
-    width: '100px'
-  },
-  {
-    key: 'name',
-    label: 'Name',
-    width: 'auto'
-  }
-]
 
 const fetchTickets = async () => {
   try {
@@ -85,6 +81,20 @@ onMounted(() => {
 <style scoped>
 .ticket-table-container {
   padding: 20px;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+th, td {
+  padding: 12px;
+  text-align: left;
+}
+
+th {
+  font-weight: 600;
 }
 
 .ticket-link {

@@ -1,6 +1,6 @@
 <template>
   <div>
     <NuxtRouteAnnouncer />
-    <TicketTable />
+    <NuxtPage />
   </div>
 </template>
