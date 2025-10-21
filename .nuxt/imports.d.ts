@@ -42,3 +42,4 @@ export { portalTargetInjectionKey, usePortal } from '../node_modules/@bitrix24/b
 export { sidebarLayoutInjectionKey, useSidebarLayout } from '../node_modules/@bitrix24/b24ui-nuxt/dist/runtime/composables/useSidebarLayout';
 export { useToast } from '../node_modules/@bitrix24/b24ui-nuxt/dist/runtime/composables/useToast';
 export { useColorMode } from '../node_modules/@nuxtjs/color-mode/dist/runtime/composables';
+export { useNuxtDevTools } from '../node_modules/@nuxt/devtools/dist/runtime/use-nuxt-devtools';
