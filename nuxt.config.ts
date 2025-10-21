@@ -2,5 +2,6 @@
 export default defineNuxtConfig({
   compatibilityDate: '2025-07-15',
   devtools: { enabled: true },
-  modules: ['@bitrix24/b24ui-nuxt']
+  modules: ['@bitrix24/b24ui-nuxt'],
+  css: ['~/assets/css/main.css']
 })

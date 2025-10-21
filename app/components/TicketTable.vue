@@ -1,32 +1,31 @@
 <template>
-  <div class="ticket-table-container">
-    <div v-if="loading" class="loading">
+  <div class="p-5">
+    <div v-if="loading" class="text-center py-5 text-gray-600">
       Loading...
     </div>
 
-    <div v-if="error" class="error">
+    <B24Alert v-if="error" color="error" class="m-5">
       Error: {{ error }}
-    </div>
+    </B24Alert>
 
     <B24TableWrapper v-if="!loading && !error" bordered zebra row-hover>
-      <table>
+      <table class="w-full">
         <thead>
           <tr>
-            <th style="width: 100px">ID</th>
-            <th>Name</th>
+            <th class="w-24 p-3 text-left font-semibold">ID</th>
+            <th class="p-3 text-left font-semibold">Name</th>
           </tr>
         </thead>
         <tbody>
           <tr v-for="ticket in tickets" :key="ticket.id">
-            <td>{{ ticket.id }}</td>
-            <td>
-              <a
+            <td class="p-3">{{ ticket.id }}</td>
+            <td class="p-3">
+              <B24Link
                 :href="`https://tp.point.online/tickets?id=${ticket.id}`"
                 target="_blank"
-                class="ticket-link"
               >
                 {{ ticket.name }}
-              </a>
+              </B24Link>
             </td>
           </tr>
         </tbody>
@@ -77,48 +76,3 @@ onMounted(() => {
   fetchTickets()
 })
 </script>
-
-<style scoped>
-.ticket-table-container {
-  padding: 20px;
-}
-
-table {
-  width: 100%;
-  border-collapse: collapse;
-}
-
-th, td {
-  padding: 12px;
-  text-align: left;
-}
-
-th {
-  font-weight: 600;
-}
-
-.ticket-link {
-  color: #2fc6f6;
-  text-decoration: none;
-  cursor: pointer;
-}
-
-.ticket-link:hover {
-  text-decoration: underline;
-}
-
-.loading {
-  padding: 20px;
-  text-align: center;
-  color: #666;
-}
-
-.error {
-  padding: 20px;
-  color: #d9534f;
-  background-color: #f2dede;
-  border: 1px solid #ebccd1;
-  border-radius: 4px;
-  margin: 20px;
-}
-</style>
