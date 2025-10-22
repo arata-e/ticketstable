@@ -4,5 +4,8 @@
     <p class="text-lg mb-4">
       <B24Link to="/tt">Go to Ticket Table</B24Link>
     </p>
+    <p class="text-lg mb-4">
+      <B24Link to="/cc">Go to Company List</B24Link>
+    </p>
   </B24Container>
 </template>
