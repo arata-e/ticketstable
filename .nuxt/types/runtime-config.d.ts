@@ -15,7 +15,7 @@ import { RuntimeConfig as UserRuntimeConfig, PublicRuntimeConfig as UserPublicRu
    },
   }
   interface SharedPublicRuntimeConfig {
-
+   apiTicketsUrl: string,
   }
 declare module '@nuxt/schema' {
   interface RuntimeConfig extends UserRuntimeConfig {}

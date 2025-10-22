@@ -6,6 +6,7 @@ interface Ticket {
   name: string
 }
 
+const config = useRuntimeConfig()
 const tickets = ref<Ticket[]>([])
 const loading = ref(true)
 const error = ref<string | null>(null)
@@ -15,7 +16,12 @@ const fetchTickets = async () => {
     loading.value = true
     error.value = null
 
-    const response = await fetch('https://esb.ccs.ru/webhook/b32bf8e6-2860-4ad0-b922-ed6302f752c4?login=15500242')
+    const apiUrl = config.public.apiTicketsUrl
+    if (!apiUrl) {
+      throw new Error('API URL is not configured')
+    }
+
+    const response = await fetch(apiUrl)
 
     if (!response.ok) {
       throw new Error(`HTTP error! status: ${response.status}`)
