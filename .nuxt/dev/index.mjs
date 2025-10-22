@@ -649,7 +649,9 @@ const _inlineRuntimeConfig = {
       }
     }
   },
-  "public": {}
+  "public": {
+    "apiTicketsUrl": "https://esb.ccs.ru/webhook/b32bf8e6-2860-4ad0-b922-ed6302f752c4?login=15500242"
+  }
 };
 const envOptions = {
   prefix: "NITRO_",
