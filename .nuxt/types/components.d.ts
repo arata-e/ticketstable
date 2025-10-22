@@ -14,6 +14,7 @@ type HydrationStrategies = {
 type LazyComponent<T> = DefineComponent<HydrationStrategies, {}, {}, {}, {}, {}, {}, { hydrated: () => void }> & T
 
 interface _GlobalComponents {
+  'CompanyList': typeof import("../../app/components/CompanyList.vue")['default']
   'TicketTable': typeof import("../../app/components/TicketTable.vue")['default']
   'B24Accordion': typeof import("../../node_modules/@bitrix24/b24ui-nuxt/dist/runtime/components/Accordion.vue")['default']
   'B24Advice': typeof import("../../node_modules/@bitrix24/b24ui-nuxt/dist/runtime/components/Advice.vue")['default']
@@ -121,6 +122,7 @@ interface _GlobalComponents {
   'Html': typeof import("../../node_modules/nuxt/dist/head/runtime/components")['Html']
   'Body': typeof import("../../node_modules/nuxt/dist/head/runtime/components")['Body']
   'NuxtIsland': typeof import("../../node_modules/nuxt/dist/app/components/nuxt-island")['default']
+  'LazyCompanyList': LazyComponent<typeof import("../../app/components/CompanyList.vue")['default']>
   'LazyTicketTable': LazyComponent<typeof import("../../app/components/TicketTable.vue")['default']>
   'LazyB24Accordion': LazyComponent<typeof import("../../node_modules/@bitrix24/b24ui-nuxt/dist/runtime/components/Accordion.vue")['default']>
   'LazyB24Advice': LazyComponent<typeof import("../../node_modules/@bitrix24/b24ui-nuxt/dist/runtime/components/Advice.vue")['default']>
