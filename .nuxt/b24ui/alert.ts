@@ -29,13 +29,13 @@ export default {
   "slots": {
     "root": "relative overflow-hidden w-full flex text-(--b24ui-color) bg-(--b24ui-background) border-(--b24ui-border-color) border-(length:--b24ui-border-width) rounded-(--ui-border-radius-md)",
     "wrapper": "min-w-0 flex-1 flex flex-col font-[family-name:var(--ui-font-family-primary)]",
-    "title": "font-bold",
+    "title": "font-(--ui-font-weight-bold)",
     "description": "",
     "icon": "shrink-0 size-6",
     "avatar": "shrink-0",
     "avatarSize": "",
     "actions": "flex flex-wrap gap-1.5 shrink-0",
-    "close": "p-0"
+    "close": "p-0 [--ui-btn-color:var(--b24ui-color)] hover:bg-(--ui-color-base-white-fixed)/10 focus-visible:bg-(--ui-color-base-white-fixed)/10 -me-1.5 lg:me-0"
   },
   "variants": {
     "color": {

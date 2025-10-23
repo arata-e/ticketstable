@@ -1,3 +1,8 @@
+const fieldGroup = [
+  "horizontal",
+  "vertical"
+] as const
+
 const size = [
   "xss",
   "xs",
@@ -45,8 +50,8 @@ const colorItem = [
 
 export default {
   "slots": {
-    "root": "isolate relative inline-flex items-center w-full",
-    "base": "w-full py-0 border-0 focus:outline-none disabled:cursor-not-allowed disabled:pointer-events-none disabled:opacity-30 disabled:resize-none appearance-none transition duration-300 ease-linear transition-colors ring ring-inset ring-(--ui-color-design-outline-stroke) text-(--ui-color-base-1) style-blurred-bg-input hover:text-(--ui-color-base-1) focus:text-(--ui-color-base-1) active:text-(--ui-color-base-1) placeholder:text-(--ui-color-design-plain-na-content-secondary) font-[family-name:var(--ui-font-family-primary)] font-(--ui-font-weight-regular) align-middle focus-visible:ring-1 focus-visible:ring-inset focus-visible:ring-(--b24ui-border-color)",
+    "root": "isolate relative inline-flex items-center",
+    "base": "w-full py-0 border-0 focus:outline-none disabled:cursor-not-allowed disabled:pointer-events-none disabled:select-none disabled:opacity-30 disabled:resize-none appearance-none transition duration-300 ease-linear transition-colors text-(--ui-color-base-1) style-blurred-bg-input hover:text-(--ui-color-base-1) focus:text-(--ui-color-base-1) active:text-(--ui-color-base-1) placeholder:text-(--ui-color-design-plain-na-content-secondary) font-[family-name:var(--ui-font-family-primary)] font-(--ui-font-weight-regular) align-middle",
     "leading": "absolute inset-y-0 start-0 flex items-center",
     "leadingIcon": "shrink-0 text-(--b24ui-icon-color)",
     "leadingAvatar": "shrink-0",
@@ -55,29 +60,31 @@ export default {
     "trailingIcon": "shrink-0 text-(--b24ui-icon-color)",
     "tag": "pointer-events-none select-none absolute z-10 -top-[7px] right-[14px] flex flex-col justify-center items-center",
     "content": "light bg-(--popup-window-background-color) shadow-(--popup-window-box-shadow) rounded-(--popup-window-border-radius) will-change-[opacity] motion-safe:data-[state=open]:animate-[scale-in_100ms_ease-out] motion-safe:data-[state=closed]:animate-[scale-out_100ms_ease-in] origin-(--reka-dropdown-menu-content-transform-origin) font-[family-name:var(--ui-font-family-primary)] relative isolate px-0 py-(--menu-popup-padding) pointer-events-auto",
-    "viewport": "relative w-[240px] max-h-[40vh] overflow-x-hidden overflow-y-auto scrollbar-thin",
+    "viewport": "relative scroll-py-1 w-[240px] max-h-[40vh] overflow-x-hidden overflow-y-auto scrollbar-thin",
     "arrow": "fill-(--popup-window-background-color)",
     "group": "grid",
     "empty": "h-(--popup-window-delimiter-section-height) py-[8px] select-none outline-none whitespace-nowrap text-center text-(length:--popup-window-delimiter-font-size)/(--ui-font-line-height-lg) text-(--popup-window-delimiter-text-color) font-(--popup-window-delimiter-font-weight)",
     "label": "w-full min-w-[195px] h-(--popup-window-delimiter-section-height) px-[18px] mt-(--menu-item-block-stack-space) flex flex-row rtl:flex-row-reverse items-center select-none outline-none whitespace-nowrap text-start text-(length:--popup-window-delimiter-font-size) text-(--popup-window-delimiter-text-color) font-(--popup-window-delimiter-font-weight) after:ms-[10px] after:block after:flex-1 after:min-w-[15px] after:h-px after:bg-(--popup-window-delimiter-bg-color)",
     "separator": "my-[8px] mx-[18px] h-[1px] bg-(--popup-window-delimiter-bg-color)",
-    "item": "group w-full min-w-[195px] h-[36px] px-[18px] mt-(--menu-item-block-stack-space) relative flex flex-row rtl:flex-row-reverse items-center select-none outline-none whitespace-nowrap cursor-pointer data-disabled:cursor-not-allowed data-disabled:opacity-30 text-start text-(length:--menu-popup-item-font-size) text-(--menu-popup-item-color) hover:text-(--menu-popup-item-color-hover) data-highlighted:not-data-disabled:text-(--menu-popup-item-color-hover) data-[state=open]:text-(--menu-popup-item-color-hover) data-[state=checked]:text-(--menu-popup-item-color-hover) hover:bg-(--menu-popup-item-bg-color-hover) data-highlighted:bg-(--menu-popup-item-bg-color-hover) data-[state=open]:bg-(--menu-popup-item-bg-color-hover) transition-colors",
+    "item": "group w-full min-w-[195px] h-[36px] px-[18px] mt-(--menu-item-block-stack-space) relative flex flex-row rtl:flex-row-reverse items-center select-none outline-none whitespace-nowrap cursor-pointer data-disabled:cursor-not-allowed data-disabled:opacity-30 data-disabled:select-none text-start text-(length:--menu-popup-item-font-size) text-(--menu-popup-item-color) hover:text-(--menu-popup-item-color-hover) data-highlighted:not-data-disabled:text-(--menu-popup-item-color-hover) data-[state=open]:text-(--menu-popup-item-color-hover) data-[state=checked]:text-(--menu-popup-item-color-hover) hover:bg-(--menu-popup-item-bg-color-hover) data-highlighted:bg-(--menu-popup-item-bg-color-hover) data-[state=open]:bg-(--menu-popup-item-bg-color-hover) transition-colors",
     "itemLeadingIcon": "shrink-0 size-[18px] text-(--ui-color-design-plain-content-icon-secondary) group-data-highlighted:not-data-disabled:text-(--ui-color-accent-main-primary) group-data-[state=open]:text-(--ui-color-accent-main-primary) group-data-[state=checked]:text-(--ui-color-accent-main-primary) transition-colors",
-    "itemLeadingAvatar": "shrink-0 size-[16px] mx-px",
+    "itemLeadingAvatar": "shrink-0 size-[16px]",
     "itemLeadingAvatarSize": "2xs",
-    "itemLeadingChip": "shrink-0 size-[16px] mx-px",
+    "itemLeadingChip": "shrink-0 size-[16px]",
     "itemLeadingChipSize": "sm",
     "itemTrailing": "ml-auto rtl:ml-0 rtl:mr-auto inline-flex gap-1.5 items-center",
     "itemTrailingIcon": "shrink-0 size-[24px] text-(--ui-color-design-plain-content-icon-secondary)",
+    "itemWrapper": "flex-1 flex flex-col min-w-0",
     "itemLabel": "truncate ms-[2px] -mt-px group-data-[state=checked]:text-(--ui-color-accent-main-primary)",
-    "tagsItem": "ps-[13px] pe-[6px] rounded-(--ui-border-radius-xs) h-(--main-ui-square-item-height) leading-(--main-ui-square-item-height) font-[family-name:var(--ui-font-family-primary)] font-(--ui-font-weight-regular) inline-flex items-center gap-1 data-disabled:cursor-not-allowed data-disabled:opacity-30 text-(--ui-color-design-tinted-content) bg-(--ui-color-design-tinted-bg-alt)",
+    "itemDescription": "truncate -mt-[6px] text-(--b24ui-typography-description-color) text-(length:--ui-font-size-sm)",
+    "tagsItem": "ps-[13px] pe-[6px] rounded-(--ui-border-radius-xs) h-(--main-ui-square-item-height) leading-(--main-ui-square-item-height) font-[family-name:var(--ui-font-family-primary)] font-(--ui-font-weight-regular) inline-flex items-center gap-1 data-disabled:cursor-not-allowed data-disabled:opacity-30 data-disabled:select-none text-(--ui-color-design-tinted-content) bg-(--ui-color-design-tinted-bg-alt)",
     "tagsItemText": "truncate max-w-[180px]",
     "tagsItemDelete": "cursor-pointer inline-flex items-center disabled:pointer-events-none text-(--b24ui-icon-color-secondary) hover:text-(--b24ui-icon-color-secondary-hover) transition-none",
     "tagsItemDeleteIcon": "",
     "tagsInput": ""
   },
   "variants": {
-    "buttonGroup": {
+    "fieldGroup": {
       "horizontal": {
         "root": "group leading-none has-focus-visible:z-[1]",
         "base": "focus-visible:outline-none ring ring-inset ring-1 focus-visible:ring-2 group-not-only:group-first:rounded-e-3xl group-not-only:group-last:rounded-s-none group-not-last:group-not-first:rounded-none group-not-only:group-first:rounded-e-none group-not-only:group-last:rounded-s-none group-not-last:group-not-first:rounded-none group-not-only:group-first:border-e-0 group-not-only:group-not-first:border-s-0"
@@ -98,29 +105,35 @@ export default {
         "leadingIcon": "size-[12px]",
         "leadingAvatarSize": "3xs",
         "trailingIcon": "size-[12px]",
+        "itemLeadingAvatar": "size-[12px]",
+        "itemLeadingAvatarSize": "3xs",
         "tagsInput": "text-(length:--ui-font-size-4xs)/[normal]",
         "tagsItem": "text-(length:--ui-font-size-5xs)/(--main-ui-square-item-height) gap-0.5",
         "tagsItemDeleteIcon": "size-[10px]"
       },
       "xs": {
-        "base": "[--main-ui-square-item-height:16px] h-[24px] gap-1 text-(length:--ui-font-size-xs)/[normal]",
+        "base": "[--main-ui-square-item-height:16px] h-[24px] gap-1 text-(length:--ui-font-size-4xs)/[normal]",
         "leading": "px-1",
         "trailing": "px-1",
         "leadingIcon": "size-[14px]",
         "leadingAvatarSize": "3xs",
         "trailingIcon": "size-[14px]",
+        "itemLeadingAvatar": "size-[14px]",
+        "itemLeadingAvatarSize": "3xs",
         "tagsInput": "text-(length:--ui-font-size-xs)/[normal]",
         "tagsItem": "text-(length:--ui-font-size-5xs)/(--main-ui-square-item-height) gap-0.5",
         "tagsItemDeleteIcon": "size-[10px]"
       },
       "sm": {
-        "base": "[--main-ui-square-item-height:20px] h-[28px] gap-1.5 text-(length:--ui-font-size-sm)/[normal]",
+        "base": "[--main-ui-square-item-height:20px] h-[28px] gap-1.5 text-(length:--ui-font-size-xs)/[normal]",
         "leading": "px-1.5",
         "trailing": "px-1.5",
         "leadingIcon": "size-[16px]",
         "leadingAvatar": "size-[16px]",
         "leadingAvatarSize": "2xs",
         "trailingIcon": "size-[16px]",
+        "itemLeadingAvatar": "size-[16px]",
+        "itemLeadingAvatarSize": "2xs",
         "tagsInput": "text-(length:--ui-font-size-sm)/[normal]",
         "tagsItem": "text-(length:--ui-font-size-5xs)/(--main-ui-square-item-height) gap-0.5",
         "tagsItemDeleteIcon": "size-[12px]"
@@ -132,6 +145,7 @@ export default {
         "leadingIcon": "size-[18px]",
         "leadingAvatarSize": "2xs",
         "trailingIcon": "size-[18px]",
+        "itemLeadingAvatarSize": "2xs",
         "tagsInput": "text-(length:--ui-font-size-lg)/[normal]",
         "tagsItem": "text-(length:--ui-font-size-sm)/(--main-ui-square-item-height) gap-[4px]",
         "tagsItemDeleteIcon": "size-[18px]"
@@ -143,6 +157,7 @@ export default {
         "leadingIcon": "size-[22px]",
         "leadingAvatarSize": "2xs",
         "trailingIcon": "size-[22px]",
+        "itemLeadingAvatarSize": "2xs",
         "tagsInput": "text-(length:--ui-font-size-lg)/[normal]",
         "tagsItem": "text-(length:--ui-font-size-md)/(--main-ui-square-item-height) gap-1",
         "tagsItemDeleteIcon": "size-[22px]"
@@ -154,6 +169,7 @@ export default {
         "leadingIcon": "size-[22px]",
         "leadingAvatarSize": "2xs",
         "trailingIcon": "size-[22px]",
+        "itemLeadingAvatarSize": "2xs",
         "tagsInput": "text-(length:--ui-font-size-2xl)/[normal]",
         "tagsItem": "text-(length:--ui-font-size-xl)/(--main-ui-square-item-height) gap-1",
         "tagsItemDeleteIcon": "size-[22px]"
@@ -213,7 +229,7 @@ export default {
       "true": "ring-0 focus-visible:ring-0 style-transparent-bg"
     },
     "underline": {
-      "true": "ring-0 focus-visible:ring-0 style-transparent-bg border-b-1 border-b-(--ui-color-design-outline-stroke) rounded-none"
+      "true": "rounded-none ring-0 focus-visible:ring-0 style-transparent-bg border-b-1 border-b-(--ui-color-design-outline-stroke)"
     },
     "leading": {
       "true": ""
@@ -228,11 +244,15 @@ export default {
       "true": "ring ring-inset ring-(--b24ui-border-color)"
     },
     "type": {
-      "file": [
-        "file:me-1.5",
-        "file:text-(--ui-color-design-plain-na-content-secondary)",
-        "file:outline-none"
-      ]
+      "file": "file:me-1.5 file:text-(--ui-color-design-plain-na-content-secondary) file:outline-none"
+    },
+    "virtualize": {
+      "true": {
+        "viewport": "p-1 isolate"
+      },
+      "false": {
+        "viewport": ""
+      }
     },
     "addNew": {
       "true": {
@@ -246,10 +266,10 @@ export default {
       "true": {
         "root": "flex-wrap",
         "base": "py-[6px] ps-[6px] pe-[39px]",
-        "tagsInput": "flex-1 border-0 bg-transparent ps-[6px] pe-[0px] py-0 placeholder:text-(--ui-color-design-plain-na-content-secondary) focus:outline-none disabled:cursor-not-allowed disabled:opacity-30 focus:ring-0 focus-visible:ring-0"
+        "tagsInput": "flex-1 border-0 bg-transparent ps-[6px] pe-[0px] py-0 placeholder:text-(--ui-color-design-plain-na-content-secondary) focus:outline-none disabled:cursor-not-allowed disabled:pointer-events-none disabled:select-none disabled:opacity-30 focus:ring-0 focus-visible:ring-0"
       },
       "false": {
-        "base": "px-3 placeholder:text-(--ui-color-design-plain-na-content-secondary) focus:outline-none disabled:cursor-not-allowed disabled:opacity-30"
+        "base": "px-3 placeholder:text-(--ui-color-design-plain-na-content-secondary) focus:outline-none disabled:cursor-not-allowed disabled:pointer-events-none disabled:select-none disabled:opacity-30"
       }
     },
     "colorItem": {
@@ -408,26 +428,43 @@ export default {
       }
     },
     {
+      "highlight": false,
       "noBorder": false,
       "underline": false,
-      "class": ""
+      "class": {
+        "base": "ring ring-inset ring-(--ui-color-design-outline-stroke) focus-visible:ring-1 focus-visible:ring-inset focus-visible:ring-(--b24ui-border-color) hover:not-disabled:not-data-disabled:ring-1 hover:not-disabled:not-data-disabled:ring-inset hover:not-disabled:not-data-disabled:ring-(--b24ui-border-color) data-[state=open]:ring-1 data-[state=open]:ring-inset data-[state=open]:ring-(--b24ui-border-color)"
+      }
     },
     {
       "highlight": true,
       "noBorder": false,
       "underline": false,
-      "class": "ring ring-inset ring-(--b24ui-border-color)"
+      "class": {
+        "base": "ring ring-inset ring-(--b24ui-border-color) focus-visible:ring-1 focus-visible:ring-inset focus-visible:ring-(--b24ui-border-color) hover:ring-1 hover:ring-inset hover:ring-(--b24ui-border-color) data-[state=open]:ring-1 data-[state=open]:ring-inset data-[state=open]:ring-(--b24ui-border-color)"
+      }
     },
     {
       "noBorder": false,
       "underline": true,
-      "class": "focus-visible:border-(--b24ui-border-color)"
+      "class": {
+        "base": "focus-visible:border-(--b24ui-border-color) hover:border-(--b24ui-border-color) data-[state=open]:border-(--b24ui-border-color)"
+      }
     },
     {
       "highlight": true,
       "noBorder": false,
       "underline": true,
-      "class": "border-b-(--b24ui-border-color)"
+      "class": {
+        "base": "ring-0 border-b-(--b24ui-border-color)"
+      }
+    },
+    {
+      "highlight": true,
+      "noBorder": true,
+      "underline": false,
+      "class": {
+        "base": "ring-0"
+      }
     },
     {
       "type": "file" as typeof type[number],
@@ -481,19 +518,19 @@ export default {
       "leading": true,
       "noPadding": false,
       "size": "md" as typeof size[number],
-      "class": "ps-[34px]"
+      "class": "ps-[32px]"
     },
     {
       "leading": true,
       "noPadding": false,
       "size": "lg" as typeof size[number],
-      "class": "ps-[38px]"
+      "class": "ps-[32px]"
     },
     {
       "leading": true,
       "noPadding": false,
       "size": "xl" as typeof size[number],
-      "class": "ps-[38px]"
+      "class": "ps-[32px]"
     },
     {
       "trailing": true,
@@ -545,6 +582,46 @@ export default {
       "class": {
         "trailingIcon": "size-[21px]"
       }
+    },
+    {
+      "fieldGroup": [
+        "horizontal" as typeof fieldGroup[number],
+        "vertical" as typeof fieldGroup[number]
+      ],
+      "size": [
+        "xl" as typeof size[number],
+        "lg" as typeof size[number],
+        "md" as typeof size[number]
+      ],
+      "rounded": false,
+      "class": "rounded-(--ui-border-radius-md)"
+    },
+    {
+      "fieldGroup": [
+        "horizontal" as typeof fieldGroup[number],
+        "vertical" as typeof fieldGroup[number]
+      ],
+      "size": "sm" as typeof size[number],
+      "rounded": false,
+      "class": "rounded-(--ui-border-radius-sm)"
+    },
+    {
+      "fieldGroup": [
+        "horizontal" as typeof fieldGroup[number],
+        "vertical" as typeof fieldGroup[number]
+      ],
+      "size": "xs" as typeof size[number],
+      "rounded": false,
+      "class": "rounded-(--ui-border-radius-xs)"
+    },
+    {
+      "fieldGroup": [
+        "horizontal" as typeof fieldGroup[number],
+        "vertical" as typeof fieldGroup[number]
+      ],
+      "size": "xss" as typeof size[number],
+      "rounded": false,
+      "class": "rounded-[5px]"
     }
   ],
   "defaultVariants": {

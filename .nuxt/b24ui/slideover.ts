@@ -15,9 +15,11 @@ export default {
   "slots": {
     "overlay": "fixed inset-0 bg-linear-to-b from-[#00204e]/52 to-[#00204e]",
     "content": "fixed sm:shadow-lg flex flex-col focus:outline-none h-full",
-    "sidebarLayoutRoot": "",
-    "sidebarLayoutHeaderWrapper": "",
-    "sidebarLayoutPageBottomWrapper": "",
+    "sidebarLayoutRoot": "relative",
+    "sidebarLayoutHeaderWrapper": "relative",
+    "sidebarLayoutPageWrapper": "min-h-full pb-[calc(53px_+_10px)] px-[20px] ps-[20px] pe-[20px] pb-[20px]",
+    "sidebarLayoutContainer": "gap-[22px]",
+    "sidebarLayoutPageBottomWrapper": "relative",
     "sidebarLayoutLoadingWrapper": "",
     "sidebarLayoutLoadingIcon": "",
     "header": "pt-[24px] flex-1 flex items-center gap-x-[12px] gap-y-1.5",
@@ -26,10 +28,15 @@ export default {
     "description": "mt-1 text-(--b24ui-typography-description-color) text-(length:--ui-font-size-sm)",
     "close": "absolute",
     "body": "size-full flex-1",
-    "footer": "light bg-(--popup-window-background-color) flex items-center justify-center gap-3 border-t border-t-1 border-t-(--ui-color-divider-less) shadow-top-md py-[9px] px-2 pr-(--scrollbar-width)",
+    "footer": "absolute inset-x-0 bottom-0 light bg-(--popup-window-background-color) flex items-center justify-center gap-3 border-t border-t-1 border-t-(--ui-color-divider-less) shadow-top-md py-[9px] px-2 pr-(--scrollbar-width)",
     "safeList": "group-hover:rounded-full group-hover:border-1 group-hover:border-current"
   },
   "variants": {
+    "useFooter": {
+      "true": {
+        "sidebarLayoutPageWrapper": "pb-[calc(53px+20px)]"
+      }
+    },
     "overlayBlur": {
       "auto": {
         "overlay": "motion-safe:backdrop-blur-sm"
@@ -43,19 +50,19 @@ export default {
     },
     "side": {
       "right": {
-        "content": "right-0 inset-y-0 w-[calc(100%-60px)] sm:w-[calc(100%-150px)]",
+        "content": "right-0 inset-y-0 w-[calc(100%-60px)] sm:w-[calc(100%-150px)] sm:rounded-t-none",
         "sidebarLayoutRoot": "sm:rounded-t-none"
       },
       "left": {
-        "content": "left-0 inset-y-0 w-[calc(100%-60px)] sm:w-[calc(100%-150px)]",
+        "content": "left-0 inset-y-0 w-[calc(100%-60px)] sm:w-[calc(100%-150px)] sm:rounded-t-none",
         "sidebarLayoutRoot": "sm:rounded-t-none"
       },
       "top": {
-        "content": "inset-x-0 top-0 max-h-full",
+        "content": "inset-x-0 top-0 max-h-full sm:rounded-t-none",
         "sidebarLayoutRoot": "sm:rounded-t-none"
       },
       "bottom": {
-        "content": "right-[5px] sm:right-[70px] top-0 sm:top-[18px] bottom-0 w-[calc(100%-60px-5px)] sm:w-[calc(100%-150px-70px)] sm:max-h-[calc(100%-18px)]",
+        "content": "right-[5px] top-0 sm:top-[18px] bottom-0 w-[calc(100%-60px-5px)] sm:w-[calc(100%-150px-70px)] sm:max-h-[calc(100%-18px)] sm:rounded-t-[18px]",
         "sidebarLayoutRoot": "sm:rounded-t-[18px]"
       }
     },

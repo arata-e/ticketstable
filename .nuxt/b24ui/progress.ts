@@ -45,11 +45,7 @@ const orientation = [
 export default {
   "slots": {
     "root": "gap-2",
-    "base": [
-      "relative overflow-hidden",
-      "rounded-(--ui-border-radius-pill)",
-      "bg-(--ui-color-base-5)"
-    ],
+    "base": "relative overflow-hidden rounded-(--ui-border-radius-pill) bg-(--ui-color-base-5)",
     "indicator": "rounded-(--ui-border-radius-pill) size-full transition-transform duration-200 ease-out bg-(--b24ui-background)",
     "status": "flex justify-end text-(--b24ui-typography-legend-color) transition-[width] duration-200",
     "steps": "grid items-end text-(--b24ui-typography-legend-color)",

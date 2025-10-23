@@ -1,4 +1,4 @@
-const buttonGroup = [
+const fieldGroup = [
   "horizontal",
   "vertical"
 ] as const
@@ -46,12 +46,12 @@ export default {
     "trailingIcon": "shrink-0 cursor-pointer hover:rounded-(--ui-border-radius-circle) hover:bg-current/20"
   },
   "variants": {
-    "buttonGroup": {
-      "horizontal": "focus-visible:outline-none ring ring-inset ring-0 focus-visible:ring-2 group-[.is-button-group]/items:not-only:first:rounded-e-none group-[.is-button-group]/items:not-only:last:rounded-s-none group-[.is-button-group]/items:not-last:not-first:rounded-none group-[.is-button-group]/items:not-only:first:border-e-0 group-[.is-button-group]/items:not-only:not-first:border-s-0 focus-visible:z-[1]",
+    "fieldGroup": {
+      "horizontal": "focus-visible:outline-none ring ring-inset ring-0 focus-visible:ring-2 group-[.is-field-group]/items:not-only:first:rounded-e-none group-[.is-field-group]/items:not-only:last:rounded-s-none group-[.is-field-group]/items:not-last:not-first:rounded-none group-[.is-field-group]/items:not-only:first:border-e-0 group-[.is-field-group]/items:not-only:not-first:border-s-0 focus-visible:z-[1]",
       "vertical": "focus-visible:outline-none ring ring-inset ring-0 focus-visible:ring-2 not-only:first:rounded-b-none not-only:last:rounded-t-none not-last:not-first:rounded-none focus-visible:z-[1]"
     },
     "noSplit": {
-      "false": "group-[.is-button-group]/items:not-only:not-first:after:content-[''] group-[.is-button-group]/items:not-only:not-first:after:absolute group-[.is-button-group]/items:not-only:not-first:after:top-[7px] group-[.is-button-group]/items:not-only:not-first:after:bottom-[6px] group-[.is-button-group]/items:not-only:not-first:after:left-0 group-[.is-button-group]/items:not-only:not-first:after:w-px group-[.is-button-group]/items:not-only:not-first:after:bg-current/30"
+      "false": "group-[.is-field-group]/items:not-only:not-first:after:content-[''] group-[.is-field-group]/items:not-only:not-first:after:absolute group-[.is-field-group]/items:not-only:not-first:after:top-[7px] group-[.is-field-group]/items:not-only:not-first:after:bottom-[6px] group-[.is-field-group]/items:not-only:not-first:after:left-0 group-[.is-field-group]/items:not-only:not-first:after:w-px group-[.is-field-group]/items:not-only:not-first:after:bg-current/30"
     },
     "useLink": {
       "true": {
@@ -288,11 +288,40 @@ export default {
       }
     },
     {
-      "buttonGroup": [
-        "horizontal" as typeof buttonGroup[number],
-        "vertical" as typeof buttonGroup[number]
+      "fieldGroup": [
+        "horizontal" as typeof fieldGroup[number],
+        "vertical" as typeof fieldGroup[number]
+      ],
+      "size": [
+        "xl" as typeof size[number],
+        "lg" as typeof size[number],
+        "md" as typeof size[number]
       ],
       "class": "rounded-(--ui-border-radius-md)"
+    },
+    {
+      "fieldGroup": [
+        "horizontal" as typeof fieldGroup[number],
+        "vertical" as typeof fieldGroup[number]
+      ],
+      "size": "sm" as typeof size[number],
+      "class": "rounded-(--ui-border-radius-sm)"
+    },
+    {
+      "fieldGroup": [
+        "horizontal" as typeof fieldGroup[number],
+        "vertical" as typeof fieldGroup[number]
+      ],
+      "size": "xs" as typeof size[number],
+      "class": "rounded-(--ui-border-radius-xs)"
+    },
+    {
+      "fieldGroup": [
+        "horizontal" as typeof fieldGroup[number],
+        "vertical" as typeof fieldGroup[number]
+      ],
+      "size": "xss" as typeof size[number],
+      "class": "rounded-[5px]"
     }
   ],
   "defaultVariants": {

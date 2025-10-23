@@ -18,10 +18,7 @@ const size = [
 
 export default {
   "slots": {
-    "root": [
-      "style-outline-accent-2",
-      "flex items-center gap-2"
-    ],
+    "root": "style-outline-accent-2 flex items-center gap-2",
     "list": "relative flex p-1 group",
     "indicator": "absolute transition-[translate,width] duration-200",
     "trigger": "group relative inline-flex items-center min-w-0 data-[state=inactive]:text-(--ui-color-design-plain-na-content) hover:data-[state=inactive]:not-disabled:text-(--ui-color-design-selection-content) font-(--ui-font-weight-medium) cursor-pointer disabled:cursor-not-allowed disabled:opacity-30 transition-colors rounded-(--ui-border-radius-md)",

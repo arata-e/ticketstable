@@ -4,7 +4,6 @@ declare global {
   const abortNavigation: typeof import('../../node_modules/nuxt/dist/app/composables/router').abortNavigation
   const addRouteMiddleware: typeof import('../../node_modules/nuxt/dist/app/composables/router').addRouteMiddleware
   const avatarGroupInjectionKey: typeof import('../../node_modules/@bitrix24/b24ui-nuxt/dist/runtime/composables/useAvatarGroup').avatarGroupInjectionKey
-  const buttonGroupInjectionKey: typeof import('../../node_modules/@bitrix24/b24ui-nuxt/dist/runtime/composables/useButtonGroup').buttonGroupInjectionKey
   const callOnce: typeof import('../../node_modules/nuxt/dist/app/composables/once').callOnce
   const cancelIdleCallback: typeof import('../../node_modules/nuxt/dist/app/compat/idle-callback').cancelIdleCallback
   const clearError: typeof import('../../node_modules/nuxt/dist/app/composables/error').clearError
@@ -31,12 +30,14 @@ declare global {
   const effectScope: typeof import('vue').effectScope
   const extendLocale: typeof import('../../node_modules/@bitrix24/b24ui-nuxt/dist/runtime/composables/defineLocale').extendLocale
   const extractShortcuts: typeof import('../../node_modules/@bitrix24/b24ui-nuxt/dist/runtime/composables/defineShortcuts').extractShortcuts
+  const fieldGroupInjectionKey: typeof import('../../node_modules/@bitrix24/b24ui-nuxt/dist/runtime/composables/useFieldGroup').fieldGroupInjectionKey
   const formBusInjectionKey: typeof import('../../node_modules/@bitrix24/b24ui-nuxt/dist/runtime/composables/useFormField').formBusInjectionKey
   const formErrorsInjectionKey: typeof import('../../node_modules/@bitrix24/b24ui-nuxt/dist/runtime/composables/useFormField').formErrorsInjectionKey
   const formFieldInjectionKey: typeof import('../../node_modules/@bitrix24/b24ui-nuxt/dist/runtime/composables/useFormField').formFieldInjectionKey
   const formInputsInjectionKey: typeof import('../../node_modules/@bitrix24/b24ui-nuxt/dist/runtime/composables/useFormField').formInputsInjectionKey
   const formLoadingInjectionKey: typeof import('../../node_modules/@bitrix24/b24ui-nuxt/dist/runtime/composables/useFormField').formLoadingInjectionKey
   const formOptionsInjectionKey: typeof import('../../node_modules/@bitrix24/b24ui-nuxt/dist/runtime/composables/useFormField').formOptionsInjectionKey
+  const formStateInjectionKey: typeof import('../../node_modules/@bitrix24/b24ui-nuxt/dist/runtime/composables/useFormField').formStateInjectionKey
   const getAppManifest: typeof import('../../node_modules/nuxt/dist/app/composables/manifest').getAppManifest
   const getCurrentInstance: typeof import('vue').getCurrentInstance
   const getCurrentScope: typeof import('vue').getCurrentScope
@@ -103,11 +104,11 @@ declare global {
   const shallowReadonly: typeof import('vue').shallowReadonly
   const shallowRef: typeof import('vue').shallowRef
   const showError: typeof import('../../node_modules/nuxt/dist/app/composables/error').showError
-  const sidebarLayoutInjectionKey: typeof import('../../node_modules/@bitrix24/b24ui-nuxt/dist/runtime/composables/useSidebarLayout').sidebarLayoutInjectionKey
   const toRaw: typeof import('vue').toRaw
   const toRef: typeof import('vue').toRef
   const toRefs: typeof import('vue').toRefs
   const toValue: typeof import('vue').toValue
+  const toastMaxInjectionKey: typeof import('../../node_modules/@bitrix24/b24ui-nuxt/dist/runtime/composables/useToast').toastMaxInjectionKey
   const triggerRef: typeof import('vue').triggerRef
   const tryUseNuxtApp: typeof import('../../node_modules/nuxt/dist/app/nuxt').tryUseNuxtApp
   const unref: typeof import('vue').unref
@@ -116,15 +117,17 @@ declare global {
   const useAsyncData: typeof import('../../node_modules/nuxt/dist/app/composables/asyncData').useAsyncData
   const useAttrs: typeof import('vue').useAttrs
   const useAvatarGroup: typeof import('../../node_modules/@bitrix24/b24ui-nuxt/dist/runtime/composables/useAvatarGroup').useAvatarGroup
-  const useButtonGroup: typeof import('../../node_modules/@bitrix24/b24ui-nuxt/dist/runtime/composables/useButtonGroup').useButtonGroup
-  const useColorMode: typeof import('../../node_modules/@nuxtjs/color-mode/dist/runtime/composables').useColorMode
+  const useColorMode: typeof import('../../node_modules/@bitrix24/b24ui-nuxt/dist/runtime/composables/color-mode/useColorMode').useColorMode
   const useComponentIcons: typeof import('../../node_modules/@bitrix24/b24ui-nuxt/dist/runtime/composables/useComponentIcons').useComponentIcons
   const useConfetti: typeof import('../../node_modules/@bitrix24/b24ui-nuxt/dist/runtime/composables/useConfetti').useConfetti
+  const useContentSearch: typeof import('../../node_modules/@bitrix24/b24ui-nuxt/dist/runtime/composables/useContentSearch').useContentSearch
   const useCookie: typeof import('../../node_modules/nuxt/dist/app/composables/cookie').useCookie
   const useCssModule: typeof import('vue').useCssModule
   const useCssVars: typeof import('vue').useCssVars
   const useError: typeof import('../../node_modules/nuxt/dist/app/composables/error').useError
   const useFetch: typeof import('../../node_modules/nuxt/dist/app/composables/fetch').useFetch
+  const useFieldGroup: typeof import('../../node_modules/@bitrix24/b24ui-nuxt/dist/runtime/composables/useFieldGroup').useFieldGroup
+  const useFileUpload: typeof import('../../node_modules/@bitrix24/b24ui-nuxt/dist/runtime/composables/useFileUpload').useFileUpload
   const useFormField: typeof import('../../node_modules/@bitrix24/b24ui-nuxt/dist/runtime/composables/useFormField').useFormField
   const useHead: typeof import('../../node_modules/nuxt/dist/app/composables/head').useHead
   const useHeadSafe: typeof import('../../node_modules/nuxt/dist/app/composables/head').useHeadSafe
@@ -139,7 +142,6 @@ declare global {
   const useModel: typeof import('vue').useModel
   const useNuxtApp: typeof import('../../node_modules/nuxt/dist/app/nuxt').useNuxtApp
   const useNuxtData: typeof import('../../node_modules/nuxt/dist/app/composables/asyncData').useNuxtData
-  const useNuxtDevTools: typeof import('../../node_modules/@nuxt/devtools/dist/runtime/use-nuxt-devtools').useNuxtDevTools
   const useOverlay: typeof import('../../node_modules/@bitrix24/b24ui-nuxt/dist/runtime/composables/useOverlay').useOverlay
   const usePortal: typeof import('../../node_modules/@bitrix24/b24ui-nuxt/dist/runtime/composables/usePortal').usePortal
   const usePreviewMode: typeof import('../../node_modules/nuxt/dist/app/composables/preview').usePreviewMode
@@ -148,6 +150,7 @@ declare global {
   const useRequestHeader: typeof import('../../node_modules/nuxt/dist/app/composables/ssr').useRequestHeader
   const useRequestHeaders: typeof import('../../node_modules/nuxt/dist/app/composables/ssr').useRequestHeaders
   const useRequestURL: typeof import('../../node_modules/nuxt/dist/app/composables/url').useRequestURL
+  const useResizable: typeof import('../../node_modules/@bitrix24/b24ui-nuxt/dist/runtime/composables/useResizable').useResizable
   const useResponseHeader: typeof import('../../node_modules/nuxt/dist/app/composables/ssr').useResponseHeader
   const useRoute: typeof import('../../node_modules/nuxt/dist/app/composables/router').useRoute
   const useRouteAnnouncer: typeof import('../../node_modules/nuxt/dist/app/composables/route-announcer').useRouteAnnouncer
@@ -184,12 +187,12 @@ declare global {
   const useScriptVimeoPlayer: typeof import('../../node_modules/nuxt/dist/app/composables/script-stubs').useScriptVimeoPlayer
   const useScriptXPixel: typeof import('../../node_modules/nuxt/dist/app/composables/script-stubs').useScriptXPixel
   const useScriptYouTubePlayer: typeof import('../../node_modules/nuxt/dist/app/composables/script-stubs').useScriptYouTubePlayer
+  const useScrollspy: typeof import('../../node_modules/@bitrix24/b24ui-nuxt/dist/runtime/composables/useScrollspy').useScrollspy
   const useSeoMeta: typeof import('../../node_modules/nuxt/dist/app/composables/head').useSeoMeta
   const useServerHead: typeof import('../../node_modules/nuxt/dist/app/composables/head').useServerHead
   const useServerHeadSafe: typeof import('../../node_modules/nuxt/dist/app/composables/head').useServerHeadSafe
   const useServerSeoMeta: typeof import('../../node_modules/nuxt/dist/app/composables/head').useServerSeoMeta
   const useShadowRoot: typeof import('vue').useShadowRoot
-  const useSidebarLayout: typeof import('../../node_modules/@bitrix24/b24ui-nuxt/dist/runtime/composables/useSidebarLayout').useSidebarLayout
   const useSlots: typeof import('vue').useSlots
   const useState: typeof import('../../node_modules/nuxt/dist/app/composables/state').useState
   const useTemplateRef: typeof import('vue').useTemplateRef
@@ -219,7 +222,6 @@ declare module 'vue' {
     readonly abortNavigation: UnwrapRef<typeof import('../../node_modules/nuxt/dist/app/composables/router')['abortNavigation']>
     readonly addRouteMiddleware: UnwrapRef<typeof import('../../node_modules/nuxt/dist/app/composables/router')['addRouteMiddleware']>
     readonly avatarGroupInjectionKey: UnwrapRef<typeof import('../../node_modules/@bitrix24/b24ui-nuxt/dist/runtime/composables/useAvatarGroup')['avatarGroupInjectionKey']>
-    readonly buttonGroupInjectionKey: UnwrapRef<typeof import('../../node_modules/@bitrix24/b24ui-nuxt/dist/runtime/composables/useButtonGroup')['buttonGroupInjectionKey']>
     readonly callOnce: UnwrapRef<typeof import('../../node_modules/nuxt/dist/app/composables/once')['callOnce']>
     readonly cancelIdleCallback: UnwrapRef<typeof import('../../node_modules/nuxt/dist/app/compat/idle-callback')['cancelIdleCallback']>
     readonly clearError: UnwrapRef<typeof import('../../node_modules/nuxt/dist/app/composables/error')['clearError']>
@@ -246,12 +248,14 @@ declare module 'vue' {
     readonly effectScope: UnwrapRef<typeof import('vue')['effectScope']>
     readonly extendLocale: UnwrapRef<typeof import('../../node_modules/@bitrix24/b24ui-nuxt/dist/runtime/composables/defineLocale')['extendLocale']>
     readonly extractShortcuts: UnwrapRef<typeof import('../../node_modules/@bitrix24/b24ui-nuxt/dist/runtime/composables/defineShortcuts')['extractShortcuts']>
+    readonly fieldGroupInjectionKey: UnwrapRef<typeof import('../../node_modules/@bitrix24/b24ui-nuxt/dist/runtime/composables/useFieldGroup')['fieldGroupInjectionKey']>
     readonly formBusInjectionKey: UnwrapRef<typeof import('../../node_modules/@bitrix24/b24ui-nuxt/dist/runtime/composables/useFormField')['formBusInjectionKey']>
     readonly formErrorsInjectionKey: UnwrapRef<typeof import('../../node_modules/@bitrix24/b24ui-nuxt/dist/runtime/composables/useFormField')['formErrorsInjectionKey']>
     readonly formFieldInjectionKey: UnwrapRef<typeof import('../../node_modules/@bitrix24/b24ui-nuxt/dist/runtime/composables/useFormField')['formFieldInjectionKey']>
     readonly formInputsInjectionKey: UnwrapRef<typeof import('../../node_modules/@bitrix24/b24ui-nuxt/dist/runtime/composables/useFormField')['formInputsInjectionKey']>
     readonly formLoadingInjectionKey: UnwrapRef<typeof import('../../node_modules/@bitrix24/b24ui-nuxt/dist/runtime/composables/useFormField')['formLoadingInjectionKey']>
     readonly formOptionsInjectionKey: UnwrapRef<typeof import('../../node_modules/@bitrix24/b24ui-nuxt/dist/runtime/composables/useFormField')['formOptionsInjectionKey']>
+    readonly formStateInjectionKey: UnwrapRef<typeof import('../../node_modules/@bitrix24/b24ui-nuxt/dist/runtime/composables/useFormField')['formStateInjectionKey']>
     readonly getAppManifest: UnwrapRef<typeof import('../../node_modules/nuxt/dist/app/composables/manifest')['getAppManifest']>
     readonly getCurrentInstance: UnwrapRef<typeof import('vue')['getCurrentInstance']>
     readonly getCurrentScope: UnwrapRef<typeof import('vue')['getCurrentScope']>
@@ -318,11 +322,11 @@ declare module 'vue' {
     readonly shallowReadonly: UnwrapRef<typeof import('vue')['shallowReadonly']>
     readonly shallowRef: UnwrapRef<typeof import('vue')['shallowRef']>
     readonly showError: UnwrapRef<typeof import('../../node_modules/nuxt/dist/app/composables/error')['showError']>
-    readonly sidebarLayoutInjectionKey: UnwrapRef<typeof import('../../node_modules/@bitrix24/b24ui-nuxt/dist/runtime/composables/useSidebarLayout')['sidebarLayoutInjectionKey']>
     readonly toRaw: UnwrapRef<typeof import('vue')['toRaw']>
     readonly toRef: UnwrapRef<typeof import('vue')['toRef']>
     readonly toRefs: UnwrapRef<typeof import('vue')['toRefs']>
     readonly toValue: UnwrapRef<typeof import('vue')['toValue']>
+    readonly toastMaxInjectionKey: UnwrapRef<typeof import('../../node_modules/@bitrix24/b24ui-nuxt/dist/runtime/composables/useToast')['toastMaxInjectionKey']>
     readonly triggerRef: UnwrapRef<typeof import('vue')['triggerRef']>
     readonly tryUseNuxtApp: UnwrapRef<typeof import('../../node_modules/nuxt/dist/app/nuxt')['tryUseNuxtApp']>
     readonly unref: UnwrapRef<typeof import('vue')['unref']>
@@ -331,15 +335,17 @@ declare module 'vue' {
     readonly useAsyncData: UnwrapRef<typeof import('../../node_modules/nuxt/dist/app/composables/asyncData')['useAsyncData']>
     readonly useAttrs: UnwrapRef<typeof import('vue')['useAttrs']>
     readonly useAvatarGroup: UnwrapRef<typeof import('../../node_modules/@bitrix24/b24ui-nuxt/dist/runtime/composables/useAvatarGroup')['useAvatarGroup']>
-    readonly useButtonGroup: UnwrapRef<typeof import('../../node_modules/@bitrix24/b24ui-nuxt/dist/runtime/composables/useButtonGroup')['useButtonGroup']>
-    readonly useColorMode: UnwrapRef<typeof import('../../node_modules/@nuxtjs/color-mode/dist/runtime/composables')['useColorMode']>
+    readonly useColorMode: UnwrapRef<typeof import('../../node_modules/@bitrix24/b24ui-nuxt/dist/runtime/composables/color-mode/useColorMode')['useColorMode']>
     readonly useComponentIcons: UnwrapRef<typeof import('../../node_modules/@bitrix24/b24ui-nuxt/dist/runtime/composables/useComponentIcons')['useComponentIcons']>
     readonly useConfetti: UnwrapRef<typeof import('../../node_modules/@bitrix24/b24ui-nuxt/dist/runtime/composables/useConfetti')['useConfetti']>
+    readonly useContentSearch: UnwrapRef<typeof import('../../node_modules/@bitrix24/b24ui-nuxt/dist/runtime/composables/useContentSearch')['useContentSearch']>
     readonly useCookie: UnwrapRef<typeof import('../../node_modules/nuxt/dist/app/composables/cookie')['useCookie']>
     readonly useCssModule: UnwrapRef<typeof import('vue')['useCssModule']>
     readonly useCssVars: UnwrapRef<typeof import('vue')['useCssVars']>
     readonly useError: UnwrapRef<typeof import('../../node_modules/nuxt/dist/app/composables/error')['useError']>
     readonly useFetch: UnwrapRef<typeof import('../../node_modules/nuxt/dist/app/composables/fetch')['useFetch']>
+    readonly useFieldGroup: UnwrapRef<typeof import('../../node_modules/@bitrix24/b24ui-nuxt/dist/runtime/composables/useFieldGroup')['useFieldGroup']>
+    readonly useFileUpload: UnwrapRef<typeof import('../../node_modules/@bitrix24/b24ui-nuxt/dist/runtime/composables/useFileUpload')['useFileUpload']>
     readonly useFormField: UnwrapRef<typeof import('../../node_modules/@bitrix24/b24ui-nuxt/dist/runtime/composables/useFormField')['useFormField']>
     readonly useHead: UnwrapRef<typeof import('../../node_modules/nuxt/dist/app/composables/head')['useHead']>
     readonly useHeadSafe: UnwrapRef<typeof import('../../node_modules/nuxt/dist/app/composables/head')['useHeadSafe']>
@@ -354,7 +360,6 @@ declare module 'vue' {
     readonly useModel: UnwrapRef<typeof import('vue')['useModel']>
     readonly useNuxtApp: UnwrapRef<typeof import('../../node_modules/nuxt/dist/app/nuxt')['useNuxtApp']>
     readonly useNuxtData: UnwrapRef<typeof import('../../node_modules/nuxt/dist/app/composables/asyncData')['useNuxtData']>
-    readonly useNuxtDevTools: UnwrapRef<typeof import('../../node_modules/@nuxt/devtools/dist/runtime/use-nuxt-devtools')['useNuxtDevTools']>
     readonly useOverlay: UnwrapRef<typeof import('../../node_modules/@bitrix24/b24ui-nuxt/dist/runtime/composables/useOverlay')['useOverlay']>
     readonly usePortal: UnwrapRef<typeof import('../../node_modules/@bitrix24/b24ui-nuxt/dist/runtime/composables/usePortal')['usePortal']>
     readonly usePreviewMode: UnwrapRef<typeof import('../../node_modules/nuxt/dist/app/composables/preview')['usePreviewMode']>
@@ -363,6 +368,7 @@ declare module 'vue' {
     readonly useRequestHeader: UnwrapRef<typeof import('../../node_modules/nuxt/dist/app/composables/ssr')['useRequestHeader']>
     readonly useRequestHeaders: UnwrapRef<typeof import('../../node_modules/nuxt/dist/app/composables/ssr')['useRequestHeaders']>
     readonly useRequestURL: UnwrapRef<typeof import('../../node_modules/nuxt/dist/app/composables/url')['useRequestURL']>
+    readonly useResizable: UnwrapRef<typeof import('../../node_modules/@bitrix24/b24ui-nuxt/dist/runtime/composables/useResizable')['useResizable']>
     readonly useResponseHeader: UnwrapRef<typeof import('../../node_modules/nuxt/dist/app/composables/ssr')['useResponseHeader']>
     readonly useRoute: UnwrapRef<typeof import('../../node_modules/nuxt/dist/app/composables/router')['useRoute']>
     readonly useRouteAnnouncer: UnwrapRef<typeof import('../../node_modules/nuxt/dist/app/composables/route-announcer')['useRouteAnnouncer']>
@@ -399,12 +405,12 @@ declare module 'vue' {
     readonly useScriptVimeoPlayer: UnwrapRef<typeof import('../../node_modules/nuxt/dist/app/composables/script-stubs')['useScriptVimeoPlayer']>
     readonly useScriptXPixel: UnwrapRef<typeof import('../../node_modules/nuxt/dist/app/composables/script-stubs')['useScriptXPixel']>
     readonly useScriptYouTubePlayer: UnwrapRef<typeof import('../../node_modules/nuxt/dist/app/composables/script-stubs')['useScriptYouTubePlayer']>
+    readonly useScrollspy: UnwrapRef<typeof import('../../node_modules/@bitrix24/b24ui-nuxt/dist/runtime/composables/useScrollspy')['useScrollspy']>
     readonly useSeoMeta: UnwrapRef<typeof import('../../node_modules/nuxt/dist/app/composables/head')['useSeoMeta']>
     readonly useServerHead: UnwrapRef<typeof import('../../node_modules/nuxt/dist/app/composables/head')['useServerHead']>
     readonly useServerHeadSafe: UnwrapRef<typeof import('../../node_modules/nuxt/dist/app/composables/head')['useServerHeadSafe']>
     readonly useServerSeoMeta: UnwrapRef<typeof import('../../node_modules/nuxt/dist/app/composables/head')['useServerSeoMeta']>
     readonly useShadowRoot: UnwrapRef<typeof import('vue')['useShadowRoot']>
-    readonly useSidebarLayout: UnwrapRef<typeof import('../../node_modules/@bitrix24/b24ui-nuxt/dist/runtime/composables/useSidebarLayout')['useSidebarLayout']>
     readonly useSlots: UnwrapRef<typeof import('vue')['useSlots']>
     readonly useState: UnwrapRef<typeof import('../../node_modules/nuxt/dist/app/composables/state')['useState']>
     readonly useTemplateRef: UnwrapRef<typeof import('vue')['useTemplateRef']>

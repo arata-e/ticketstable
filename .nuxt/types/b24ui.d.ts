@@ -10,6 +10,7 @@ declare module '@nuxt/schema' {
   interface AppConfigInput {
     /**
      * Bitrix24 UI theme configuration
+     * @see https://bitrix24.github.io/b24ui/docs/getting-started/theme/components/
      */
     b24ui?: AppConfigUI
   }

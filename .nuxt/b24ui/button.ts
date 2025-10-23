@@ -42,27 +42,7 @@ const size = [
 
 export default {
   "slots": {
-    "base": [
-      "ui-btn",
-      "font-[family-name:var(--ui-font-family-primary)]",
-      "select-none cursor-pointer inline-flex items-center",
-      "relative",
-      "outline-transparent focus-visible:outline-2 focus-visible:outline-offset-2",
-      "disabled:cursor-not-allowed aria-disabled:cursor-not-allowed disabled:opacity-30 aria-disabled:opacity-30",
-      "transition duration-0 ease-linear",
-      "border-(length:--ui-btn-border-width)",
-      "text-(--ui-btn-color) bg-(--ui-btn-background) border-(--ui-btn-border-color)",
-      "hover:text-(--ui-btn-color-hover) hover:bg-(--ui-btn-background-hover) hover:border-(--ui-btn-border-color-hover)",
-      "focus:text-(--ui-btn-color-hover) focus:bg-(--ui-btn-background-hover) focus:border-(--ui-btn-border-color-hover)",
-      "active:text-(--ui-btn-color-active) active:bg-(--ui-btn-background-active) active:border-(--ui-btn-border-color-active)",
-      "disabled:bg-(--ui-btn-background) disabled:border-(--ui-btn-border-color)",
-      "aria-disabled:bg-(--ui-btn-background) aria-disabled:border-(--ui-btn-border-color)",
-      "focus-visible:outline-(--ui-btn-background)",
-      "ring-(--ui-btn-background-hover) focus:outline-none focus-visible:ring-(--ui-btn-background-hover)",
-      "h-(--ui-btn-height)",
-      "text-(length:--ui-btn-font-size) leading-(--ui-btn-height) font-(--ui-btn-font-weight)",
-      ""
-    ],
+    "base": "ui-btn font-[family-name:var(--ui-font-family-primary)] select-none cursor-pointer inline-flex items-center relative outline-transparent focus-visible:outline-2 focus-visible:outline-offset-2 disabled:cursor-not-allowed aria-disabled:cursor-not-allowed disabled:opacity-30 aria-disabled:opacity-30 transition duration-0 ease-linear border-(length:--ui-btn-border-width) text-(--ui-btn-color) bg-(--ui-btn-background) border-(--ui-btn-border-color) hover:text-(--ui-btn-color-hover) hover:bg-(--ui-btn-background-hover) hover:border-(--ui-btn-border-color-hover) focus:text-(--ui-btn-color-hover) focus:bg-(--ui-btn-background-hover) focus:border-(--ui-btn-border-color-hover) active:text-(--ui-btn-color-active) active:bg-(--ui-btn-background-active) active:border-(--ui-btn-border-color-active) disabled:bg-(--ui-btn-background) disabled:border-(--ui-btn-border-color) aria-disabled:bg-(--ui-btn-background) aria-disabled:border-(--ui-btn-border-color) focus-visible:outline-(--ui-btn-background) ring-(--ui-btn-background-hover) focus:outline-none focus-visible:ring-(--ui-btn-background-hover) h-(--ui-btn-height) text-(length:--ui-btn-font-size) leading-(--ui-btn-height) font-(--ui-btn-font-weight)",
     "baseLoading": "h-full w-full absolute inset-0 flex flex-row flex-nowrap items-center justify-center",
     "baseLoadingWaitIcon": "text-(--ui-btn-color) size-[calc(var(--ui-btn-wait-icon-size)_+_7px)]",
     "baseLoadingClockIcon": "text-(--ui-btn-color) size-[calc(var(--ui-btn-wait-icon-size)_+_7px)]",
@@ -77,12 +57,12 @@ export default {
     "safeList": "invisible"
   },
   "variants": {
-    "buttonGroup": {
-      "horizontal": "focus-visible:outline-none ring ring-inset ring-0 focus-visible:ring-2 group-[.is-button-group]/items:not-only:first:rounded-e-none group-[.is-button-group]/items:not-only:last:rounded-s-none group-[.is-button-group]/items:not-last:not-first:rounded-none group-[.is-button-group]/items:not-only:first:border-e-0 group-[.is-button-group]/items:not-only:not-first:border-s-0 focus-visible:z-[1]",
+    "fieldGroup": {
+      "horizontal": "focus-visible:outline-none ring ring-inset ring-0 focus-visible:ring-2 group-[.is-field-group]/items:not-only:first:rounded-e-none group-[.is-field-group]/items:not-only:last:rounded-s-none group-[.is-field-group]/items:not-last:not-first:rounded-none group-[.is-field-group]/items:not-only:first:border-e-0 group-[.is-field-group]/items:not-only:not-first:border-s-0 focus-visible:z-[1]",
       "vertical": "focus-visible:outline-none ring ring-inset ring-0 focus-visible:ring-2 not-only:first:rounded-b-none not-only:last:rounded-t-none not-last:not-first:rounded-none focus-visible:z-[1]"
     },
     "noSplit": {
-      "false": "group-[.is-button-group]/items:not-only:not-first:after:content-[''] group-[.is-button-group]/items:not-only:not-first:after:absolute group-[.is-button-group]/items:not-only:not-first:after:top-[7px] group-[.is-button-group]/items:not-only:not-first:after:bottom-[6px] group-[.is-button-group]/items:not-only:not-first:after:left-0 group-[.is-button-group]/items:not-only:not-first:after:w-px group-[.is-button-group]/items:not-only:not-first:after:bg-current/30"
+      "false": "group-[.is-field-group]/items:not-only:not-first:after:content-[''] group-[.is-field-group]/items:not-only:not-first:after:absolute group-[.is-field-group]/items:not-only:not-first:after:top-[7px] group-[.is-field-group]/items:not-only:not-first:after:bottom-[6px] group-[.is-field-group]/items:not-only:not-first:after:left-0 group-[.is-field-group]/items:not-only:not-first:after:w-px group-[.is-field-group]/items:not-only:not-first:after:bg-current/30"
     },
     "color": {
       "air-primary": "--style-filled",

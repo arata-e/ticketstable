@@ -23,17 +23,17 @@ const size = [
 
 export default {
   "slots": {
-    "root": "font-[family-name:var(--ui-font-family-primary)] w-full",
+    "root": "font-[family-name:var(--ui-font-family-primary)]",
     "header": "flex items-center justify-between",
     "body": "flex flex-col space-y-4 pt-4 sm:flex-row sm:space-x-4 sm:space-y-0",
-    "heading": "mx-auto text-center font-(--ui-font-weight-semibold) truncate",
+    "heading": "mx-auto text-center font-(--ui-font-weight-semi-bold) text-(--b24ui-typography-legend-color) truncate",
     "grid": "w-full border-collapse select-none space-y-1 focus:outline-none",
     "gridRow": "grid grid-cols-7 place-items-center",
     "gridWeekDaysRow": "mb-1 grid w-full grid-cols-7",
     "gridBody": "grid",
     "headCell": "font-(--ui-font-weight-normal) text-(--ui-color-design-plain-na-content)",
     "cell": "relative text-center cursor-pointer aria-disabled:cursor-not-allowed",
-    "cellTrigger": "m-0.5 relative flex items-center justify-center rounded-full whitespace-nowrap focus-visible:ring-2 focus:outline-none text-(--b24ui-typography-label-color) data-disabled:text-(--b24ui-typography-legend-color) data-unavailable:text-(--b24ui-typography-legend-color) data-outside-view:text-(--ui-color-design-plain-na-content-secondary) data-[selected]:text-(--b24ui-color) focus-visible:ring-(--b24ui-background-hover) data-[selected]:bg-(--b24ui-background) data-today:not-data-[selected]:text-(--b24ui-background) data-[highlighted]:bg-(--b24ui-background) data-[highlighted]:text-(--b24ui-color) hover:not-data-[disabled]:not-data-[selected]:bg-(--b24ui-background) hover:not-data-[disabled]:not-data-[selected]:text-(--b24ui-color) data-unavailable:line-through data-unavailable:pointer-events-none data-today:font-(--ui-font-weight-semibold) transition"
+    "cellTrigger": "m-0.5 relative flex items-center justify-center rounded-full whitespace-nowrap focus-visible:ring-2 focus:outline-none text-(--b24ui-typography-label-color) data-disabled:text-(--ui-color-design-plain-na-content-secondary) data-unavailable:text-(--ui-color-design-plain-na-content-secondary) data-outside-view:text-(--ui-color-design-plain-na-content-secondary) data-[selected]:text-(--b24ui-color) focus-visible:ring-(--b24ui-background-hover) data-[selected]:bg-(--b24ui-background) data-today:not-data-[selected]:text-(--b24ui-background) data-[highlighted]:bg-(--b24ui-background) data-[highlighted]:text-(--b24ui-color) hover:not-data-[disabled]:not-data-[selected]:bg-(--b24ui-background) hover:not-data-[disabled]:not-data-[selected]:text-(--b24ui-color) data-unavailable:line-through data-unavailable:pointer-events-none data-today:font-(--ui-font-weight-semi-bold) transition"
   },
   "variants": {
     "color": {

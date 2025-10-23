@@ -1,5 +1,4 @@
 /// <reference types="@bitrix24/b24ui-nuxt" />
-/// <reference types="@nuxt/devtools" />
 /// <reference types="@nuxt/telemetry" />
 /// <reference path="types/builder-env.d.ts" />
 /// <reference path="types/plugins.d.ts" />

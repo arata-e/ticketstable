@@ -8,7 +8,7 @@ const accent = [
 
 export default {
   "slots": {
-    "base": "relative mb-2 scroll-mt-[calc(32px+45px+var(--b24ui-header-height))] lg:scroll-mt-[calc(32px+var(--b24ui-header-height))] text-(length:--ui-font-size-xl)"
+    "base": "relative mb-2 scroll-mt-[calc(24px+45px+24px+var(--topbar-height))] lg:scroll-mt-[calc(24px+22px+15px+var(--topbar-height))] text-(length:--ui-font-size-xl)"
   },
   "variants": {
     "accent": {

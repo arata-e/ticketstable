@@ -1,0 +1,91 @@
+const color = [
+  "air-primary",
+  "air-primary-success",
+  "air-primary-alert",
+  "air-primary-copilot",
+  "air-primary-warning"
+] as const
+
+export default {
+  "slots": {
+    "content": "light bg-(--popup-window-background-color) shadow-(--popup-window-box-shadow) rounded-(--popup-window-border-radius) will-change-[opacity] motion-safe:data-[state=open]:animate-[scale-in_100ms_ease-out] motion-safe:data-[state=closed]:animate-[scale-out_100ms_ease-in] origin-(--reka-context-menu-content-transform-origin) font-[family-name:var(--ui-font-family-primary)] relative isolate px-0 py-(--menu-popup-padding) pointer-events-auto",
+    "viewport": "relative w-full max-h-[40vh] min-w-[120px] scroll-py-1 overflow-x-hidden overflow-y-auto scrollbar-thin",
+    "group": "grid",
+    "label": "w-full h-(--popup-window-delimiter-section-height) px-[18px] mt-(--menu-item-block-stack-space) flex flex-row rtl:flex-row-reverse items-center select-none outline-none whitespace-nowrap text-start text-(length:--popup-window-delimiter-font-size) text-(--popup-window-delimiter-text-color) font-(--popup-window-delimiter-font-weight) after:ms-[10px] after:block after:flex-1 after:min-w-[15px] after:h-px after:bg-(--popup-window-delimiter-bg-color)",
+    "separator": "my-[8px] mx-[18px] h-[1px] bg-(--popup-window-delimiter-bg-color)",
+    "item": "group w-full h-[36px] px-[18px] mt-(--menu-item-block-stack-space) relative flex flex-row rtl:flex-row-reverse items-center select-none outline-none whitespace-nowrap cursor-pointer data-disabled:cursor-not-allowed data-disabled:opacity-30 text-start text-(length:--menu-popup-item-font-size) text-(--menu-popup-item-color) hover:text-(--menu-popup-item-color-hover) data-highlighted:text-(--menu-popup-item-color-hover) data-[state=open]:text-(--menu-popup-item-color-hover) hover:bg-(--menu-popup-item-bg-color-hover) data-highlighted:bg-(--menu-popup-item-bg-color-hover) data-[state=open]:bg-(--menu-popup-item-bg-color-hover) transition-colors",
+    "itemLeadingIcon": "shrink-0 size-[18px] text-(--ui-color-design-plain-content-icon-secondary) group-data-highlighted:text-(--ui-color-accent-main-primary) group-data-[state=open]:text-(--ui-color-accent-main-primary) group-data-[state=checked]:text-(--ui-color-accent-main-primary) transition-colors",
+    "itemLeadingAvatar": "shrink-0 size-[16px] me-[12px]",
+    "itemLeadingAvatarSize": "2xs",
+    "itemTrailing": "ml-auto rtl:ml-0 rtl:mr-auto inline-flex gap-1.5 items-center",
+    "itemTrailingIcon": "shrink-0 size-[24px] text-(--ui-color-accent-main-primary)",
+    "itemTrailingKbds": "shrink-0 hidden lg:inline-flex items-center gap-0.5",
+    "itemWrapper": "flex-1 flex flex-col text-start min-w-0",
+    "itemTrailingKbdsSize": "md",
+    "itemLabel": "max-w-[240px] truncate -mt-px group-data-[state=checked]:text-(--ui-color-accent-main-primary)",
+    "itemDescription": "max-w-[240px] truncate -mt-[6px] text-(--b24ui-typography-description-color) text-(length:--ui-font-size-sm)",
+    "itemLabelExternalIcon": "inline-block size-[16px] text-(--ui-color-design-plain-content-icon-secondary)"
+  },
+  "variants": {
+    "color": {
+      "air-primary": {
+        "item": "style-filled"
+      },
+      "air-primary-success": {
+        "item": "style-filled-success"
+      },
+      "air-primary-alert": {
+        "item": "style-filled-alert"
+      },
+      "air-primary-copilot": {
+        "item": "style-filled-copilot"
+      },
+      "air-primary-warning": {
+        "item": "style-filled-warning"
+      }
+    },
+    "active": {
+      "true": {
+        "item": "text-(--ui-color-accent-main-primary) hover:text-(--ui-color-accent-main-primary)",
+        "itemLeadingIcon": "text-(--ui-color-accent-main-primary) hover:text-(--ui-color-accent-main-primary) group-data-[state=open]:text-(--ui-color-accent-main-primary)"
+      },
+      "false": {}
+    },
+    "loading": {
+      "true": {
+        "itemLeadingIcon": "animate-spin"
+      }
+    }
+  },
+  "compoundVariants": [
+    {
+      "color": [
+        "air-primary" as typeof color[number],
+        "air-primary-success" as typeof color[number],
+        "air-primary-alert" as typeof color[number],
+        "air-primary-copilot" as typeof color[number],
+        "air-primary-warning" as typeof color[number]
+      ],
+      "active": false,
+      "class": {
+        "item": "text-(--b24ui-background) data-highlighted:text-(--b24ui-background-hover) data-[state=open]:text-(--b24ui-background-hover)",
+        "itemLeadingIcon": "text-(--b24ui-background) group-data-highlighted:text-(--b24ui-background-hover) group-data-[state=open]:text-(--b24ui-background-hover)"
+      }
+    },
+    {
+      "color": [
+        "air-primary" as typeof color[number],
+        "air-primary-success" as typeof color[number],
+        "air-primary-alert" as typeof color[number],
+        "air-primary-copilot" as typeof color[number],
+        "air-primary-warning" as typeof color[number]
+      ],
+      "active": true,
+      "class": {
+        "item": "text-(--b24ui-background-active)",
+        "itemLeadingIcon": "text-(--b24ui-background-active) group-data-[state=open]:text-(--b24ui-background-active)"
+      }
+    }
+  ],
+  "defaultVariants": {}
+}

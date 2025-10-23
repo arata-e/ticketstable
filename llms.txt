@@ -1,0 +1,119 @@
+# Bitrix24 UI
+
+> A comprehensive, Nuxt-integrated UI library providing a rich set of fully-styled, accessible and highly customizable components for REST API web-application development.
+
+## Getting Started
+
+- [Introduction](https://bitrix24.github.io/b24ui/raw/docs/getting-started.md): Bitrix24 UI is a comprehensive UI library for Vue and Nuxt applications, offering a collection of fully styled and accessible components.
+- [Installation](https://bitrix24.github.io/b24ui/raw/docs/getting-started/installation/nuxt.md): Learn how to install and configure Bitrix24 UI in your Nuxt application.
+- [Installation](https://bitrix24.github.io/b24ui/raw/docs/getting-started/installation/vue.md): Learn how to install and configure Bitrix24 UI in your Vue application, compatible with both plain Vite and Inertia.
+- [Migration to v2](https://bitrix24.github.io/b24ui/raw/docs/getting-started/migration/v2.md): A comprehensive guide to migrate your application from Bitrix24 UI v1 to Bitrix24 UI v2.
+- [Contribution](https://bitrix24.github.io/b24ui/raw/docs/getting-started/contribution.md): A detailed guide on how to contribute to Bitrix24 UI, including insights on project structure, development workflow, and best practices.
+- [Design System](https://bitrix24.github.io/b24ui/raw/docs/getting-started/theme/design-system.md): Bitrix24 UI's design system uses Tailwind CSS for simple theming and easy customization.
+- [CSS Variables](https://bitrix24.github.io/b24ui/raw/docs/getting-started/theme/css-variables.md): Bitrix24 UI uses CSS variables as design tokens for flexible, consistent theming with built-in light and dark mode support.
+- [Customize components](https://bitrix24.github.io/b24ui/raw/docs/getting-started/theme/components.md): Learn how to customize Bitrix24 UI components with the Tailwind Variants API for advanced, flexible, and maintainable styling.
+- [Icons](https://bitrix24.github.io/b24ui/raw/docs/getting-started/integrations/icons/nuxt.md): Bitrix24 UI integrates with @bitrix24/b24icons to access over 1,400+ icons.
+- [Icons](https://bitrix24.github.io/b24ui/raw/docs/getting-started/integrations/icons/vue.md): Bitrix24 UI integrates with @bitrix24/b24icons to access over 1,400+ icons.
+- [Color Mode](https://bitrix24.github.io/b24ui/raw/docs/getting-started/integrations/color-mode/nuxt.md): Bitrix24 UI integrates with VueUse to allow for easy switching between light and dark themes.
+- [Color Mode](https://bitrix24.github.io/b24ui/raw/docs/getting-started/integrations/color-mode/vue.md): Bitrix24 UI integrates with VueUse to allow for easy switching between light and dark themes.
+- [Internationalization (i18n)](https://bitrix24.github.io/b24ui/raw/docs/getting-started/integrations/i18n/nuxt.md): Bitrix24 UI supports 19 locales and multi-directional (LTR/RTL) internationalization.
+- [Internationalization (i18n)](https://bitrix24.github.io/b24ui/raw/docs/getting-started/integrations/i18n/vue.md): Bitrix24 UI supports 19 locales and multi-directional (LTR/RTL) internationalization.
+- [Content](https://bitrix24.github.io/b24ui/raw/docs/getting-started/integrations/content.md): Bitrix24 UI integrates with Nuxt Content to deliver beautiful typography and consistent component styling.
+- [MCP Server](https://bitrix24.github.io/b24ui/raw/docs/getting-started/ai/mcp.md): Use Bitrix24 UI components in your AI assistants with Model Context Protocol support.
+- [LLMs.txt](https://bitrix24.github.io/b24ui/raw/docs/getting-started/ai/llms-txt.md): How to get AI tools like Cursor, Windsurf, GitHub Copilot, ChatGPT, and Claude to understand Bitrix24 UI components, theming, and best practices.
+
+## Components
+
+- [Accordion](https://bitrix24.github.io/b24ui/raw/docs/components/accordion.md): This is a stacked set of collapsible panels
+- [Advice](https://bitrix24.github.io/b24ui/raw/docs/components/advice.md): A couple of lines of text and an avatar
+- [Alert](https://bitrix24.github.io/b24ui/raw/docs/components/alert.md): An alert designed to capture the user's attention.
+- [App](https://bitrix24.github.io/b24ui/raw/docs/components/app.md): Encases your app to deliver global settings and additional features.
+- [Avatar](https://bitrix24.github.io/b24ui/raw/docs/components/avatar.md): An img element that includes fallback and supports Nuxt Image.
+- [AvatarGroup](https://bitrix24.github.io/b24ui/raw/docs/components/avatar-group.md): Pile multiple avatars into a single group.
+- [Badge](https://bitrix24.github.io/b24ui/raw/docs/components/badge.md): A short descriptor for a status or category.
+- [Banner](https://bitrix24.github.io/b24ui/raw/docs/components/banner.md): Top banner for important user messages.
+- [Breadcrumb](https://bitrix24.github.io/b24ui/raw/docs/components/breadcrumb.md): A breadcrumb navigation component.
+- [Button](https://bitrix24.github.io/b24ui/raw/docs/components/button.md): A button capable of linking or performing an action.
+- [Calendar](https://bitrix24.github.io/b24ui/raw/docs/components/calendar.md): A calendar tool for choosing individual dates, multiple dates, or date spans.
+- [Card](https://bitrix24.github.io/b24ui/raw/docs/components/card.md): Render the content within a card component comprising a header, body, and footer section.
+- [Checkbox](https://bitrix24.github.io/b24ui/raw/docs/components/checkbox.md): A toggle input for marking as checked or unchecked.
+- [CheckboxGroup](https://bitrix24.github.io/b24ui/raw/docs/components/checkbox-group.md): Multi-select checklist using button controls.
+- [Chip](https://bitrix24.github.io/b24ui/raw/docs/components/chip.md): An indicator that shows either a number or a state.
+- [Collapsible](https://bitrix24.github.io/b24ui/raw/docs/components/collapsible.md): A collapsible component for showing or hiding its content.
+- [ColorModeAvatar](https://bitrix24.github.io/b24ui/raw/docs/components/color-mode-avatar.md): An Avatar that automatically switches its image based on the current theme (light/dark).
+- [ColorModeButton](https://bitrix24.github.io/b24ui/raw/docs/components/color-mode-button.md): A button to toggle between light and dark themes.
+- [ColorModeImage](https://bitrix24.github.io/b24ui/raw/docs/components/color-mode-image.md): An image element with a different source for light and dark mode.
+- [ColorModeSelect](https://bitrix24.github.io/b24ui/raw/docs/components/color-mode-select.md): A Select to switch between system, dark & light mode.
+- [ColorModeSwitch](https://bitrix24.github.io/b24ui/raw/docs/components/color-mode-switch.md): A switch to toggle between light and dark mode.
+- [ColorPicker](https://bitrix24.github.io/b24ui/raw/docs/components/color-picker.md): A color picker component.
+- [CommandPalette](https://bitrix24.github.io/b24ui/raw/docs/components/command-palette.md): A searchable command palette powered by Fuse.js for fast, fuzzy text search.
+- [Container](https://bitrix24.github.io/b24ui/raw/docs/components/container.md): A box for centering and setting a maximum width for your content.
+- [ContentSearch](https://bitrix24.github.io/b24ui/raw/docs/components/content-search.md): A ready-to-use Command Palette component for your documentation.
+- [ContentSearchButton](https://bitrix24.github.io/b24ui/raw/docs/components/content-search-button.md): A pre-styled button that opens the content search modal.
+- [ContentSurround](https://bitrix24.github.io/b24ui/raw/docs/components/content-surround.md):  A pair of "Previous" and "Next" buttons for sequential page navigation.
+- [ContentToc](https://bitrix24.github.io/b24ui/raw/docs/components/content-toc.md): A sticky table of contents component with dynamic active section highlighting.
+- [ContextMenu](https://bitrix24.github.io/b24ui/raw/docs/components/context-menu.md): A pop-up menu that appears upon right-clicking an element to present relevant actions.
+- [Countdown](https://bitrix24.github.io/b24ui/raw/docs/components/countdown.md): Countdown with options control.
+- [DashboardGroup](https://bitrix24.github.io/b24ui/raw/docs/components/dashboard-group.md): A fixed-layout dashboard container with sidebar state management and persistent UI state.
+- [DashboardSearch](https://bitrix24.github.io/b24ui/raw/docs/components/dashboard-search.md): A ready-to-use Command Palette component for your dashboard.
+- [DashboardSearchButton](https://bitrix24.github.io/b24ui/raw/docs/components/dashboard-search-button.md): A pre-styled button that opens the Dashboard Search modal.
+- [DescriptionList](https://bitrix24.github.io/b24ui/raw/docs/components/description-list.md): For instances requiring the conversion of a table row into its own table to enhance page completeness.
+- [DropdownMenu](https://bitrix24.github.io/b24ui/raw/docs/components/dropdown-menu.md): A contextual menu for actions triggered by clicking an element.
+- [Empty](https://bitrix24.github.io/b24ui/raw/docs/components/empty.md): An empty state component.
+- [Error](https://bitrix24.github.io/b24ui/raw/docs/components/error.md): A pre-built error component with NuxtError support.
+- [FieldGroup](https://bitrix24.github.io/b24ui/raw/docs/components/field-group.md): Organize several button-like elements into a group.
+- [FileUpload](https://bitrix24.github.io/b24ui/raw/docs/components/file-upload.md): A file upload input component.
+- [Form](https://bitrix24.github.io/b24ui/raw/docs/components/form.md): A form component designed for validation and handling submissions.
+- [FormField](https://bitrix24.github.io/b24ui/raw/docs/components/form-field.md): A container for form elements with built-in validation and error management.
+- [Input](https://bitrix24.github.io/b24ui/raw/docs/components/input.md): An input box designed for text entry.
+- [InputMenu](https://bitrix24.github.io/b24ui/raw/docs/components/input-menu.md): An input field with live autocomplete suggestions.
+- [InputNumber](https://bitrix24.github.io/b24ui/raw/docs/components/input-number.md): Provide numerical input with a flexible range setting.
+- [InputTags](https://bitrix24.github.io/b24ui/raw/docs/components/input-tags.md): A tags input component with interactive tag elements.
+- [Kbd](https://bitrix24.github.io/b24ui/raw/docs/components/kbd.md): A kbd element for indicating a keyboard input.
+- [Link](https://bitrix24.github.io/b24ui/raw/docs/components/link.md): A wrapper around <NuxtLink> with extra props.
+- [LocaleSelect](https://bitrix24.github.io/b24ui/raw/docs/components/locale-select.md): A Select to switch between locales.
+- [Modal](https://bitrix24.github.io/b24ui/raw/docs/components/modal.md): A popup window for showing messages or gathering user input.
+- [NavigationMenu](https://bitrix24.github.io/b24ui/raw/docs/components/navigation-menu.md): A link list that can be arranged in horizontal or vertical orientation.
+- [PageCard](https://bitrix24.github.io/b24ui/raw/docs/components/page-card.md): A pre-styled card component featuring a title, description, and optional link.
+- [PageColumns](https://bitrix24.github.io/b24ui/raw/docs/components/page-columns.md): A responsive multi-column layout system for organizing content side-by-side.
+- [PageGrid](https://bitrix24.github.io/b24ui/raw/docs/components/page-grid.md): A responsive grid system for creating flexible content layouts.
+- [PageLinks](https://bitrix24.github.io/b24ui/raw/docs/components/page-links.md): A list of links to display on the page.
+- [PageList](https://bitrix24.github.io/b24ui/raw/docs/components/page-list.md): A vertical list layout for stacking content items.
+- [Pagination](https://bitrix24.github.io/b24ui/raw/docs/components/pagination.md): A navigation component with buttons or links for pagination.
+- [PinInput](https://bitrix24.github.io/b24ui/raw/docs/components/pin-input.md): A PIN code input component.
+- [Popover](https://bitrix24.github.io/b24ui/raw/docs/components/popover.md): A non-modal popup window for showing messages or gathering user input.
+- [Progress](https://bitrix24.github.io/b24ui/raw/docs/components/progress.md): A progress bar displaying task completion status.
+- [RadioGroup](https://bitrix24.github.io/b24ui/raw/docs/components/radio-group.md): A collection of radio buttons to pick a single choice from several options.
+- [Range](https://bitrix24.github.io/b24ui/raw/docs/components/range.md): A control for selecting a numeric value within a specified range.
+- [Select](https://bitrix24.github.io/b24ui/raw/docs/components/select.md): A selection field to pick from various options.
+- [SelectMenu](https://bitrix24.github.io/b24ui/raw/docs/components/select-menu.md): A refined and searchable selection component.
+- [Separator](https://bitrix24.github.io/b24ui/raw/docs/components/separator.md): Divides content in a horizontal or vertical manner.
+- [SidebarLayout](https://bitrix24.github.io/b24ui/raw/docs/components/sidebar-layout.md): You incorporate a sidebar in the slider and CRM entity tab embedding. Overall, it's stylish, trendy, and youthful
+- [Skeleton](https://bitrix24.github.io/b24ui/raw/docs/components/skeleton.md): A toggle control for switching between two states.
+- [Slideover](https://bitrix24.github.io/b24ui/raw/docs/components/slideover.md): A dialog that slides in from any side of the screen.
+- [Stepper](https://bitrix24.github.io/b24ui/raw/docs/components/stepper.md): A stepper component to visualize progress in a multistep workflow.
+- [Switch](https://bitrix24.github.io/b24ui/raw/docs/components/switch.md): A toggle control for switching between two states.
+- [Table](https://bitrix24.github.io/b24ui/raw/docs/components/table.md): A responsive data table component.
+- [TableWrapper](https://bitrix24.github.io/b24ui/raw/docs/components/table-wrapper.md): Wrapper for displaying a html table
+- [Tabs](https://bitrix24.github.io/b24ui/raw/docs/components/tabs.md): A collection of tab panels shown individually.
+- [Textarea](https://bitrix24.github.io/b24ui/raw/docs/components/textarea.md): A textarea for entering multi-line text.
+- [Timeline](https://bitrix24.github.io/b24ui/raw/docs/components/timeline.md): A component for displaying a chronological sequence of events, with dates, titles, and supporting icons or avatars.
+- [Toast](https://bitrix24.github.io/b24ui/raw/docs/components/toast.md): A short message to offer information or feedback to the user.
+- [Tooltip](https://bitrix24.github.io/b24ui/raw/docs/components/tooltip.md): A small window that shows details when you move your mouse over an item.
+- [User](https://bitrix24.github.io/b24ui/raw/docs/components/user.md): A component to display user details, including their name, bio, and profile picture.
+
+## Composables
+
+- [defineShortcuts](https://bitrix24.github.io/b24ui/raw/docs/composables/define-shortcuts.md): A composable to assign keyboard shortcuts in your app.
+- [useConfetti](https://bitrix24.github.io/b24ui/raw/docs/composables/use-confetti.md): Performant confetti animation in the browser
+- [useFormField](https://bitrix24.github.io/b24ui/raw/docs/composables/use-form-field.md): A composable to merge custom inputs with the Form component
+- [useOverlay](https://bitrix24.github.io/b24ui/raw/docs/composables/use-overlay.md): A composable to programmatically control overlays in App.
+- [useToast](https://bitrix24.github.io/b24ui/raw/docs/composables/use-toast.md): A composable for showing toast notifications in your app.
+
+## Documentation Sets
+
+- [Bitrix24 UI Full Documentation](https://bitrix24.github.io/b24ui/llms-full.txt): This is the full documentation for Bitrix24 UI. It includes all the Markdown files written with the MDC syntax.
+
+## Notes
+
+- The content is automatically generated from the same source as the official documentation.

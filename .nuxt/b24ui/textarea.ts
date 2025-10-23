@@ -16,8 +16,8 @@ const color = [
 
 export default {
   "slots": {
-    "root": "isolate relative inline-flex items-center w-full",
-    "base": "px-3 w-full pt-[7px] pb-[8px] border-0 focus:outline-none disabled:cursor-not-allowed disabled:pointer-events-none disabled:opacity-30 disabled:resize-none appearance-none transition duration-300 ease-linear ring ring-inset ring-(--ui-color-design-outline-stroke) text-(--ui-color-base-1) style-blurred-bg-input placeholder:text-(--ui-color-design-plain-na-content-secondary) hover:text-(--ui-color-base-1) focus:text-(--ui-color-base-1) active:text-(--ui-color-base-1) font-[family-name:var(--ui-font-family-primary)] font-(--ui-font-weight-regular) text-(length:--ui-font-size-lg)/(--ui-font-line-height-2xs) align-middle focus-visible:ring-1 focus-visible:ring-inset focus-visible:ring-(--b24ui-border-color)",
+    "root": "isolate relative inline-flex items-center",
+    "base": "px-3 w-full pt-[7px] pb-[8px] border-0 focus:outline-none disabled:cursor-not-allowed disabled:pointer-events-none disabled:select-none disabled:opacity-30 disabled:resize-none appearance-none transition duration-300 ease-linear text-(--ui-color-base-1) style-blurred-bg-input placeholder:text-(--ui-color-design-plain-na-content-secondary) hover:text-(--ui-color-base-1) focus:text-(--ui-color-base-1) active:text-(--ui-color-base-1) font-[family-name:var(--ui-font-family-primary)] font-(--ui-font-weight-regular) text-(length:--ui-font-size-lg)/(--ui-font-line-height-2xs) align-middle",
     "leading": "absolute inset-y-[7px] start-0 flex items-start px-[8px]",
     "leadingIcon": "shrink-0 size-[18px] text-(--b24ui-icon-color)",
     "leadingAvatar": "shrink-0 size-[20px]",
@@ -27,7 +27,7 @@ export default {
     "tag": "pointer-events-none select-none absolute z-10 -top-[6px] right-[12px]"
   },
   "variants": {
-    "buttonGroup": {
+    "fieldGroup": {
       "horizontal": {
         "root": "group leading-none has-focus-visible:z-[1]",
         "base": "focus-visible:outline-none ring ring-inset ring-1 focus-visible:ring-2 group-not-only:group-first:rounded-e-3xl group-not-only:group-last:rounded-s-none group-not-last:group-not-first:rounded-none group-not-only:group-first:rounded-e-none group-not-only:group-last:rounded-s-none group-not-last:group-not-first:rounded-none group-not-only:group-first:border-e-0 group-not-only:group-not-first:border-s-0"
@@ -99,7 +99,7 @@ export default {
       "true": "ring-0 focus-visible:ring-0 style-transparent-bg"
     },
     "underline": {
-      "true": "ring-0 focus-visible:ring-0 style-transparent-bg border-b-1 border-b-(--ui-color-design-outline-stroke) rounded-none"
+      "true": "rounded-none ring-0 focus-visible:ring-0 style-transparent-bg border-b-1 border-b-(--ui-color-design-outline-stroke) rounded-none"
     },
     "leading": {
       "true": ""
@@ -116,26 +116,43 @@ export default {
   },
   "compoundVariants": [
     {
+      "highlight": false,
       "noBorder": false,
       "underline": false,
-      "class": ""
+      "class": {
+        "base": "ring ring-inset ring-(--ui-color-design-outline-stroke) focus-visible:ring-1 focus-visible:ring-inset focus-visible:ring-(--b24ui-border-color) hover:not-disabled:not-data-disabled:ring-1 hover:not-disabled:not-data-disabled:ring-inset hover:not-disabled:not-data-disabled:ring-(--b24ui-border-color) data-[state=open]:ring-1 data-[state=open]:ring-inset data-[state=open]:ring-(--b24ui-border-color)"
+      }
     },
     {
       "highlight": true,
       "noBorder": false,
       "underline": false,
-      "class": "ring ring-inset ring-(--b24ui-border-color)"
+      "class": {
+        "base": "ring ring-inset ring-(--b24ui-border-color) focus-visible:ring-1 focus-visible:ring-inset focus-visible:ring-(--b24ui-border-color) hover:ring-1 hover:ring-inset hover:ring-(--b24ui-border-color) data-[state=open]:ring-1 data-[state=open]:ring-inset data-[state=open]:ring-(--b24ui-border-color)"
+      }
     },
     {
       "noBorder": false,
       "underline": true,
-      "class": "focus-visible:border-(--b24ui-border-color)"
+      "class": {
+        "base": "focus-visible:border-(--b24ui-border-color) hover:border-(--b24ui-border-color) data-[state=open]:border-(--b24ui-border-color)"
+      }
     },
     {
       "highlight": true,
       "noBorder": false,
       "underline": true,
-      "class": "border-b-(--b24ui-border-color)"
+      "class": {
+        "base": "ring-0 border-b-(--b24ui-border-color)"
+      }
+    },
+    {
+      "highlight": true,
+      "noBorder": true,
+      "underline": false,
+      "class": {
+        "base": "ring-0"
+      }
     },
     {
       "leading": true,

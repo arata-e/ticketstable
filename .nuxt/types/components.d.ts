@@ -16,88 +16,278 @@ type LazyComponent<T> = DefineComponent<HydrationStrategies, {}, {}, {}, {}, {},
 interface _GlobalComponents {
   'CompanyList': typeof import("../../app/components/CompanyList.vue")['default']
   'TicketTable': typeof import("../../app/components/TicketTable.vue")['default']
+  'ProseADVue': typeof import("../../node_modules/@bitrix24/b24ui-nuxt/dist/runtime/components/prose/A.d.vue")['default']
+  'ProseA': typeof import("../../node_modules/@bitrix24/b24ui-nuxt/dist/runtime/components/prose/A.vue")['default']
+  'ProseAccordionDVue': typeof import("../../node_modules/@bitrix24/b24ui-nuxt/dist/runtime/components/prose/Accordion.d.vue")['default']
+  'ProseAccordion': typeof import("../../node_modules/@bitrix24/b24ui-nuxt/dist/runtime/components/prose/Accordion.vue")['default']
+  'ProseAccordionItemDVue': typeof import("../../node_modules/@bitrix24/b24ui-nuxt/dist/runtime/components/prose/AccordionItem.d.vue")['default']
+  'ProseAccordionItem': typeof import("../../node_modules/@bitrix24/b24ui-nuxt/dist/runtime/components/prose/AccordionItem.vue")['default']
+  'ProseBadgeDVue': typeof import("../../node_modules/@bitrix24/b24ui-nuxt/dist/runtime/components/prose/Badge.d.vue")['default']
+  'ProseBadge': typeof import("../../node_modules/@bitrix24/b24ui-nuxt/dist/runtime/components/prose/Badge.vue")['default']
+  'ProseBlockquoteDVue': typeof import("../../node_modules/@bitrix24/b24ui-nuxt/dist/runtime/components/prose/Blockquote.d.vue")['default']
+  'ProseBlockquote': typeof import("../../node_modules/@bitrix24/b24ui-nuxt/dist/runtime/components/prose/Blockquote.vue")['default']
+  'ProseCalloutDVue': typeof import("../../node_modules/@bitrix24/b24ui-nuxt/dist/runtime/components/prose/Callout.d.vue")['default']
+  'ProseCallout': typeof import("../../node_modules/@bitrix24/b24ui-nuxt/dist/runtime/components/prose/Callout.vue")['default']
+  'ProseCardDVue': typeof import("../../node_modules/@bitrix24/b24ui-nuxt/dist/runtime/components/prose/Card.d.vue")['default']
+  'ProseCard': typeof import("../../node_modules/@bitrix24/b24ui-nuxt/dist/runtime/components/prose/Card.vue")['default']
+  'ProseCardGroupDVue': typeof import("../../node_modules/@bitrix24/b24ui-nuxt/dist/runtime/components/prose/CardGroup.d.vue")['default']
+  'ProseCardGroup': typeof import("../../node_modules/@bitrix24/b24ui-nuxt/dist/runtime/components/prose/CardGroup.vue")['default']
+  'ProseCodeDVue': typeof import("../../node_modules/@bitrix24/b24ui-nuxt/dist/runtime/components/prose/Code.d.vue")['default']
+  'ProseCode': typeof import("../../node_modules/@bitrix24/b24ui-nuxt/dist/runtime/components/prose/Code.vue")['default']
+  'ProseCodeCollapseDVue': typeof import("../../node_modules/@bitrix24/b24ui-nuxt/dist/runtime/components/prose/CodeCollapse.d.vue")['default']
+  'ProseCodeCollapse': typeof import("../../node_modules/@bitrix24/b24ui-nuxt/dist/runtime/components/prose/CodeCollapse.vue")['default']
+  'ProseCodeGroupDVue': typeof import("../../node_modules/@bitrix24/b24ui-nuxt/dist/runtime/components/prose/CodeGroup.d.vue")['default']
+  'ProseCodeGroup': typeof import("../../node_modules/@bitrix24/b24ui-nuxt/dist/runtime/components/prose/CodeGroup.vue")['default']
+  'ProseCodeIconDVue': typeof import("../../node_modules/@bitrix24/b24ui-nuxt/dist/runtime/components/prose/CodeIcon.d.vue")['default']
+  'ProseCodeIcon': typeof import("../../node_modules/@bitrix24/b24ui-nuxt/dist/runtime/components/prose/CodeIcon.vue")['default']
+  'ProseCodePreviewDVue': typeof import("../../node_modules/@bitrix24/b24ui-nuxt/dist/runtime/components/prose/CodePreview.d.vue")['default']
+  'ProseCodePreview': typeof import("../../node_modules/@bitrix24/b24ui-nuxt/dist/runtime/components/prose/CodePreview.vue")['default']
+  'ProseCollapsibleDVue': typeof import("../../node_modules/@bitrix24/b24ui-nuxt/dist/runtime/components/prose/Collapsible.d.vue")['default']
+  'ProseCollapsible': typeof import("../../node_modules/@bitrix24/b24ui-nuxt/dist/runtime/components/prose/Collapsible.vue")['default']
+  'ProseEmDVue': typeof import("../../node_modules/@bitrix24/b24ui-nuxt/dist/runtime/components/prose/Em.d.vue")['default']
+  'ProseEm': typeof import("../../node_modules/@bitrix24/b24ui-nuxt/dist/runtime/components/prose/Em.vue")['default']
+  'ProseFieldDVue': typeof import("../../node_modules/@bitrix24/b24ui-nuxt/dist/runtime/components/prose/Field.d.vue")['default']
+  'ProseField': typeof import("../../node_modules/@bitrix24/b24ui-nuxt/dist/runtime/components/prose/Field.vue")['default']
+  'ProseFieldGroupDVue': typeof import("../../node_modules/@bitrix24/b24ui-nuxt/dist/runtime/components/prose/FieldGroup.d.vue")['default']
+  'ProseFieldGroup': typeof import("../../node_modules/@bitrix24/b24ui-nuxt/dist/runtime/components/prose/FieldGroup.vue")['default']
+  'ProseH1DVue': typeof import("../../node_modules/@bitrix24/b24ui-nuxt/dist/runtime/components/prose/H1.d.vue")['default']
+  'ProseH1': typeof import("../../node_modules/@bitrix24/b24ui-nuxt/dist/runtime/components/prose/H1.vue")['default']
+  'ProseH2DVue': typeof import("../../node_modules/@bitrix24/b24ui-nuxt/dist/runtime/components/prose/H2.d.vue")['default']
+  'ProseH2': typeof import("../../node_modules/@bitrix24/b24ui-nuxt/dist/runtime/components/prose/H2.vue")['default']
+  'ProseH3DVue': typeof import("../../node_modules/@bitrix24/b24ui-nuxt/dist/runtime/components/prose/H3.d.vue")['default']
+  'ProseH3': typeof import("../../node_modules/@bitrix24/b24ui-nuxt/dist/runtime/components/prose/H3.vue")['default']
+  'ProseH4DVue': typeof import("../../node_modules/@bitrix24/b24ui-nuxt/dist/runtime/components/prose/H4.d.vue")['default']
+  'ProseH4': typeof import("../../node_modules/@bitrix24/b24ui-nuxt/dist/runtime/components/prose/H4.vue")['default']
+  'ProseH5DVue': typeof import("../../node_modules/@bitrix24/b24ui-nuxt/dist/runtime/components/prose/H5.d.vue")['default']
+  'ProseH5': typeof import("../../node_modules/@bitrix24/b24ui-nuxt/dist/runtime/components/prose/H5.vue")['default']
+  'ProseH6DVue': typeof import("../../node_modules/@bitrix24/b24ui-nuxt/dist/runtime/components/prose/H6.d.vue")['default']
+  'ProseH6': typeof import("../../node_modules/@bitrix24/b24ui-nuxt/dist/runtime/components/prose/H6.vue")['default']
+  'ProseHrDVue': typeof import("../../node_modules/@bitrix24/b24ui-nuxt/dist/runtime/components/prose/Hr.d.vue")['default']
+  'ProseHr': typeof import("../../node_modules/@bitrix24/b24ui-nuxt/dist/runtime/components/prose/Hr.vue")['default']
+  'ProseImgDVue': typeof import("../../node_modules/@bitrix24/b24ui-nuxt/dist/runtime/components/prose/Img.d.vue")['default']
+  'ProseImg': typeof import("../../node_modules/@bitrix24/b24ui-nuxt/dist/runtime/components/prose/Img.vue")['default']
+  'ProseKbdDVue': typeof import("../../node_modules/@bitrix24/b24ui-nuxt/dist/runtime/components/prose/Kbd.d.vue")['default']
+  'ProseKbd': typeof import("../../node_modules/@bitrix24/b24ui-nuxt/dist/runtime/components/prose/Kbd.vue")['default']
+  'ProseLiDVue': typeof import("../../node_modules/@bitrix24/b24ui-nuxt/dist/runtime/components/prose/Li.d.vue")['default']
+  'ProseLi': typeof import("../../node_modules/@bitrix24/b24ui-nuxt/dist/runtime/components/prose/Li.vue")['default']
+  'ProseOlDVue': typeof import("../../node_modules/@bitrix24/b24ui-nuxt/dist/runtime/components/prose/Ol.d.vue")['default']
+  'ProseOl': typeof import("../../node_modules/@bitrix24/b24ui-nuxt/dist/runtime/components/prose/Ol.vue")['default']
+  'ProsePDVue': typeof import("../../node_modules/@bitrix24/b24ui-nuxt/dist/runtime/components/prose/P.d.vue")['default']
+  'ProseP': typeof import("../../node_modules/@bitrix24/b24ui-nuxt/dist/runtime/components/prose/P.vue")['default']
+  'ProsePreDVue': typeof import("../../node_modules/@bitrix24/b24ui-nuxt/dist/runtime/components/prose/Pre.d.vue")['default']
+  'ProsePre': typeof import("../../node_modules/@bitrix24/b24ui-nuxt/dist/runtime/components/prose/Pre.vue")['default']
+  'ProseScriptDVue': typeof import("../../node_modules/@bitrix24/b24ui-nuxt/dist/runtime/components/prose/Script.d.vue")['default']
+  'ProseScript': typeof import("../../node_modules/@bitrix24/b24ui-nuxt/dist/runtime/components/prose/Script.vue")['default']
+  'ProseStepsDVue': typeof import("../../node_modules/@bitrix24/b24ui-nuxt/dist/runtime/components/prose/Steps.d.vue")['default']
+  'ProseSteps': typeof import("../../node_modules/@bitrix24/b24ui-nuxt/dist/runtime/components/prose/Steps.vue")['default']
+  'ProseStrongDVue': typeof import("../../node_modules/@bitrix24/b24ui-nuxt/dist/runtime/components/prose/Strong.d.vue")['default']
+  'ProseStrong': typeof import("../../node_modules/@bitrix24/b24ui-nuxt/dist/runtime/components/prose/Strong.vue")['default']
+  'ProseTableDVue': typeof import("../../node_modules/@bitrix24/b24ui-nuxt/dist/runtime/components/prose/Table.d.vue")['default']
+  'ProseTable': typeof import("../../node_modules/@bitrix24/b24ui-nuxt/dist/runtime/components/prose/Table.vue")['default']
+  'ProseTabsDVue': typeof import("../../node_modules/@bitrix24/b24ui-nuxt/dist/runtime/components/prose/Tabs.d.vue")['default']
+  'ProseTabs': typeof import("../../node_modules/@bitrix24/b24ui-nuxt/dist/runtime/components/prose/Tabs.vue")['default']
+  'ProseTabsItemDVue': typeof import("../../node_modules/@bitrix24/b24ui-nuxt/dist/runtime/components/prose/TabsItem.d.vue")['default']
+  'ProseTabsItem': typeof import("../../node_modules/@bitrix24/b24ui-nuxt/dist/runtime/components/prose/TabsItem.vue")['default']
+  'ProseTbodyDVue': typeof import("../../node_modules/@bitrix24/b24ui-nuxt/dist/runtime/components/prose/Tbody.d.vue")['default']
+  'ProseTbody': typeof import("../../node_modules/@bitrix24/b24ui-nuxt/dist/runtime/components/prose/Tbody.vue")['default']
+  'ProseTdDVue': typeof import("../../node_modules/@bitrix24/b24ui-nuxt/dist/runtime/components/prose/Td.d.vue")['default']
+  'ProseTd': typeof import("../../node_modules/@bitrix24/b24ui-nuxt/dist/runtime/components/prose/Td.vue")['default']
+  'ProseThDVue': typeof import("../../node_modules/@bitrix24/b24ui-nuxt/dist/runtime/components/prose/Th.d.vue")['default']
+  'ProseTh': typeof import("../../node_modules/@bitrix24/b24ui-nuxt/dist/runtime/components/prose/Th.vue")['default']
+  'ProseTheadDVue': typeof import("../../node_modules/@bitrix24/b24ui-nuxt/dist/runtime/components/prose/Thead.d.vue")['default']
+  'ProseThead': typeof import("../../node_modules/@bitrix24/b24ui-nuxt/dist/runtime/components/prose/Thead.vue")['default']
+  'ProseTrDVue': typeof import("../../node_modules/@bitrix24/b24ui-nuxt/dist/runtime/components/prose/Tr.d.vue")['default']
+  'ProseTr': typeof import("../../node_modules/@bitrix24/b24ui-nuxt/dist/runtime/components/prose/Tr.vue")['default']
+  'ProseUlDVue': typeof import("../../node_modules/@bitrix24/b24ui-nuxt/dist/runtime/components/prose/Ul.d.vue")['default']
+  'ProseUl': typeof import("../../node_modules/@bitrix24/b24ui-nuxt/dist/runtime/components/prose/Ul.vue")['default']
+  'ProseCautionDVue': typeof import("../../node_modules/@bitrix24/b24ui-nuxt/dist/runtime/components/prose/callout/Caution.d.vue")['default']
+  'ProseCaution': typeof import("../../node_modules/@bitrix24/b24ui-nuxt/dist/runtime/components/prose/callout/Caution.vue")['default']
+  'ProseNoteDVue': typeof import("../../node_modules/@bitrix24/b24ui-nuxt/dist/runtime/components/prose/callout/Note.d.vue")['default']
+  'ProseNote': typeof import("../../node_modules/@bitrix24/b24ui-nuxt/dist/runtime/components/prose/callout/Note.vue")['default']
+  'ProseTipDVue': typeof import("../../node_modules/@bitrix24/b24ui-nuxt/dist/runtime/components/prose/callout/Tip.d.vue")['default']
+  'ProseTip': typeof import("../../node_modules/@bitrix24/b24ui-nuxt/dist/runtime/components/prose/callout/Tip.vue")['default']
+  'ProseWarningDVue': typeof import("../../node_modules/@bitrix24/b24ui-nuxt/dist/runtime/components/prose/callout/Warning.d.vue")['default']
+  'ProseWarning': typeof import("../../node_modules/@bitrix24/b24ui-nuxt/dist/runtime/components/prose/callout/Warning.vue")['default']
+  'B24ColorModeAvatarDVue': typeof import("../../node_modules/@bitrix24/b24ui-nuxt/dist/runtime/components/color-mode/ColorModeAvatar.d.vue")['default']
+  'B24ColorModeAvatar': typeof import("../../node_modules/@bitrix24/b24ui-nuxt/dist/runtime/components/color-mode/ColorModeAvatar.vue")['default']
+  'B24ColorModeButtonDVue': typeof import("../../node_modules/@bitrix24/b24ui-nuxt/dist/runtime/components/color-mode/ColorModeButton.d.vue")['default']
+  'B24ColorModeButton': typeof import("../../node_modules/@bitrix24/b24ui-nuxt/dist/runtime/components/color-mode/ColorModeButton.vue")['default']
+  'B24ColorModeImageDVue': typeof import("../../node_modules/@bitrix24/b24ui-nuxt/dist/runtime/components/color-mode/ColorModeImage.d.vue")['default']
+  'B24ColorModeImage': typeof import("../../node_modules/@bitrix24/b24ui-nuxt/dist/runtime/components/color-mode/ColorModeImage.vue")['default']
+  'B24ColorModeSelectDVue': typeof import("../../node_modules/@bitrix24/b24ui-nuxt/dist/runtime/components/color-mode/ColorModeSelect.d.vue")['default']
+  'B24ColorModeSelect': typeof import("../../node_modules/@bitrix24/b24ui-nuxt/dist/runtime/components/color-mode/ColorModeSelect.vue")['default']
+  'B24ColorModeSwitchDVue': typeof import("../../node_modules/@bitrix24/b24ui-nuxt/dist/runtime/components/color-mode/ColorModeSwitch.d.vue")['default']
+  'B24ColorModeSwitch': typeof import("../../node_modules/@bitrix24/b24ui-nuxt/dist/runtime/components/color-mode/ColorModeSwitch.vue")['default']
+  'B24AccordionDVue': typeof import("../../node_modules/@bitrix24/b24ui-nuxt/dist/runtime/components/Accordion.d.vue")['default']
   'B24Accordion': typeof import("../../node_modules/@bitrix24/b24ui-nuxt/dist/runtime/components/Accordion.vue")['default']
+  'B24AdviceDVue': typeof import("../../node_modules/@bitrix24/b24ui-nuxt/dist/runtime/components/Advice.d.vue")['default']
   'B24Advice': typeof import("../../node_modules/@bitrix24/b24ui-nuxt/dist/runtime/components/Advice.vue")['default']
+  'B24AlertDVue': typeof import("../../node_modules/@bitrix24/b24ui-nuxt/dist/runtime/components/Alert.d.vue")['default']
   'B24Alert': typeof import("../../node_modules/@bitrix24/b24ui-nuxt/dist/runtime/components/Alert.vue")['default']
+  'B24AppDVue': typeof import("../../node_modules/@bitrix24/b24ui-nuxt/dist/runtime/components/App.d.vue")['default']
   'B24App': typeof import("../../node_modules/@bitrix24/b24ui-nuxt/dist/runtime/components/App.vue")['default']
+  'B24AvatarDVue': typeof import("../../node_modules/@bitrix24/b24ui-nuxt/dist/runtime/components/Avatar.d.vue")['default']
   'B24Avatar': typeof import("../../node_modules/@bitrix24/b24ui-nuxt/dist/runtime/components/Avatar.vue")['default']
+  'B24AvatarGroupDVue': typeof import("../../node_modules/@bitrix24/b24ui-nuxt/dist/runtime/components/AvatarGroup.d.vue")['default']
   'B24AvatarGroup': typeof import("../../node_modules/@bitrix24/b24ui-nuxt/dist/runtime/components/AvatarGroup.vue")['default']
+  'B24BadgeDVue': typeof import("../../node_modules/@bitrix24/b24ui-nuxt/dist/runtime/components/Badge.d.vue")['default']
   'B24Badge': typeof import("../../node_modules/@bitrix24/b24ui-nuxt/dist/runtime/components/Badge.vue")['default']
+  'B24BannerDVue': typeof import("../../node_modules/@bitrix24/b24ui-nuxt/dist/runtime/components/Banner.d.vue")['default']
+  'B24Banner': typeof import("../../node_modules/@bitrix24/b24ui-nuxt/dist/runtime/components/Banner.vue")['default']
+  'B24BreadcrumbDVue': typeof import("../../node_modules/@bitrix24/b24ui-nuxt/dist/runtime/components/Breadcrumb.d.vue")['default']
+  'B24Breadcrumb': typeof import("../../node_modules/@bitrix24/b24ui-nuxt/dist/runtime/components/Breadcrumb.vue")['default']
+  'B24ButtonDVue': typeof import("../../node_modules/@bitrix24/b24ui-nuxt/dist/runtime/components/Button.d.vue")['default']
   'B24Button': typeof import("../../node_modules/@bitrix24/b24ui-nuxt/dist/runtime/components/Button.vue")['default']
-  'B24ButtonGroup': typeof import("../../node_modules/@bitrix24/b24ui-nuxt/dist/runtime/components/ButtonGroup.vue")['default']
+  'B24CalendarDVue': typeof import("../../node_modules/@bitrix24/b24ui-nuxt/dist/runtime/components/Calendar.d.vue")['default']
   'B24Calendar': typeof import("../../node_modules/@bitrix24/b24ui-nuxt/dist/runtime/components/Calendar.vue")['default']
+  'B24CardDVue': typeof import("../../node_modules/@bitrix24/b24ui-nuxt/dist/runtime/components/Card.d.vue")['default']
+  'B24Card': typeof import("../../node_modules/@bitrix24/b24ui-nuxt/dist/runtime/components/Card.vue")['default']
+  'B24CheckboxDVue': typeof import("../../node_modules/@bitrix24/b24ui-nuxt/dist/runtime/components/Checkbox.d.vue")['default']
   'B24Checkbox': typeof import("../../node_modules/@bitrix24/b24ui-nuxt/dist/runtime/components/Checkbox.vue")['default']
+  'B24CheckboxGroupDVue': typeof import("../../node_modules/@bitrix24/b24ui-nuxt/dist/runtime/components/CheckboxGroup.d.vue")['default']
+  'B24CheckboxGroup': typeof import("../../node_modules/@bitrix24/b24ui-nuxt/dist/runtime/components/CheckboxGroup.vue")['default']
+  'B24ChipDVue': typeof import("../../node_modules/@bitrix24/b24ui-nuxt/dist/runtime/components/Chip.d.vue")['default']
   'B24Chip': typeof import("../../node_modules/@bitrix24/b24ui-nuxt/dist/runtime/components/Chip.vue")['default']
+  'B24CollapsibleDVue': typeof import("../../node_modules/@bitrix24/b24ui-nuxt/dist/runtime/components/Collapsible.d.vue")['default']
   'B24Collapsible': typeof import("../../node_modules/@bitrix24/b24ui-nuxt/dist/runtime/components/Collapsible.vue")['default']
+  'B24ColorPickerDVue': typeof import("../../node_modules/@bitrix24/b24ui-nuxt/dist/runtime/components/ColorPicker.d.vue")['default']
+  'B24ColorPicker': typeof import("../../node_modules/@bitrix24/b24ui-nuxt/dist/runtime/components/ColorPicker.vue")['default']
+  'B24CommandPaletteDVue': typeof import("../../node_modules/@bitrix24/b24ui-nuxt/dist/runtime/components/CommandPalette.d.vue")['default']
+  'B24CommandPalette': typeof import("../../node_modules/@bitrix24/b24ui-nuxt/dist/runtime/components/CommandPalette.vue")['default']
+  'B24ContainerDVue': typeof import("../../node_modules/@bitrix24/b24ui-nuxt/dist/runtime/components/Container.d.vue")['default']
   'B24Container': typeof import("../../node_modules/@bitrix24/b24ui-nuxt/dist/runtime/components/Container.vue")['default']
+  'B24ContextMenuDVue': typeof import("../../node_modules/@bitrix24/b24ui-nuxt/dist/runtime/components/ContextMenu.d.vue")['default']
+  'B24ContextMenu': typeof import("../../node_modules/@bitrix24/b24ui-nuxt/dist/runtime/components/ContextMenu.vue")['default']
+  'B24ContextMenuContentDVue': typeof import("../../node_modules/@bitrix24/b24ui-nuxt/dist/runtime/components/ContextMenuContent.d.vue")['default']
+  'B24ContextMenuContent': typeof import("../../node_modules/@bitrix24/b24ui-nuxt/dist/runtime/components/ContextMenuContent.vue")['default']
+  'B24CountdownDVue': typeof import("../../node_modules/@bitrix24/b24ui-nuxt/dist/runtime/components/Countdown.d.vue")['default']
   'B24Countdown': typeof import("../../node_modules/@bitrix24/b24ui-nuxt/dist/runtime/components/Countdown.vue")['default']
+  'B24DashboardGroupDVue': typeof import("../../node_modules/@bitrix24/b24ui-nuxt/dist/runtime/components/DashboardGroup.d.vue")['default']
+  'B24DashboardGroup': typeof import("../../node_modules/@bitrix24/b24ui-nuxt/dist/runtime/components/DashboardGroup.vue")['default']
+  'B24DashboardSearchDVue': typeof import("../../node_modules/@bitrix24/b24ui-nuxt/dist/runtime/components/DashboardSearch.d.vue")['default']
+  'B24DashboardSearch': typeof import("../../node_modules/@bitrix24/b24ui-nuxt/dist/runtime/components/DashboardSearch.vue")['default']
+  'B24DashboardSearchButtonDVue': typeof import("../../node_modules/@bitrix24/b24ui-nuxt/dist/runtime/components/DashboardSearchButton.d.vue")['default']
+  'B24DashboardSearchButton': typeof import("../../node_modules/@bitrix24/b24ui-nuxt/dist/runtime/components/DashboardSearchButton.vue")['default']
+  'B24DescriptionListDVue': typeof import("../../node_modules/@bitrix24/b24ui-nuxt/dist/runtime/components/DescriptionList.d.vue")['default']
   'B24DescriptionList': typeof import("../../node_modules/@bitrix24/b24ui-nuxt/dist/runtime/components/DescriptionList.vue")['default']
+  'B24DropdownMenuDVue': typeof import("../../node_modules/@bitrix24/b24ui-nuxt/dist/runtime/components/DropdownMenu.d.vue")['default']
   'B24DropdownMenu': typeof import("../../node_modules/@bitrix24/b24ui-nuxt/dist/runtime/components/DropdownMenu.vue")['default']
+  'B24DropdownMenuContentDVue': typeof import("../../node_modules/@bitrix24/b24ui-nuxt/dist/runtime/components/DropdownMenuContent.d.vue")['default']
   'B24DropdownMenuContent': typeof import("../../node_modules/@bitrix24/b24ui-nuxt/dist/runtime/components/DropdownMenuContent.vue")['default']
+  'B24EmptyDVue': typeof import("../../node_modules/@bitrix24/b24ui-nuxt/dist/runtime/components/Empty.d.vue")['default']
+  'B24Empty': typeof import("../../node_modules/@bitrix24/b24ui-nuxt/dist/runtime/components/Empty.vue")['default']
+  'B24ErrorDVue': typeof import("../../node_modules/@bitrix24/b24ui-nuxt/dist/runtime/components/Error.d.vue")['default']
+  'B24Error': typeof import("../../node_modules/@bitrix24/b24ui-nuxt/dist/runtime/components/Error.vue")['default']
+  'B24FieldGroupDVue': typeof import("../../node_modules/@bitrix24/b24ui-nuxt/dist/runtime/components/FieldGroup.d.vue")['default']
+  'B24FieldGroup': typeof import("../../node_modules/@bitrix24/b24ui-nuxt/dist/runtime/components/FieldGroup.vue")['default']
+  'B24FileUploadDVue': typeof import("../../node_modules/@bitrix24/b24ui-nuxt/dist/runtime/components/FileUpload.d.vue")['default']
+  'B24FileUpload': typeof import("../../node_modules/@bitrix24/b24ui-nuxt/dist/runtime/components/FileUpload.vue")['default']
+  'B24FormDVue': typeof import("../../node_modules/@bitrix24/b24ui-nuxt/dist/runtime/components/Form.d.vue")['default']
   'B24Form': typeof import("../../node_modules/@bitrix24/b24ui-nuxt/dist/runtime/components/Form.vue")['default']
+  'B24FormFieldDVue': typeof import("../../node_modules/@bitrix24/b24ui-nuxt/dist/runtime/components/FormField.d.vue")['default']
   'B24FormField': typeof import("../../node_modules/@bitrix24/b24ui-nuxt/dist/runtime/components/FormField.vue")['default']
+  'B24InputDVue': typeof import("../../node_modules/@bitrix24/b24ui-nuxt/dist/runtime/components/Input.d.vue")['default']
   'B24Input': typeof import("../../node_modules/@bitrix24/b24ui-nuxt/dist/runtime/components/Input.vue")['default']
+  'B24InputMenuDVue': typeof import("../../node_modules/@bitrix24/b24ui-nuxt/dist/runtime/components/InputMenu.d.vue")['default']
   'B24InputMenu': typeof import("../../node_modules/@bitrix24/b24ui-nuxt/dist/runtime/components/InputMenu.vue")['default']
+  'B24InputNumberDVue': typeof import("../../node_modules/@bitrix24/b24ui-nuxt/dist/runtime/components/InputNumber.d.vue")['default']
   'B24InputNumber': typeof import("../../node_modules/@bitrix24/b24ui-nuxt/dist/runtime/components/InputNumber.vue")['default']
+  'B24InputTagsDVue': typeof import("../../node_modules/@bitrix24/b24ui-nuxt/dist/runtime/components/InputTags.d.vue")['default']
+  'B24InputTags': typeof import("../../node_modules/@bitrix24/b24ui-nuxt/dist/runtime/components/InputTags.vue")['default']
+  'B24KbdDVue': typeof import("../../node_modules/@bitrix24/b24ui-nuxt/dist/runtime/components/Kbd.d.vue")['default']
   'B24Kbd': typeof import("../../node_modules/@bitrix24/b24ui-nuxt/dist/runtime/components/Kbd.vue")['default']
+  'B24LinkDVue': typeof import("../../node_modules/@bitrix24/b24ui-nuxt/dist/runtime/components/Link.d.vue")['default']
   'B24Link': typeof import("../../node_modules/@bitrix24/b24ui-nuxt/dist/runtime/components/Link.vue")['default']
+  'B24LinkBaseDVue': typeof import("../../node_modules/@bitrix24/b24ui-nuxt/dist/runtime/components/LinkBase.d.vue")['default']
   'B24LinkBase': typeof import("../../node_modules/@bitrix24/b24ui-nuxt/dist/runtime/components/LinkBase.vue")['default']
+  'B24ModalDVue': typeof import("../../node_modules/@bitrix24/b24ui-nuxt/dist/runtime/components/Modal.d.vue")['default']
   'B24Modal': typeof import("../../node_modules/@bitrix24/b24ui-nuxt/dist/runtime/components/Modal.vue")['default']
+  'B24ModalDialogCloseDVue': typeof import("../../node_modules/@bitrix24/b24ui-nuxt/dist/runtime/components/ModalDialogClose.d.vue")['default']
   'B24ModalDialogClose': typeof import("../../node_modules/@bitrix24/b24ui-nuxt/dist/runtime/components/ModalDialogClose.vue")['default']
+  'B24NavbarDVue': typeof import("../../node_modules/@bitrix24/b24ui-nuxt/dist/runtime/components/Navbar.d.vue")['default']
   'B24Navbar': typeof import("../../node_modules/@bitrix24/b24ui-nuxt/dist/runtime/components/Navbar.vue")['default']
+  'B24NavbarDividerDVue': typeof import("../../node_modules/@bitrix24/b24ui-nuxt/dist/runtime/components/NavbarDivider.d.vue")['default']
   'B24NavbarDivider': typeof import("../../node_modules/@bitrix24/b24ui-nuxt/dist/runtime/components/NavbarDivider.vue")['default']
+  'B24NavbarSectionDVue': typeof import("../../node_modules/@bitrix24/b24ui-nuxt/dist/runtime/components/NavbarSection.d.vue")['default']
   'B24NavbarSection': typeof import("../../node_modules/@bitrix24/b24ui-nuxt/dist/runtime/components/NavbarSection.vue")['default']
+  'B24NavbarSpacerDVue': typeof import("../../node_modules/@bitrix24/b24ui-nuxt/dist/runtime/components/NavbarSpacer.d.vue")['default']
   'B24NavbarSpacer': typeof import("../../node_modules/@bitrix24/b24ui-nuxt/dist/runtime/components/NavbarSpacer.vue")['default']
+  'B24NavigationMenuDVue': typeof import("../../node_modules/@bitrix24/b24ui-nuxt/dist/runtime/components/NavigationMenu.d.vue")['default']
   'B24NavigationMenu': typeof import("../../node_modules/@bitrix24/b24ui-nuxt/dist/runtime/components/NavigationMenu.vue")['default']
+  'B24OverlayProviderDVue': typeof import("../../node_modules/@bitrix24/b24ui-nuxt/dist/runtime/components/OverlayProvider.d.vue")['default']
   'B24OverlayProvider': typeof import("../../node_modules/@bitrix24/b24ui-nuxt/dist/runtime/components/OverlayProvider.vue")['default']
+  'B24PageCardDVue': typeof import("../../node_modules/@bitrix24/b24ui-nuxt/dist/runtime/components/PageCard.d.vue")['default']
+  'B24PageCard': typeof import("../../node_modules/@bitrix24/b24ui-nuxt/dist/runtime/components/PageCard.vue")['default']
+  'B24PageColumnsDVue': typeof import("../../node_modules/@bitrix24/b24ui-nuxt/dist/runtime/components/PageColumns.d.vue")['default']
+  'B24PageColumns': typeof import("../../node_modules/@bitrix24/b24ui-nuxt/dist/runtime/components/PageColumns.vue")['default']
+  'B24PageGridDVue': typeof import("../../node_modules/@bitrix24/b24ui-nuxt/dist/runtime/components/PageGrid.d.vue")['default']
+  'B24PageGrid': typeof import("../../node_modules/@bitrix24/b24ui-nuxt/dist/runtime/components/PageGrid.vue")['default']
+  'B24PageLinksDVue': typeof import("../../node_modules/@bitrix24/b24ui-nuxt/dist/runtime/components/PageLinks.d.vue")['default']
+  'B24PageLinks': typeof import("../../node_modules/@bitrix24/b24ui-nuxt/dist/runtime/components/PageLinks.vue")['default']
+  'B24PageListDVue': typeof import("../../node_modules/@bitrix24/b24ui-nuxt/dist/runtime/components/PageList.d.vue")['default']
+  'B24PageList': typeof import("../../node_modules/@bitrix24/b24ui-nuxt/dist/runtime/components/PageList.vue")['default']
+  'B24PaginationDVue': typeof import("../../node_modules/@bitrix24/b24ui-nuxt/dist/runtime/components/Pagination.d.vue")['default']
+  'B24Pagination': typeof import("../../node_modules/@bitrix24/b24ui-nuxt/dist/runtime/components/Pagination.vue")['default']
+  'B24PinInputDVue': typeof import("../../node_modules/@bitrix24/b24ui-nuxt/dist/runtime/components/PinInput.d.vue")['default']
+  'B24PinInput': typeof import("../../node_modules/@bitrix24/b24ui-nuxt/dist/runtime/components/PinInput.vue")['default']
+  'B24PopoverDVue': typeof import("../../node_modules/@bitrix24/b24ui-nuxt/dist/runtime/components/Popover.d.vue")['default']
   'B24Popover': typeof import("../../node_modules/@bitrix24/b24ui-nuxt/dist/runtime/components/Popover.vue")['default']
+  'B24ProgressDVue': typeof import("../../node_modules/@bitrix24/b24ui-nuxt/dist/runtime/components/Progress.d.vue")['default']
   'B24Progress': typeof import("../../node_modules/@bitrix24/b24ui-nuxt/dist/runtime/components/Progress.vue")['default']
+  'B24RadioGroupDVue': typeof import("../../node_modules/@bitrix24/b24ui-nuxt/dist/runtime/components/RadioGroup.d.vue")['default']
   'B24RadioGroup': typeof import("../../node_modules/@bitrix24/b24ui-nuxt/dist/runtime/components/RadioGroup.vue")['default']
+  'B24RangeDVue': typeof import("../../node_modules/@bitrix24/b24ui-nuxt/dist/runtime/components/Range.d.vue")['default']
   'B24Range': typeof import("../../node_modules/@bitrix24/b24ui-nuxt/dist/runtime/components/Range.vue")['default']
+  'B24SelectDVue': typeof import("../../node_modules/@bitrix24/b24ui-nuxt/dist/runtime/components/Select.d.vue")['default']
   'B24Select': typeof import("../../node_modules/@bitrix24/b24ui-nuxt/dist/runtime/components/Select.vue")['default']
+  'B24SelectMenuDVue': typeof import("../../node_modules/@bitrix24/b24ui-nuxt/dist/runtime/components/SelectMenu.d.vue")['default']
   'B24SelectMenu': typeof import("../../node_modules/@bitrix24/b24ui-nuxt/dist/runtime/components/SelectMenu.vue")['default']
+  'B24SeparatorDVue': typeof import("../../node_modules/@bitrix24/b24ui-nuxt/dist/runtime/components/Separator.d.vue")['default']
   'B24Separator': typeof import("../../node_modules/@bitrix24/b24ui-nuxt/dist/runtime/components/Separator.vue")['default']
+  'B24SidebarDVue': typeof import("../../node_modules/@bitrix24/b24ui-nuxt/dist/runtime/components/Sidebar.d.vue")['default']
   'B24Sidebar': typeof import("../../node_modules/@bitrix24/b24ui-nuxt/dist/runtime/components/Sidebar.vue")['default']
+  'B24SidebarBodyDVue': typeof import("../../node_modules/@bitrix24/b24ui-nuxt/dist/runtime/components/SidebarBody.d.vue")['default']
   'B24SidebarBody': typeof import("../../node_modules/@bitrix24/b24ui-nuxt/dist/runtime/components/SidebarBody.vue")['default']
+  'B24SidebarFooterDVue': typeof import("../../node_modules/@bitrix24/b24ui-nuxt/dist/runtime/components/SidebarFooter.d.vue")['default']
   'B24SidebarFooter': typeof import("../../node_modules/@bitrix24/b24ui-nuxt/dist/runtime/components/SidebarFooter.vue")['default']
+  'B24SidebarHeaderDVue': typeof import("../../node_modules/@bitrix24/b24ui-nuxt/dist/runtime/components/SidebarHeader.d.vue")['default']
   'B24SidebarHeader': typeof import("../../node_modules/@bitrix24/b24ui-nuxt/dist/runtime/components/SidebarHeader.vue")['default']
+  'B24SidebarHeadingDVue': typeof import("../../node_modules/@bitrix24/b24ui-nuxt/dist/runtime/components/SidebarHeading.d.vue")['default']
   'B24SidebarHeading': typeof import("../../node_modules/@bitrix24/b24ui-nuxt/dist/runtime/components/SidebarHeading.vue")['default']
+  'B24SidebarLayoutDVue': typeof import("../../node_modules/@bitrix24/b24ui-nuxt/dist/runtime/components/SidebarLayout.d.vue")['default']
   'B24SidebarLayout': typeof import("../../node_modules/@bitrix24/b24ui-nuxt/dist/runtime/components/SidebarLayout.vue")['default']
+  'B24SidebarSectionDVue': typeof import("../../node_modules/@bitrix24/b24ui-nuxt/dist/runtime/components/SidebarSection.d.vue")['default']
   'B24SidebarSection': typeof import("../../node_modules/@bitrix24/b24ui-nuxt/dist/runtime/components/SidebarSection.vue")['default']
+  'B24SidebarSpacerDVue': typeof import("../../node_modules/@bitrix24/b24ui-nuxt/dist/runtime/components/SidebarSpacer.d.vue")['default']
   'B24SidebarSpacer': typeof import("../../node_modules/@bitrix24/b24ui-nuxt/dist/runtime/components/SidebarSpacer.vue")['default']
+  'B24SkeletonDVue': typeof import("../../node_modules/@bitrix24/b24ui-nuxt/dist/runtime/components/Skeleton.d.vue")['default']
   'B24Skeleton': typeof import("../../node_modules/@bitrix24/b24ui-nuxt/dist/runtime/components/Skeleton.vue")['default']
+  'B24SlideoverDVue': typeof import("../../node_modules/@bitrix24/b24ui-nuxt/dist/runtime/components/Slideover.d.vue")['default']
   'B24Slideover': typeof import("../../node_modules/@bitrix24/b24ui-nuxt/dist/runtime/components/Slideover.vue")['default']
+  'B24StepperDVue': typeof import("../../node_modules/@bitrix24/b24ui-nuxt/dist/runtime/components/Stepper.d.vue")['default']
+  'B24Stepper': typeof import("../../node_modules/@bitrix24/b24ui-nuxt/dist/runtime/components/Stepper.vue")['default']
+  'B24SwitchDVue': typeof import("../../node_modules/@bitrix24/b24ui-nuxt/dist/runtime/components/Switch.d.vue")['default']
   'B24Switch': typeof import("../../node_modules/@bitrix24/b24ui-nuxt/dist/runtime/components/Switch.vue")['default']
+  'B24TableDVue': typeof import("../../node_modules/@bitrix24/b24ui-nuxt/dist/runtime/components/Table.d.vue")['default']
+  'B24Table': typeof import("../../node_modules/@bitrix24/b24ui-nuxt/dist/runtime/components/Table.vue")['default']
+  'B24TableWrapperDVue': typeof import("../../node_modules/@bitrix24/b24ui-nuxt/dist/runtime/components/TableWrapper.d.vue")['default']
+  'B24TableWrapper': typeof import("../../node_modules/@bitrix24/b24ui-nuxt/dist/runtime/components/TableWrapper.vue")['default']
+  'B24TabsDVue': typeof import("../../node_modules/@bitrix24/b24ui-nuxt/dist/runtime/components/Tabs.d.vue")['default']
   'B24Tabs': typeof import("../../node_modules/@bitrix24/b24ui-nuxt/dist/runtime/components/Tabs.vue")['default']
+  'B24TextareaDVue': typeof import("../../node_modules/@bitrix24/b24ui-nuxt/dist/runtime/components/Textarea.d.vue")['default']
   'B24Textarea': typeof import("../../node_modules/@bitrix24/b24ui-nuxt/dist/runtime/components/Textarea.vue")['default']
+  'B24TimelineDVue': typeof import("../../node_modules/@bitrix24/b24ui-nuxt/dist/runtime/components/Timeline.d.vue")['default']
+  'B24Timeline': typeof import("../../node_modules/@bitrix24/b24ui-nuxt/dist/runtime/components/Timeline.vue")['default']
+  'B24ToastDVue': typeof import("../../node_modules/@bitrix24/b24ui-nuxt/dist/runtime/components/Toast.d.vue")['default']
   'B24Toast': typeof import("../../node_modules/@bitrix24/b24ui-nuxt/dist/runtime/components/Toast.vue")['default']
+  'B24ToasterDVue': typeof import("../../node_modules/@bitrix24/b24ui-nuxt/dist/runtime/components/Toaster.d.vue")['default']
   'B24Toaster': typeof import("../../node_modules/@bitrix24/b24ui-nuxt/dist/runtime/components/Toaster.vue")['default']
+  'B24TooltipDVue': typeof import("../../node_modules/@bitrix24/b24ui-nuxt/dist/runtime/components/Tooltip.d.vue")['default']
   'B24Tooltip': typeof import("../../node_modules/@bitrix24/b24ui-nuxt/dist/runtime/components/Tooltip.vue")['default']
-  'B24TableWrapper': typeof import("../../node_modules/@bitrix24/b24ui-nuxt/dist/runtime/components/content/TableWrapper.vue")['default']
-  'ProseA': typeof import("../../node_modules/@bitrix24/b24ui-nuxt/dist/runtime/prose/A.vue")['default']
-  'ProseBlockquote': typeof import("../../node_modules/@bitrix24/b24ui-nuxt/dist/runtime/prose/Blockquote.vue")['default']
-  'ProseCode': typeof import("../../node_modules/@bitrix24/b24ui-nuxt/dist/runtime/prose/Code.vue")['default']
-  'ProseEm': typeof import("../../node_modules/@bitrix24/b24ui-nuxt/dist/runtime/prose/Em.vue")['default']
-  'ProseH1': typeof import("../../node_modules/@bitrix24/b24ui-nuxt/dist/runtime/prose/H1.vue")['default']
-  'ProseH2': typeof import("../../node_modules/@bitrix24/b24ui-nuxt/dist/runtime/prose/H2.vue")['default']
-  'ProseH3': typeof import("../../node_modules/@bitrix24/b24ui-nuxt/dist/runtime/prose/H3.vue")['default']
-  'ProseH4': typeof import("../../node_modules/@bitrix24/b24ui-nuxt/dist/runtime/prose/H4.vue")['default']
-  'ProseH5': typeof import("../../node_modules/@bitrix24/b24ui-nuxt/dist/runtime/prose/H5.vue")['default']
-  'ProseH6': typeof import("../../node_modules/@bitrix24/b24ui-nuxt/dist/runtime/prose/H6.vue")['default']
-  'ProseHr': typeof import("../../node_modules/@bitrix24/b24ui-nuxt/dist/runtime/prose/Hr.vue")['default']
-  'ProseImg': typeof import("../../node_modules/@bitrix24/b24ui-nuxt/dist/runtime/prose/Img.vue")['default']
-  'ProseLi': typeof import("../../node_modules/@bitrix24/b24ui-nuxt/dist/runtime/prose/Li.vue")['default']
-  'ProseOl': typeof import("../../node_modules/@bitrix24/b24ui-nuxt/dist/runtime/prose/Ol.vue")['default']
-  'ProseP': typeof import("../../node_modules/@bitrix24/b24ui-nuxt/dist/runtime/prose/P.vue")['default']
-  'ProsePre': typeof import("../../node_modules/@bitrix24/b24ui-nuxt/dist/runtime/prose/Pre.vue")['default']
-  'ProseStrong': typeof import("../../node_modules/@bitrix24/b24ui-nuxt/dist/runtime/prose/Strong.vue")['default']
-  'ProseTable': typeof import("../../node_modules/@bitrix24/b24ui-nuxt/dist/runtime/prose/Table.vue")['default']
-  'ProseTbody': typeof import("../../node_modules/@bitrix24/b24ui-nuxt/dist/runtime/prose/Tbody.vue")['default']
-  'ProseTd': typeof import("../../node_modules/@bitrix24/b24ui-nuxt/dist/runtime/prose/Td.vue")['default']
-  'ProseTh': typeof import("../../node_modules/@bitrix24/b24ui-nuxt/dist/runtime/prose/Th.vue")['default']
-  'ProseThead': typeof import("../../node_modules/@bitrix24/b24ui-nuxt/dist/runtime/prose/Thead.vue")['default']
-  'ProseTr': typeof import("../../node_modules/@bitrix24/b24ui-nuxt/dist/runtime/prose/Tr.vue")['default']
-  'ProseUl': typeof import("../../node_modules/@bitrix24/b24ui-nuxt/dist/runtime/prose/Ul.vue")['default']
+  'B24UserDVue': typeof import("../../node_modules/@bitrix24/b24ui-nuxt/dist/runtime/components/User.d.vue")['default']
+  'B24User': typeof import("../../node_modules/@bitrix24/b24ui-nuxt/dist/runtime/components/User.vue")['default']
+  'B24LocaleSelectDVue': typeof import("../../node_modules/@bitrix24/b24ui-nuxt/dist/runtime/components/locale/LocaleSelect.d.vue")['default']
+  'B24LocaleSelect': typeof import("../../node_modules/@bitrix24/b24ui-nuxt/dist/runtime/components/locale/LocaleSelect.vue")['default']
   'NuxtWelcome': typeof import("../../node_modules/nuxt/dist/app/components/welcome.vue")['default']
   'NuxtLayout': typeof import("../../node_modules/nuxt/dist/app/components/nuxt-layout")['default']
   'NuxtErrorBoundary': typeof import("../../node_modules/nuxt/dist/app/components/nuxt-error-boundary.vue")['default']
@@ -110,7 +300,6 @@ interface _GlobalComponents {
   'NuxtRouteAnnouncer': typeof import("../../node_modules/nuxt/dist/app/components/nuxt-route-announcer")['default']
   'NuxtImg': typeof import("../../node_modules/nuxt/dist/app/components/nuxt-stubs")['NuxtImg']
   'NuxtPicture': typeof import("../../node_modules/nuxt/dist/app/components/nuxt-stubs")['NuxtPicture']
-  'ColorScheme': typeof import("../../node_modules/@nuxtjs/color-mode/dist/runtime/component.vue3.vue")['default']
   'NuxtPage': typeof import("../../node_modules/nuxt/dist/pages/runtime/page")['default']
   'NoScript': typeof import("../../node_modules/nuxt/dist/head/runtime/components")['NoScript']
   'Link': typeof import("../../node_modules/nuxt/dist/head/runtime/components")['Link']
@@ -124,88 +313,278 @@ interface _GlobalComponents {
   'NuxtIsland': typeof import("../../node_modules/nuxt/dist/app/components/nuxt-island")['default']
   'LazyCompanyList': LazyComponent<typeof import("../../app/components/CompanyList.vue")['default']>
   'LazyTicketTable': LazyComponent<typeof import("../../app/components/TicketTable.vue")['default']>
+  'LazyProseADVue': LazyComponent<typeof import("../../node_modules/@bitrix24/b24ui-nuxt/dist/runtime/components/prose/A.d.vue")['default']>
+  'LazyProseA': LazyComponent<typeof import("../../node_modules/@bitrix24/b24ui-nuxt/dist/runtime/components/prose/A.vue")['default']>
+  'LazyProseAccordionDVue': LazyComponent<typeof import("../../node_modules/@bitrix24/b24ui-nuxt/dist/runtime/components/prose/Accordion.d.vue")['default']>
+  'LazyProseAccordion': LazyComponent<typeof import("../../node_modules/@bitrix24/b24ui-nuxt/dist/runtime/components/prose/Accordion.vue")['default']>
+  'LazyProseAccordionItemDVue': LazyComponent<typeof import("../../node_modules/@bitrix24/b24ui-nuxt/dist/runtime/components/prose/AccordionItem.d.vue")['default']>
+  'LazyProseAccordionItem': LazyComponent<typeof import("../../node_modules/@bitrix24/b24ui-nuxt/dist/runtime/components/prose/AccordionItem.vue")['default']>
+  'LazyProseBadgeDVue': LazyComponent<typeof import("../../node_modules/@bitrix24/b24ui-nuxt/dist/runtime/components/prose/Badge.d.vue")['default']>
+  'LazyProseBadge': LazyComponent<typeof import("../../node_modules/@bitrix24/b24ui-nuxt/dist/runtime/components/prose/Badge.vue")['default']>
+  'LazyProseBlockquoteDVue': LazyComponent<typeof import("../../node_modules/@bitrix24/b24ui-nuxt/dist/runtime/components/prose/Blockquote.d.vue")['default']>
+  'LazyProseBlockquote': LazyComponent<typeof import("../../node_modules/@bitrix24/b24ui-nuxt/dist/runtime/components/prose/Blockquote.vue")['default']>
+  'LazyProseCalloutDVue': LazyComponent<typeof import("../../node_modules/@bitrix24/b24ui-nuxt/dist/runtime/components/prose/Callout.d.vue")['default']>
+  'LazyProseCallout': LazyComponent<typeof import("../../node_modules/@bitrix24/b24ui-nuxt/dist/runtime/components/prose/Callout.vue")['default']>
+  'LazyProseCardDVue': LazyComponent<typeof import("../../node_modules/@bitrix24/b24ui-nuxt/dist/runtime/components/prose/Card.d.vue")['default']>
+  'LazyProseCard': LazyComponent<typeof import("../../node_modules/@bitrix24/b24ui-nuxt/dist/runtime/components/prose/Card.vue")['default']>
+  'LazyProseCardGroupDVue': LazyComponent<typeof import("../../node_modules/@bitrix24/b24ui-nuxt/dist/runtime/components/prose/CardGroup.d.vue")['default']>
+  'LazyProseCardGroup': LazyComponent<typeof import("../../node_modules/@bitrix24/b24ui-nuxt/dist/runtime/components/prose/CardGroup.vue")['default']>
+  'LazyProseCodeDVue': LazyComponent<typeof import("../../node_modules/@bitrix24/b24ui-nuxt/dist/runtime/components/prose/Code.d.vue")['default']>
+  'LazyProseCode': LazyComponent<typeof import("../../node_modules/@bitrix24/b24ui-nuxt/dist/runtime/components/prose/Code.vue")['default']>
+  'LazyProseCodeCollapseDVue': LazyComponent<typeof import("../../node_modules/@bitrix24/b24ui-nuxt/dist/runtime/components/prose/CodeCollapse.d.vue")['default']>
+  'LazyProseCodeCollapse': LazyComponent<typeof import("../../node_modules/@bitrix24/b24ui-nuxt/dist/runtime/components/prose/CodeCollapse.vue")['default']>
+  'LazyProseCodeGroupDVue': LazyComponent<typeof import("../../node_modules/@bitrix24/b24ui-nuxt/dist/runtime/components/prose/CodeGroup.d.vue")['default']>
+  'LazyProseCodeGroup': LazyComponent<typeof import("../../node_modules/@bitrix24/b24ui-nuxt/dist/runtime/components/prose/CodeGroup.vue")['default']>
+  'LazyProseCodeIconDVue': LazyComponent<typeof import("../../node_modules/@bitrix24/b24ui-nuxt/dist/runtime/components/prose/CodeIcon.d.vue")['default']>
+  'LazyProseCodeIcon': LazyComponent<typeof import("../../node_modules/@bitrix24/b24ui-nuxt/dist/runtime/components/prose/CodeIcon.vue")['default']>
+  'LazyProseCodePreviewDVue': LazyComponent<typeof import("../../node_modules/@bitrix24/b24ui-nuxt/dist/runtime/components/prose/CodePreview.d.vue")['default']>
+  'LazyProseCodePreview': LazyComponent<typeof import("../../node_modules/@bitrix24/b24ui-nuxt/dist/runtime/components/prose/CodePreview.vue")['default']>
+  'LazyProseCollapsibleDVue': LazyComponent<typeof import("../../node_modules/@bitrix24/b24ui-nuxt/dist/runtime/components/prose/Collapsible.d.vue")['default']>
+  'LazyProseCollapsible': LazyComponent<typeof import("../../node_modules/@bitrix24/b24ui-nuxt/dist/runtime/components/prose/Collapsible.vue")['default']>
+  'LazyProseEmDVue': LazyComponent<typeof import("../../node_modules/@bitrix24/b24ui-nuxt/dist/runtime/components/prose/Em.d.vue")['default']>
+  'LazyProseEm': LazyComponent<typeof import("../../node_modules/@bitrix24/b24ui-nuxt/dist/runtime/components/prose/Em.vue")['default']>
+  'LazyProseFieldDVue': LazyComponent<typeof import("../../node_modules/@bitrix24/b24ui-nuxt/dist/runtime/components/prose/Field.d.vue")['default']>
+  'LazyProseField': LazyComponent<typeof import("../../node_modules/@bitrix24/b24ui-nuxt/dist/runtime/components/prose/Field.vue")['default']>
+  'LazyProseFieldGroupDVue': LazyComponent<typeof import("../../node_modules/@bitrix24/b24ui-nuxt/dist/runtime/components/prose/FieldGroup.d.vue")['default']>
+  'LazyProseFieldGroup': LazyComponent<typeof import("../../node_modules/@bitrix24/b24ui-nuxt/dist/runtime/components/prose/FieldGroup.vue")['default']>
+  'LazyProseH1DVue': LazyComponent<typeof import("../../node_modules/@bitrix24/b24ui-nuxt/dist/runtime/components/prose/H1.d.vue")['default']>
+  'LazyProseH1': LazyComponent<typeof import("../../node_modules/@bitrix24/b24ui-nuxt/dist/runtime/components/prose/H1.vue")['default']>
+  'LazyProseH2DVue': LazyComponent<typeof import("../../node_modules/@bitrix24/b24ui-nuxt/dist/runtime/components/prose/H2.d.vue")['default']>
+  'LazyProseH2': LazyComponent<typeof import("../../node_modules/@bitrix24/b24ui-nuxt/dist/runtime/components/prose/H2.vue")['default']>
+  'LazyProseH3DVue': LazyComponent<typeof import("../../node_modules/@bitrix24/b24ui-nuxt/dist/runtime/components/prose/H3.d.vue")['default']>
+  'LazyProseH3': LazyComponent<typeof import("../../node_modules/@bitrix24/b24ui-nuxt/dist/runtime/components/prose/H3.vue")['default']>
+  'LazyProseH4DVue': LazyComponent<typeof import("../../node_modules/@bitrix24/b24ui-nuxt/dist/runtime/components/prose/H4.d.vue")['default']>
+  'LazyProseH4': LazyComponent<typeof import("../../node_modules/@bitrix24/b24ui-nuxt/dist/runtime/components/prose/H4.vue")['default']>
+  'LazyProseH5DVue': LazyComponent<typeof import("../../node_modules/@bitrix24/b24ui-nuxt/dist/runtime/components/prose/H5.d.vue")['default']>
+  'LazyProseH5': LazyComponent<typeof import("../../node_modules/@bitrix24/b24ui-nuxt/dist/runtime/components/prose/H5.vue")['default']>
+  'LazyProseH6DVue': LazyComponent<typeof import("../../node_modules/@bitrix24/b24ui-nuxt/dist/runtime/components/prose/H6.d.vue")['default']>
+  'LazyProseH6': LazyComponent<typeof import("../../node_modules/@bitrix24/b24ui-nuxt/dist/runtime/components/prose/H6.vue")['default']>
+  'LazyProseHrDVue': LazyComponent<typeof import("../../node_modules/@bitrix24/b24ui-nuxt/dist/runtime/components/prose/Hr.d.vue")['default']>
+  'LazyProseHr': LazyComponent<typeof import("../../node_modules/@bitrix24/b24ui-nuxt/dist/runtime/components/prose/Hr.vue")['default']>
+  'LazyProseImgDVue': LazyComponent<typeof import("../../node_modules/@bitrix24/b24ui-nuxt/dist/runtime/components/prose/Img.d.vue")['default']>
+  'LazyProseImg': LazyComponent<typeof import("../../node_modules/@bitrix24/b24ui-nuxt/dist/runtime/components/prose/Img.vue")['default']>
+  'LazyProseKbdDVue': LazyComponent<typeof import("../../node_modules/@bitrix24/b24ui-nuxt/dist/runtime/components/prose/Kbd.d.vue")['default']>
+  'LazyProseKbd': LazyComponent<typeof import("../../node_modules/@bitrix24/b24ui-nuxt/dist/runtime/components/prose/Kbd.vue")['default']>
+  'LazyProseLiDVue': LazyComponent<typeof import("../../node_modules/@bitrix24/b24ui-nuxt/dist/runtime/components/prose/Li.d.vue")['default']>
+  'LazyProseLi': LazyComponent<typeof import("../../node_modules/@bitrix24/b24ui-nuxt/dist/runtime/components/prose/Li.vue")['default']>
+  'LazyProseOlDVue': LazyComponent<typeof import("../../node_modules/@bitrix24/b24ui-nuxt/dist/runtime/components/prose/Ol.d.vue")['default']>
+  'LazyProseOl': LazyComponent<typeof import("../../node_modules/@bitrix24/b24ui-nuxt/dist/runtime/components/prose/Ol.vue")['default']>
+  'LazyProsePDVue': LazyComponent<typeof import("../../node_modules/@bitrix24/b24ui-nuxt/dist/runtime/components/prose/P.d.vue")['default']>
+  'LazyProseP': LazyComponent<typeof import("../../node_modules/@bitrix24/b24ui-nuxt/dist/runtime/components/prose/P.vue")['default']>
+  'LazyProsePreDVue': LazyComponent<typeof import("../../node_modules/@bitrix24/b24ui-nuxt/dist/runtime/components/prose/Pre.d.vue")['default']>
+  'LazyProsePre': LazyComponent<typeof import("../../node_modules/@bitrix24/b24ui-nuxt/dist/runtime/components/prose/Pre.vue")['default']>
+  'LazyProseScriptDVue': LazyComponent<typeof import("../../node_modules/@bitrix24/b24ui-nuxt/dist/runtime/components/prose/Script.d.vue")['default']>
+  'LazyProseScript': LazyComponent<typeof import("../../node_modules/@bitrix24/b24ui-nuxt/dist/runtime/components/prose/Script.vue")['default']>
+  'LazyProseStepsDVue': LazyComponent<typeof import("../../node_modules/@bitrix24/b24ui-nuxt/dist/runtime/components/prose/Steps.d.vue")['default']>
+  'LazyProseSteps': LazyComponent<typeof import("../../node_modules/@bitrix24/b24ui-nuxt/dist/runtime/components/prose/Steps.vue")['default']>
+  'LazyProseStrongDVue': LazyComponent<typeof import("../../node_modules/@bitrix24/b24ui-nuxt/dist/runtime/components/prose/Strong.d.vue")['default']>
+  'LazyProseStrong': LazyComponent<typeof import("../../node_modules/@bitrix24/b24ui-nuxt/dist/runtime/components/prose/Strong.vue")['default']>
+  'LazyProseTableDVue': LazyComponent<typeof import("../../node_modules/@bitrix24/b24ui-nuxt/dist/runtime/components/prose/Table.d.vue")['default']>
+  'LazyProseTable': LazyComponent<typeof import("../../node_modules/@bitrix24/b24ui-nuxt/dist/runtime/components/prose/Table.vue")['default']>
+  'LazyProseTabsDVue': LazyComponent<typeof import("../../node_modules/@bitrix24/b24ui-nuxt/dist/runtime/components/prose/Tabs.d.vue")['default']>
+  'LazyProseTabs': LazyComponent<typeof import("../../node_modules/@bitrix24/b24ui-nuxt/dist/runtime/components/prose/Tabs.vue")['default']>
+  'LazyProseTabsItemDVue': LazyComponent<typeof import("../../node_modules/@bitrix24/b24ui-nuxt/dist/runtime/components/prose/TabsItem.d.vue")['default']>
+  'LazyProseTabsItem': LazyComponent<typeof import("../../node_modules/@bitrix24/b24ui-nuxt/dist/runtime/components/prose/TabsItem.vue")['default']>
+  'LazyProseTbodyDVue': LazyComponent<typeof import("../../node_modules/@bitrix24/b24ui-nuxt/dist/runtime/components/prose/Tbody.d.vue")['default']>
+  'LazyProseTbody': LazyComponent<typeof import("../../node_modules/@bitrix24/b24ui-nuxt/dist/runtime/components/prose/Tbody.vue")['default']>
+  'LazyProseTdDVue': LazyComponent<typeof import("../../node_modules/@bitrix24/b24ui-nuxt/dist/runtime/components/prose/Td.d.vue")['default']>
+  'LazyProseTd': LazyComponent<typeof import("../../node_modules/@bitrix24/b24ui-nuxt/dist/runtime/components/prose/Td.vue")['default']>
+  'LazyProseThDVue': LazyComponent<typeof import("../../node_modules/@bitrix24/b24ui-nuxt/dist/runtime/components/prose/Th.d.vue")['default']>
+  'LazyProseTh': LazyComponent<typeof import("../../node_modules/@bitrix24/b24ui-nuxt/dist/runtime/components/prose/Th.vue")['default']>
+  'LazyProseTheadDVue': LazyComponent<typeof import("../../node_modules/@bitrix24/b24ui-nuxt/dist/runtime/components/prose/Thead.d.vue")['default']>
+  'LazyProseThead': LazyComponent<typeof import("../../node_modules/@bitrix24/b24ui-nuxt/dist/runtime/components/prose/Thead.vue")['default']>
+  'LazyProseTrDVue': LazyComponent<typeof import("../../node_modules/@bitrix24/b24ui-nuxt/dist/runtime/components/prose/Tr.d.vue")['default']>
+  'LazyProseTr': LazyComponent<typeof import("../../node_modules/@bitrix24/b24ui-nuxt/dist/runtime/components/prose/Tr.vue")['default']>
+  'LazyProseUlDVue': LazyComponent<typeof import("../../node_modules/@bitrix24/b24ui-nuxt/dist/runtime/components/prose/Ul.d.vue")['default']>
+  'LazyProseUl': LazyComponent<typeof import("../../node_modules/@bitrix24/b24ui-nuxt/dist/runtime/components/prose/Ul.vue")['default']>
+  'LazyProseCautionDVue': LazyComponent<typeof import("../../node_modules/@bitrix24/b24ui-nuxt/dist/runtime/components/prose/callout/Caution.d.vue")['default']>
+  'LazyProseCaution': LazyComponent<typeof import("../../node_modules/@bitrix24/b24ui-nuxt/dist/runtime/components/prose/callout/Caution.vue")['default']>
+  'LazyProseNoteDVue': LazyComponent<typeof import("../../node_modules/@bitrix24/b24ui-nuxt/dist/runtime/components/prose/callout/Note.d.vue")['default']>
+  'LazyProseNote': LazyComponent<typeof import("../../node_modules/@bitrix24/b24ui-nuxt/dist/runtime/components/prose/callout/Note.vue")['default']>
+  'LazyProseTipDVue': LazyComponent<typeof import("../../node_modules/@bitrix24/b24ui-nuxt/dist/runtime/components/prose/callout/Tip.d.vue")['default']>
+  'LazyProseTip': LazyComponent<typeof import("../../node_modules/@bitrix24/b24ui-nuxt/dist/runtime/components/prose/callout/Tip.vue")['default']>
+  'LazyProseWarningDVue': LazyComponent<typeof import("../../node_modules/@bitrix24/b24ui-nuxt/dist/runtime/components/prose/callout/Warning.d.vue")['default']>
+  'LazyProseWarning': LazyComponent<typeof import("../../node_modules/@bitrix24/b24ui-nuxt/dist/runtime/components/prose/callout/Warning.vue")['default']>
+  'LazyB24ColorModeAvatarDVue': LazyComponent<typeof import("../../node_modules/@bitrix24/b24ui-nuxt/dist/runtime/components/color-mode/ColorModeAvatar.d.vue")['default']>
+  'LazyB24ColorModeAvatar': LazyComponent<typeof import("../../node_modules/@bitrix24/b24ui-nuxt/dist/runtime/components/color-mode/ColorModeAvatar.vue")['default']>
+  'LazyB24ColorModeButtonDVue': LazyComponent<typeof import("../../node_modules/@bitrix24/b24ui-nuxt/dist/runtime/components/color-mode/ColorModeButton.d.vue")['default']>
+  'LazyB24ColorModeButton': LazyComponent<typeof import("../../node_modules/@bitrix24/b24ui-nuxt/dist/runtime/components/color-mode/ColorModeButton.vue")['default']>
+  'LazyB24ColorModeImageDVue': LazyComponent<typeof import("../../node_modules/@bitrix24/b24ui-nuxt/dist/runtime/components/color-mode/ColorModeImage.d.vue")['default']>
+  'LazyB24ColorModeImage': LazyComponent<typeof import("../../node_modules/@bitrix24/b24ui-nuxt/dist/runtime/components/color-mode/ColorModeImage.vue")['default']>
+  'LazyB24ColorModeSelectDVue': LazyComponent<typeof import("../../node_modules/@bitrix24/b24ui-nuxt/dist/runtime/components/color-mode/ColorModeSelect.d.vue")['default']>
+  'LazyB24ColorModeSelect': LazyComponent<typeof import("../../node_modules/@bitrix24/b24ui-nuxt/dist/runtime/components/color-mode/ColorModeSelect.vue")['default']>
+  'LazyB24ColorModeSwitchDVue': LazyComponent<typeof import("../../node_modules/@bitrix24/b24ui-nuxt/dist/runtime/components/color-mode/ColorModeSwitch.d.vue")['default']>
+  'LazyB24ColorModeSwitch': LazyComponent<typeof import("../../node_modules/@bitrix24/b24ui-nuxt/dist/runtime/components/color-mode/ColorModeSwitch.vue")['default']>
+  'LazyB24AccordionDVue': LazyComponent<typeof import("../../node_modules/@bitrix24/b24ui-nuxt/dist/runtime/components/Accordion.d.vue")['default']>
   'LazyB24Accordion': LazyComponent<typeof import("../../node_modules/@bitrix24/b24ui-nuxt/dist/runtime/components/Accordion.vue")['default']>
+  'LazyB24AdviceDVue': LazyComponent<typeof import("../../node_modules/@bitrix24/b24ui-nuxt/dist/runtime/components/Advice.d.vue")['default']>
   'LazyB24Advice': LazyComponent<typeof import("../../node_modules/@bitrix24/b24ui-nuxt/dist/runtime/components/Advice.vue")['default']>
+  'LazyB24AlertDVue': LazyComponent<typeof import("../../node_modules/@bitrix24/b24ui-nuxt/dist/runtime/components/Alert.d.vue")['default']>
   'LazyB24Alert': LazyComponent<typeof import("../../node_modules/@bitrix24/b24ui-nuxt/dist/runtime/components/Alert.vue")['default']>
+  'LazyB24AppDVue': LazyComponent<typeof import("../../node_modules/@bitrix24/b24ui-nuxt/dist/runtime/components/App.d.vue")['default']>
   'LazyB24App': LazyComponent<typeof import("../../node_modules/@bitrix24/b24ui-nuxt/dist/runtime/components/App.vue")['default']>
+  'LazyB24AvatarDVue': LazyComponent<typeof import("../../node_modules/@bitrix24/b24ui-nuxt/dist/runtime/components/Avatar.d.vue")['default']>
   'LazyB24Avatar': LazyComponent<typeof import("../../node_modules/@bitrix24/b24ui-nuxt/dist/runtime/components/Avatar.vue")['default']>
+  'LazyB24AvatarGroupDVue': LazyComponent<typeof import("../../node_modules/@bitrix24/b24ui-nuxt/dist/runtime/components/AvatarGroup.d.vue")['default']>
   'LazyB24AvatarGroup': LazyComponent<typeof import("../../node_modules/@bitrix24/b24ui-nuxt/dist/runtime/components/AvatarGroup.vue")['default']>
+  'LazyB24BadgeDVue': LazyComponent<typeof import("../../node_modules/@bitrix24/b24ui-nuxt/dist/runtime/components/Badge.d.vue")['default']>
   'LazyB24Badge': LazyComponent<typeof import("../../node_modules/@bitrix24/b24ui-nuxt/dist/runtime/components/Badge.vue")['default']>
+  'LazyB24BannerDVue': LazyComponent<typeof import("../../node_modules/@bitrix24/b24ui-nuxt/dist/runtime/components/Banner.d.vue")['default']>
+  'LazyB24Banner': LazyComponent<typeof import("../../node_modules/@bitrix24/b24ui-nuxt/dist/runtime/components/Banner.vue")['default']>
+  'LazyB24BreadcrumbDVue': LazyComponent<typeof import("../../node_modules/@bitrix24/b24ui-nuxt/dist/runtime/components/Breadcrumb.d.vue")['default']>
+  'LazyB24Breadcrumb': LazyComponent<typeof import("../../node_modules/@bitrix24/b24ui-nuxt/dist/runtime/components/Breadcrumb.vue")['default']>
+  'LazyB24ButtonDVue': LazyComponent<typeof import("../../node_modules/@bitrix24/b24ui-nuxt/dist/runtime/components/Button.d.vue")['default']>
   'LazyB24Button': LazyComponent<typeof import("../../node_modules/@bitrix24/b24ui-nuxt/dist/runtime/components/Button.vue")['default']>
-  'LazyB24ButtonGroup': LazyComponent<typeof import("../../node_modules/@bitrix24/b24ui-nuxt/dist/runtime/components/ButtonGroup.vue")['default']>
+  'LazyB24CalendarDVue': LazyComponent<typeof import("../../node_modules/@bitrix24/b24ui-nuxt/dist/runtime/components/Calendar.d.vue")['default']>
   'LazyB24Calendar': LazyComponent<typeof import("../../node_modules/@bitrix24/b24ui-nuxt/dist/runtime/components/Calendar.vue")['default']>
+  'LazyB24CardDVue': LazyComponent<typeof import("../../node_modules/@bitrix24/b24ui-nuxt/dist/runtime/components/Card.d.vue")['default']>
+  'LazyB24Card': LazyComponent<typeof import("../../node_modules/@bitrix24/b24ui-nuxt/dist/runtime/components/Card.vue")['default']>
+  'LazyB24CheckboxDVue': LazyComponent<typeof import("../../node_modules/@bitrix24/b24ui-nuxt/dist/runtime/components/Checkbox.d.vue")['default']>
   'LazyB24Checkbox': LazyComponent<typeof import("../../node_modules/@bitrix24/b24ui-nuxt/dist/runtime/components/Checkbox.vue")['default']>
+  'LazyB24CheckboxGroupDVue': LazyComponent<typeof import("../../node_modules/@bitrix24/b24ui-nuxt/dist/runtime/components/CheckboxGroup.d.vue")['default']>
+  'LazyB24CheckboxGroup': LazyComponent<typeof import("../../node_modules/@bitrix24/b24ui-nuxt/dist/runtime/components/CheckboxGroup.vue")['default']>
+  'LazyB24ChipDVue': LazyComponent<typeof import("../../node_modules/@bitrix24/b24ui-nuxt/dist/runtime/components/Chip.d.vue")['default']>
   'LazyB24Chip': LazyComponent<typeof import("../../node_modules/@bitrix24/b24ui-nuxt/dist/runtime/components/Chip.vue")['default']>
+  'LazyB24CollapsibleDVue': LazyComponent<typeof import("../../node_modules/@bitrix24/b24ui-nuxt/dist/runtime/components/Collapsible.d.vue")['default']>
   'LazyB24Collapsible': LazyComponent<typeof import("../../node_modules/@bitrix24/b24ui-nuxt/dist/runtime/components/Collapsible.vue")['default']>
+  'LazyB24ColorPickerDVue': LazyComponent<typeof import("../../node_modules/@bitrix24/b24ui-nuxt/dist/runtime/components/ColorPicker.d.vue")['default']>
+  'LazyB24ColorPicker': LazyComponent<typeof import("../../node_modules/@bitrix24/b24ui-nuxt/dist/runtime/components/ColorPicker.vue")['default']>
+  'LazyB24CommandPaletteDVue': LazyComponent<typeof import("../../node_modules/@bitrix24/b24ui-nuxt/dist/runtime/components/CommandPalette.d.vue")['default']>
+  'LazyB24CommandPalette': LazyComponent<typeof import("../../node_modules/@bitrix24/b24ui-nuxt/dist/runtime/components/CommandPalette.vue")['default']>
+  'LazyB24ContainerDVue': LazyComponent<typeof import("../../node_modules/@bitrix24/b24ui-nuxt/dist/runtime/components/Container.d.vue")['default']>
   'LazyB24Container': LazyComponent<typeof import("../../node_modules/@bitrix24/b24ui-nuxt/dist/runtime/components/Container.vue")['default']>
+  'LazyB24ContextMenuDVue': LazyComponent<typeof import("../../node_modules/@bitrix24/b24ui-nuxt/dist/runtime/components/ContextMenu.d.vue")['default']>
+  'LazyB24ContextMenu': LazyComponent<typeof import("../../node_modules/@bitrix24/b24ui-nuxt/dist/runtime/components/ContextMenu.vue")['default']>
+  'LazyB24ContextMenuContentDVue': LazyComponent<typeof import("../../node_modules/@bitrix24/b24ui-nuxt/dist/runtime/components/ContextMenuContent.d.vue")['default']>
+  'LazyB24ContextMenuContent': LazyComponent<typeof import("../../node_modules/@bitrix24/b24ui-nuxt/dist/runtime/components/ContextMenuContent.vue")['default']>
+  'LazyB24CountdownDVue': LazyComponent<typeof import("../../node_modules/@bitrix24/b24ui-nuxt/dist/runtime/components/Countdown.d.vue")['default']>
   'LazyB24Countdown': LazyComponent<typeof import("../../node_modules/@bitrix24/b24ui-nuxt/dist/runtime/components/Countdown.vue")['default']>
+  'LazyB24DashboardGroupDVue': LazyComponent<typeof import("../../node_modules/@bitrix24/b24ui-nuxt/dist/runtime/components/DashboardGroup.d.vue")['default']>
+  'LazyB24DashboardGroup': LazyComponent<typeof import("../../node_modules/@bitrix24/b24ui-nuxt/dist/runtime/components/DashboardGroup.vue")['default']>
+  'LazyB24DashboardSearchDVue': LazyComponent<typeof import("../../node_modules/@bitrix24/b24ui-nuxt/dist/runtime/components/DashboardSearch.d.vue")['default']>
+  'LazyB24DashboardSearch': LazyComponent<typeof import("../../node_modules/@bitrix24/b24ui-nuxt/dist/runtime/components/DashboardSearch.vue")['default']>
+  'LazyB24DashboardSearchButtonDVue': LazyComponent<typeof import("../../node_modules/@bitrix24/b24ui-nuxt/dist/runtime/components/DashboardSearchButton.d.vue")['default']>
+  'LazyB24DashboardSearchButton': LazyComponent<typeof import("../../node_modules/@bitrix24/b24ui-nuxt/dist/runtime/components/DashboardSearchButton.vue")['default']>
+  'LazyB24DescriptionListDVue': LazyComponent<typeof import("../../node_modules/@bitrix24/b24ui-nuxt/dist/runtime/components/DescriptionList.d.vue")['default']>
   'LazyB24DescriptionList': LazyComponent<typeof import("../../node_modules/@bitrix24/b24ui-nuxt/dist/runtime/components/DescriptionList.vue")['default']>
+  'LazyB24DropdownMenuDVue': LazyComponent<typeof import("../../node_modules/@bitrix24/b24ui-nuxt/dist/runtime/components/DropdownMenu.d.vue")['default']>
   'LazyB24DropdownMenu': LazyComponent<typeof import("../../node_modules/@bitrix24/b24ui-nuxt/dist/runtime/components/DropdownMenu.vue")['default']>
+  'LazyB24DropdownMenuContentDVue': LazyComponent<typeof import("../../node_modules/@bitrix24/b24ui-nuxt/dist/runtime/components/DropdownMenuContent.d.vue")['default']>
   'LazyB24DropdownMenuContent': LazyComponent<typeof import("../../node_modules/@bitrix24/b24ui-nuxt/dist/runtime/components/DropdownMenuContent.vue")['default']>
+  'LazyB24EmptyDVue': LazyComponent<typeof import("../../node_modules/@bitrix24/b24ui-nuxt/dist/runtime/components/Empty.d.vue")['default']>
+  'LazyB24Empty': LazyComponent<typeof import("../../node_modules/@bitrix24/b24ui-nuxt/dist/runtime/components/Empty.vue")['default']>
+  'LazyB24ErrorDVue': LazyComponent<typeof import("../../node_modules/@bitrix24/b24ui-nuxt/dist/runtime/components/Error.d.vue")['default']>
+  'LazyB24Error': LazyComponent<typeof import("../../node_modules/@bitrix24/b24ui-nuxt/dist/runtime/components/Error.vue")['default']>
+  'LazyB24FieldGroupDVue': LazyComponent<typeof import("../../node_modules/@bitrix24/b24ui-nuxt/dist/runtime/components/FieldGroup.d.vue")['default']>
+  'LazyB24FieldGroup': LazyComponent<typeof import("../../node_modules/@bitrix24/b24ui-nuxt/dist/runtime/components/FieldGroup.vue")['default']>
+  'LazyB24FileUploadDVue': LazyComponent<typeof import("../../node_modules/@bitrix24/b24ui-nuxt/dist/runtime/components/FileUpload.d.vue")['default']>
+  'LazyB24FileUpload': LazyComponent<typeof import("../../node_modules/@bitrix24/b24ui-nuxt/dist/runtime/components/FileUpload.vue")['default']>
+  'LazyB24FormDVue': LazyComponent<typeof import("../../node_modules/@bitrix24/b24ui-nuxt/dist/runtime/components/Form.d.vue")['default']>
   'LazyB24Form': LazyComponent<typeof import("../../node_modules/@bitrix24/b24ui-nuxt/dist/runtime/components/Form.vue")['default']>
+  'LazyB24FormFieldDVue': LazyComponent<typeof import("../../node_modules/@bitrix24/b24ui-nuxt/dist/runtime/components/FormField.d.vue")['default']>
   'LazyB24FormField': LazyComponent<typeof import("../../node_modules/@bitrix24/b24ui-nuxt/dist/runtime/components/FormField.vue")['default']>
+  'LazyB24InputDVue': LazyComponent<typeof import("../../node_modules/@bitrix24/b24ui-nuxt/dist/runtime/components/Input.d.vue")['default']>
   'LazyB24Input': LazyComponent<typeof import("../../node_modules/@bitrix24/b24ui-nuxt/dist/runtime/components/Input.vue")['default']>
+  'LazyB24InputMenuDVue': LazyComponent<typeof import("../../node_modules/@bitrix24/b24ui-nuxt/dist/runtime/components/InputMenu.d.vue")['default']>
   'LazyB24InputMenu': LazyComponent<typeof import("../../node_modules/@bitrix24/b24ui-nuxt/dist/runtime/components/InputMenu.vue")['default']>
+  'LazyB24InputNumberDVue': LazyComponent<typeof import("../../node_modules/@bitrix24/b24ui-nuxt/dist/runtime/components/InputNumber.d.vue")['default']>
   'LazyB24InputNumber': LazyComponent<typeof import("../../node_modules/@bitrix24/b24ui-nuxt/dist/runtime/components/InputNumber.vue")['default']>
+  'LazyB24InputTagsDVue': LazyComponent<typeof import("../../node_modules/@bitrix24/b24ui-nuxt/dist/runtime/components/InputTags.d.vue")['default']>
+  'LazyB24InputTags': LazyComponent<typeof import("../../node_modules/@bitrix24/b24ui-nuxt/dist/runtime/components/InputTags.vue")['default']>
+  'LazyB24KbdDVue': LazyComponent<typeof import("../../node_modules/@bitrix24/b24ui-nuxt/dist/runtime/components/Kbd.d.vue")['default']>
   'LazyB24Kbd': LazyComponent<typeof import("../../node_modules/@bitrix24/b24ui-nuxt/dist/runtime/components/Kbd.vue")['default']>
+  'LazyB24LinkDVue': LazyComponent<typeof import("../../node_modules/@bitrix24/b24ui-nuxt/dist/runtime/components/Link.d.vue")['default']>
   'LazyB24Link': LazyComponent<typeof import("../../node_modules/@bitrix24/b24ui-nuxt/dist/runtime/components/Link.vue")['default']>
+  'LazyB24LinkBaseDVue': LazyComponent<typeof import("../../node_modules/@bitrix24/b24ui-nuxt/dist/runtime/components/LinkBase.d.vue")['default']>
   'LazyB24LinkBase': LazyComponent<typeof import("../../node_modules/@bitrix24/b24ui-nuxt/dist/runtime/components/LinkBase.vue")['default']>
+  'LazyB24ModalDVue': LazyComponent<typeof import("../../node_modules/@bitrix24/b24ui-nuxt/dist/runtime/components/Modal.d.vue")['default']>
   'LazyB24Modal': LazyComponent<typeof import("../../node_modules/@bitrix24/b24ui-nuxt/dist/runtime/components/Modal.vue")['default']>
+  'LazyB24ModalDialogCloseDVue': LazyComponent<typeof import("../../node_modules/@bitrix24/b24ui-nuxt/dist/runtime/components/ModalDialogClose.d.vue")['default']>
   'LazyB24ModalDialogClose': LazyComponent<typeof import("../../node_modules/@bitrix24/b24ui-nuxt/dist/runtime/components/ModalDialogClose.vue")['default']>
+  'LazyB24NavbarDVue': LazyComponent<typeof import("../../node_modules/@bitrix24/b24ui-nuxt/dist/runtime/components/Navbar.d.vue")['default']>
   'LazyB24Navbar': LazyComponent<typeof import("../../node_modules/@bitrix24/b24ui-nuxt/dist/runtime/components/Navbar.vue")['default']>
+  'LazyB24NavbarDividerDVue': LazyComponent<typeof import("../../node_modules/@bitrix24/b24ui-nuxt/dist/runtime/components/NavbarDivider.d.vue")['default']>
   'LazyB24NavbarDivider': LazyComponent<typeof import("../../node_modules/@bitrix24/b24ui-nuxt/dist/runtime/components/NavbarDivider.vue")['default']>
+  'LazyB24NavbarSectionDVue': LazyComponent<typeof import("../../node_modules/@bitrix24/b24ui-nuxt/dist/runtime/components/NavbarSection.d.vue")['default']>
   'LazyB24NavbarSection': LazyComponent<typeof import("../../node_modules/@bitrix24/b24ui-nuxt/dist/runtime/components/NavbarSection.vue")['default']>
+  'LazyB24NavbarSpacerDVue': LazyComponent<typeof import("../../node_modules/@bitrix24/b24ui-nuxt/dist/runtime/components/NavbarSpacer.d.vue")['default']>
   'LazyB24NavbarSpacer': LazyComponent<typeof import("../../node_modules/@bitrix24/b24ui-nuxt/dist/runtime/components/NavbarSpacer.vue")['default']>
+  'LazyB24NavigationMenuDVue': LazyComponent<typeof import("../../node_modules/@bitrix24/b24ui-nuxt/dist/runtime/components/NavigationMenu.d.vue")['default']>
   'LazyB24NavigationMenu': LazyComponent<typeof import("../../node_modules/@bitrix24/b24ui-nuxt/dist/runtime/components/NavigationMenu.vue")['default']>
+  'LazyB24OverlayProviderDVue': LazyComponent<typeof import("../../node_modules/@bitrix24/b24ui-nuxt/dist/runtime/components/OverlayProvider.d.vue")['default']>
   'LazyB24OverlayProvider': LazyComponent<typeof import("../../node_modules/@bitrix24/b24ui-nuxt/dist/runtime/components/OverlayProvider.vue")['default']>
+  'LazyB24PageCardDVue': LazyComponent<typeof import("../../node_modules/@bitrix24/b24ui-nuxt/dist/runtime/components/PageCard.d.vue")['default']>
+  'LazyB24PageCard': LazyComponent<typeof import("../../node_modules/@bitrix24/b24ui-nuxt/dist/runtime/components/PageCard.vue")['default']>
+  'LazyB24PageColumnsDVue': LazyComponent<typeof import("../../node_modules/@bitrix24/b24ui-nuxt/dist/runtime/components/PageColumns.d.vue")['default']>
+  'LazyB24PageColumns': LazyComponent<typeof import("../../node_modules/@bitrix24/b24ui-nuxt/dist/runtime/components/PageColumns.vue")['default']>
+  'LazyB24PageGridDVue': LazyComponent<typeof import("../../node_modules/@bitrix24/b24ui-nuxt/dist/runtime/components/PageGrid.d.vue")['default']>
+  'LazyB24PageGrid': LazyComponent<typeof import("../../node_modules/@bitrix24/b24ui-nuxt/dist/runtime/components/PageGrid.vue")['default']>
+  'LazyB24PageLinksDVue': LazyComponent<typeof import("../../node_modules/@bitrix24/b24ui-nuxt/dist/runtime/components/PageLinks.d.vue")['default']>
+  'LazyB24PageLinks': LazyComponent<typeof import("../../node_modules/@bitrix24/b24ui-nuxt/dist/runtime/components/PageLinks.vue")['default']>
+  'LazyB24PageListDVue': LazyComponent<typeof import("../../node_modules/@bitrix24/b24ui-nuxt/dist/runtime/components/PageList.d.vue")['default']>
+  'LazyB24PageList': LazyComponent<typeof import("../../node_modules/@bitrix24/b24ui-nuxt/dist/runtime/components/PageList.vue")['default']>
+  'LazyB24PaginationDVue': LazyComponent<typeof import("../../node_modules/@bitrix24/b24ui-nuxt/dist/runtime/components/Pagination.d.vue")['default']>
+  'LazyB24Pagination': LazyComponent<typeof import("../../node_modules/@bitrix24/b24ui-nuxt/dist/runtime/components/Pagination.vue")['default']>
+  'LazyB24PinInputDVue': LazyComponent<typeof import("../../node_modules/@bitrix24/b24ui-nuxt/dist/runtime/components/PinInput.d.vue")['default']>
+  'LazyB24PinInput': LazyComponent<typeof import("../../node_modules/@bitrix24/b24ui-nuxt/dist/runtime/components/PinInput.vue")['default']>
+  'LazyB24PopoverDVue': LazyComponent<typeof import("../../node_modules/@bitrix24/b24ui-nuxt/dist/runtime/components/Popover.d.vue")['default']>
   'LazyB24Popover': LazyComponent<typeof import("../../node_modules/@bitrix24/b24ui-nuxt/dist/runtime/components/Popover.vue")['default']>
+  'LazyB24ProgressDVue': LazyComponent<typeof import("../../node_modules/@bitrix24/b24ui-nuxt/dist/runtime/components/Progress.d.vue")['default']>
   'LazyB24Progress': LazyComponent<typeof import("../../node_modules/@bitrix24/b24ui-nuxt/dist/runtime/components/Progress.vue")['default']>
+  'LazyB24RadioGroupDVue': LazyComponent<typeof import("../../node_modules/@bitrix24/b24ui-nuxt/dist/runtime/components/RadioGroup.d.vue")['default']>
   'LazyB24RadioGroup': LazyComponent<typeof import("../../node_modules/@bitrix24/b24ui-nuxt/dist/runtime/components/RadioGroup.vue")['default']>
+  'LazyB24RangeDVue': LazyComponent<typeof import("../../node_modules/@bitrix24/b24ui-nuxt/dist/runtime/components/Range.d.vue")['default']>
   'LazyB24Range': LazyComponent<typeof import("../../node_modules/@bitrix24/b24ui-nuxt/dist/runtime/components/Range.vue")['default']>
+  'LazyB24SelectDVue': LazyComponent<typeof import("../../node_modules/@bitrix24/b24ui-nuxt/dist/runtime/components/Select.d.vue")['default']>
   'LazyB24Select': LazyComponent<typeof import("../../node_modules/@bitrix24/b24ui-nuxt/dist/runtime/components/Select.vue")['default']>
+  'LazyB24SelectMenuDVue': LazyComponent<typeof import("../../node_modules/@bitrix24/b24ui-nuxt/dist/runtime/components/SelectMenu.d.vue")['default']>
   'LazyB24SelectMenu': LazyComponent<typeof import("../../node_modules/@bitrix24/b24ui-nuxt/dist/runtime/components/SelectMenu.vue")['default']>
+  'LazyB24SeparatorDVue': LazyComponent<typeof import("../../node_modules/@bitrix24/b24ui-nuxt/dist/runtime/components/Separator.d.vue")['default']>
   'LazyB24Separator': LazyComponent<typeof import("../../node_modules/@bitrix24/b24ui-nuxt/dist/runtime/components/Separator.vue")['default']>
+  'LazyB24SidebarDVue': LazyComponent<typeof import("../../node_modules/@bitrix24/b24ui-nuxt/dist/runtime/components/Sidebar.d.vue")['default']>
   'LazyB24Sidebar': LazyComponent<typeof import("../../node_modules/@bitrix24/b24ui-nuxt/dist/runtime/components/Sidebar.vue")['default']>
+  'LazyB24SidebarBodyDVue': LazyComponent<typeof import("../../node_modules/@bitrix24/b24ui-nuxt/dist/runtime/components/SidebarBody.d.vue")['default']>
   'LazyB24SidebarBody': LazyComponent<typeof import("../../node_modules/@bitrix24/b24ui-nuxt/dist/runtime/components/SidebarBody.vue")['default']>
+  'LazyB24SidebarFooterDVue': LazyComponent<typeof import("../../node_modules/@bitrix24/b24ui-nuxt/dist/runtime/components/SidebarFooter.d.vue")['default']>
   'LazyB24SidebarFooter': LazyComponent<typeof import("../../node_modules/@bitrix24/b24ui-nuxt/dist/runtime/components/SidebarFooter.vue")['default']>
+  'LazyB24SidebarHeaderDVue': LazyComponent<typeof import("../../node_modules/@bitrix24/b24ui-nuxt/dist/runtime/components/SidebarHeader.d.vue")['default']>
   'LazyB24SidebarHeader': LazyComponent<typeof import("../../node_modules/@bitrix24/b24ui-nuxt/dist/runtime/components/SidebarHeader.vue")['default']>
+  'LazyB24SidebarHeadingDVue': LazyComponent<typeof import("../../node_modules/@bitrix24/b24ui-nuxt/dist/runtime/components/SidebarHeading.d.vue")['default']>
   'LazyB24SidebarHeading': LazyComponent<typeof import("../../node_modules/@bitrix24/b24ui-nuxt/dist/runtime/components/SidebarHeading.vue")['default']>
+  'LazyB24SidebarLayoutDVue': LazyComponent<typeof import("../../node_modules/@bitrix24/b24ui-nuxt/dist/runtime/components/SidebarLayout.d.vue")['default']>
   'LazyB24SidebarLayout': LazyComponent<typeof import("../../node_modules/@bitrix24/b24ui-nuxt/dist/runtime/components/SidebarLayout.vue")['default']>
+  'LazyB24SidebarSectionDVue': LazyComponent<typeof import("../../node_modules/@bitrix24/b24ui-nuxt/dist/runtime/components/SidebarSection.d.vue")['default']>
   'LazyB24SidebarSection': LazyComponent<typeof import("../../node_modules/@bitrix24/b24ui-nuxt/dist/runtime/components/SidebarSection.vue")['default']>
+  'LazyB24SidebarSpacerDVue': LazyComponent<typeof import("../../node_modules/@bitrix24/b24ui-nuxt/dist/runtime/components/SidebarSpacer.d.vue")['default']>
   'LazyB24SidebarSpacer': LazyComponent<typeof import("../../node_modules/@bitrix24/b24ui-nuxt/dist/runtime/components/SidebarSpacer.vue")['default']>
+  'LazyB24SkeletonDVue': LazyComponent<typeof import("../../node_modules/@bitrix24/b24ui-nuxt/dist/runtime/components/Skeleton.d.vue")['default']>
   'LazyB24Skeleton': LazyComponent<typeof import("../../node_modules/@bitrix24/b24ui-nuxt/dist/runtime/components/Skeleton.vue")['default']>
+  'LazyB24SlideoverDVue': LazyComponent<typeof import("../../node_modules/@bitrix24/b24ui-nuxt/dist/runtime/components/Slideover.d.vue")['default']>
   'LazyB24Slideover': LazyComponent<typeof import("../../node_modules/@bitrix24/b24ui-nuxt/dist/runtime/components/Slideover.vue")['default']>
+  'LazyB24StepperDVue': LazyComponent<typeof import("../../node_modules/@bitrix24/b24ui-nuxt/dist/runtime/components/Stepper.d.vue")['default']>
+  'LazyB24Stepper': LazyComponent<typeof import("../../node_modules/@bitrix24/b24ui-nuxt/dist/runtime/components/Stepper.vue")['default']>
+  'LazyB24SwitchDVue': LazyComponent<typeof import("../../node_modules/@bitrix24/b24ui-nuxt/dist/runtime/components/Switch.d.vue")['default']>
   'LazyB24Switch': LazyComponent<typeof import("../../node_modules/@bitrix24/b24ui-nuxt/dist/runtime/components/Switch.vue")['default']>
+  'LazyB24TableDVue': LazyComponent<typeof import("../../node_modules/@bitrix24/b24ui-nuxt/dist/runtime/components/Table.d.vue")['default']>
+  'LazyB24Table': LazyComponent<typeof import("../../node_modules/@bitrix24/b24ui-nuxt/dist/runtime/components/Table.vue")['default']>
+  'LazyB24TableWrapperDVue': LazyComponent<typeof import("../../node_modules/@bitrix24/b24ui-nuxt/dist/runtime/components/TableWrapper.d.vue")['default']>
+  'LazyB24TableWrapper': LazyComponent<typeof import("../../node_modules/@bitrix24/b24ui-nuxt/dist/runtime/components/TableWrapper.vue")['default']>
+  'LazyB24TabsDVue': LazyComponent<typeof import("../../node_modules/@bitrix24/b24ui-nuxt/dist/runtime/components/Tabs.d.vue")['default']>
   'LazyB24Tabs': LazyComponent<typeof import("../../node_modules/@bitrix24/b24ui-nuxt/dist/runtime/components/Tabs.vue")['default']>
+  'LazyB24TextareaDVue': LazyComponent<typeof import("../../node_modules/@bitrix24/b24ui-nuxt/dist/runtime/components/Textarea.d.vue")['default']>
   'LazyB24Textarea': LazyComponent<typeof import("../../node_modules/@bitrix24/b24ui-nuxt/dist/runtime/components/Textarea.vue")['default']>
+  'LazyB24TimelineDVue': LazyComponent<typeof import("../../node_modules/@bitrix24/b24ui-nuxt/dist/runtime/components/Timeline.d.vue")['default']>
+  'LazyB24Timeline': LazyComponent<typeof import("../../node_modules/@bitrix24/b24ui-nuxt/dist/runtime/components/Timeline.vue")['default']>
+  'LazyB24ToastDVue': LazyComponent<typeof import("../../node_modules/@bitrix24/b24ui-nuxt/dist/runtime/components/Toast.d.vue")['default']>
   'LazyB24Toast': LazyComponent<typeof import("../../node_modules/@bitrix24/b24ui-nuxt/dist/runtime/components/Toast.vue")['default']>
+  'LazyB24ToasterDVue': LazyComponent<typeof import("../../node_modules/@bitrix24/b24ui-nuxt/dist/runtime/components/Toaster.d.vue")['default']>
   'LazyB24Toaster': LazyComponent<typeof import("../../node_modules/@bitrix24/b24ui-nuxt/dist/runtime/components/Toaster.vue")['default']>
+  'LazyB24TooltipDVue': LazyComponent<typeof import("../../node_modules/@bitrix24/b24ui-nuxt/dist/runtime/components/Tooltip.d.vue")['default']>
   'LazyB24Tooltip': LazyComponent<typeof import("../../node_modules/@bitrix24/b24ui-nuxt/dist/runtime/components/Tooltip.vue")['default']>
-  'LazyB24TableWrapper': LazyComponent<typeof import("../../node_modules/@bitrix24/b24ui-nuxt/dist/runtime/components/content/TableWrapper.vue")['default']>
-  'LazyProseA': LazyComponent<typeof import("../../node_modules/@bitrix24/b24ui-nuxt/dist/runtime/prose/A.vue")['default']>
-  'LazyProseBlockquote': LazyComponent<typeof import("../../node_modules/@bitrix24/b24ui-nuxt/dist/runtime/prose/Blockquote.vue")['default']>
-  'LazyProseCode': LazyComponent<typeof import("../../node_modules/@bitrix24/b24ui-nuxt/dist/runtime/prose/Code.vue")['default']>
-  'LazyProseEm': LazyComponent<typeof import("../../node_modules/@bitrix24/b24ui-nuxt/dist/runtime/prose/Em.vue")['default']>
-  'LazyProseH1': LazyComponent<typeof import("../../node_modules/@bitrix24/b24ui-nuxt/dist/runtime/prose/H1.vue")['default']>
-  'LazyProseH2': LazyComponent<typeof import("../../node_modules/@bitrix24/b24ui-nuxt/dist/runtime/prose/H2.vue")['default']>
-  'LazyProseH3': LazyComponent<typeof import("../../node_modules/@bitrix24/b24ui-nuxt/dist/runtime/prose/H3.vue")['default']>
-  'LazyProseH4': LazyComponent<typeof import("../../node_modules/@bitrix24/b24ui-nuxt/dist/runtime/prose/H4.vue")['default']>
-  'LazyProseH5': LazyComponent<typeof import("../../node_modules/@bitrix24/b24ui-nuxt/dist/runtime/prose/H5.vue")['default']>
-  'LazyProseH6': LazyComponent<typeof import("../../node_modules/@bitrix24/b24ui-nuxt/dist/runtime/prose/H6.vue")['default']>
-  'LazyProseHr': LazyComponent<typeof import("../../node_modules/@bitrix24/b24ui-nuxt/dist/runtime/prose/Hr.vue")['default']>
-  'LazyProseImg': LazyComponent<typeof import("../../node_modules/@bitrix24/b24ui-nuxt/dist/runtime/prose/Img.vue")['default']>
-  'LazyProseLi': LazyComponent<typeof import("../../node_modules/@bitrix24/b24ui-nuxt/dist/runtime/prose/Li.vue")['default']>
-  'LazyProseOl': LazyComponent<typeof import("../../node_modules/@bitrix24/b24ui-nuxt/dist/runtime/prose/Ol.vue")['default']>
-  'LazyProseP': LazyComponent<typeof import("../../node_modules/@bitrix24/b24ui-nuxt/dist/runtime/prose/P.vue")['default']>
-  'LazyProsePre': LazyComponent<typeof import("../../node_modules/@bitrix24/b24ui-nuxt/dist/runtime/prose/Pre.vue")['default']>
-  'LazyProseStrong': LazyComponent<typeof import("../../node_modules/@bitrix24/b24ui-nuxt/dist/runtime/prose/Strong.vue")['default']>
-  'LazyProseTable': LazyComponent<typeof import("../../node_modules/@bitrix24/b24ui-nuxt/dist/runtime/prose/Table.vue")['default']>
-  'LazyProseTbody': LazyComponent<typeof import("../../node_modules/@bitrix24/b24ui-nuxt/dist/runtime/prose/Tbody.vue")['default']>
-  'LazyProseTd': LazyComponent<typeof import("../../node_modules/@bitrix24/b24ui-nuxt/dist/runtime/prose/Td.vue")['default']>
-  'LazyProseTh': LazyComponent<typeof import("../../node_modules/@bitrix24/b24ui-nuxt/dist/runtime/prose/Th.vue")['default']>
-  'LazyProseThead': LazyComponent<typeof import("../../node_modules/@bitrix24/b24ui-nuxt/dist/runtime/prose/Thead.vue")['default']>
-  'LazyProseTr': LazyComponent<typeof import("../../node_modules/@bitrix24/b24ui-nuxt/dist/runtime/prose/Tr.vue")['default']>
-  'LazyProseUl': LazyComponent<typeof import("../../node_modules/@bitrix24/b24ui-nuxt/dist/runtime/prose/Ul.vue")['default']>
+  'LazyB24UserDVue': LazyComponent<typeof import("../../node_modules/@bitrix24/b24ui-nuxt/dist/runtime/components/User.d.vue")['default']>
+  'LazyB24User': LazyComponent<typeof import("../../node_modules/@bitrix24/b24ui-nuxt/dist/runtime/components/User.vue")['default']>
+  'LazyB24LocaleSelectDVue': LazyComponent<typeof import("../../node_modules/@bitrix24/b24ui-nuxt/dist/runtime/components/locale/LocaleSelect.d.vue")['default']>
+  'LazyB24LocaleSelect': LazyComponent<typeof import("../../node_modules/@bitrix24/b24ui-nuxt/dist/runtime/components/locale/LocaleSelect.vue")['default']>
   'LazyNuxtWelcome': LazyComponent<typeof import("../../node_modules/nuxt/dist/app/components/welcome.vue")['default']>
   'LazyNuxtLayout': LazyComponent<typeof import("../../node_modules/nuxt/dist/app/components/nuxt-layout")['default']>
   'LazyNuxtErrorBoundary': LazyComponent<typeof import("../../node_modules/nuxt/dist/app/components/nuxt-error-boundary.vue")['default']>
@@ -218,7 +597,6 @@ interface _GlobalComponents {
   'LazyNuxtRouteAnnouncer': LazyComponent<typeof import("../../node_modules/nuxt/dist/app/components/nuxt-route-announcer")['default']>
   'LazyNuxtImg': LazyComponent<typeof import("../../node_modules/nuxt/dist/app/components/nuxt-stubs")['NuxtImg']>
   'LazyNuxtPicture': LazyComponent<typeof import("../../node_modules/nuxt/dist/app/components/nuxt-stubs")['NuxtPicture']>
-  'LazyColorScheme': LazyComponent<typeof import("../../node_modules/@nuxtjs/color-mode/dist/runtime/component.vue3.vue")['default']>
   'LazyNuxtPage': LazyComponent<typeof import("../../node_modules/nuxt/dist/pages/runtime/page")['default']>
   'LazyNoScript': LazyComponent<typeof import("../../node_modules/nuxt/dist/head/runtime/components")['NoScript']>
   'LazyLink': LazyComponent<typeof import("../../node_modules/nuxt/dist/head/runtime/components")['Link']>

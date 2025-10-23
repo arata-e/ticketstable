@@ -9,9 +9,8 @@ declare global {
 
 declare const inlineConfig = {
   "nuxt": {},
-  "b24ui": {
-    "version": "1.0.4"
-  }
+  "version": "2.0.1",
+  "b24ui": {}
 }
 type ResolvedAppConfig = Defu<typeof inlineConfig, []>
 type IsAny<T> = 0 extends 1 & T ? true : false

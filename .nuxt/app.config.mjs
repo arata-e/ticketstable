@@ -3,9 +3,8 @@ import { defuFn } from 'defu'
 
 const inlineConfig = {
   "nuxt": {},
-  "b24ui": {
-    "version": "1.0.4"
-  }
+  "version": "2.0.1",
+  "b24ui": {}
 }
 
 /** client **/

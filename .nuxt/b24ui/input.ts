@@ -1,3 +1,8 @@
+const fieldGroup = [
+  "horizontal",
+  "vertical"
+] as const
+
 const size = [
   "xss",
   "xs",
@@ -29,8 +34,8 @@ const type = [
 
 export default {
   "slots": {
-    "root": "isolate relative inline-flex items-center w-full",
-    "base": "px-3 w-full py-0 border-0 focus:outline-none disabled:cursor-not-allowed disabled:pointer-events-none disabled:opacity-30 disabled:resize-none appearance-none transition duration-300 ease-linear ring ring-inset ring-(--ui-color-design-outline-stroke) text-(--ui-color-base-1) style-blurred-bg-input placeholder:text-(--ui-color-design-plain-na-content-secondary) hover:text-(--ui-color-base-1) focus:text-(--ui-color-base-1) active:text-(--ui-color-base-1) font-[family-name:var(--ui-font-family-primary)] font-(--ui-font-weight-regular) align-middle text-ellipsis whitespace-nowrap focus-visible:ring-1 focus-visible:ring-inset focus-visible:ring-(--b24ui-border-color)",
+    "root": "isolate relative inline-flex items-center",
+    "base": "px-3 w-full py-0 border-0 focus:outline-none disabled:cursor-not-allowed disabled:pointer-events-none disabled:select-none disabled:opacity-30 disabled:resize-none appearance-none transition duration-300 ease-linear text-(--ui-color-base-1) style-blurred-bg-input placeholder:text-(--ui-color-design-plain-na-content-secondary) hover:text-(--ui-color-base-1) focus:text-(--ui-color-base-1) active:text-(--ui-color-base-1) font-[family-name:var(--ui-font-family-primary)] font-(--ui-font-weight-regular) align-middle text-ellipsis whitespace-nowrap",
     "leading": "absolute inset-y-0 start-0 flex items-center",
     "leadingIcon": "shrink-0 text-(--b24ui-icon-color)",
     "leadingAvatar": "shrink-0",
@@ -40,7 +45,7 @@ export default {
     "tag": "pointer-events-none select-none absolute z-10 -top-[7px] right-[14px] flex flex-col justify-center items-center"
   },
   "variants": {
-    "buttonGroup": {
+    "fieldGroup": {
       "horizontal": {
         "root": "group leading-none has-focus-visible:z-[1]",
         "base": "focus-visible:outline-none ring ring-inset ring-1 focus-visible:ring-2 group-not-only:group-first:rounded-e-3xl group-not-only:group-last:rounded-s-none group-not-last:group-not-first:rounded-none group-not-only:group-first:rounded-e-none group-not-only:group-last:rounded-s-none group-not-last:group-not-first:rounded-none group-not-only:group-first:border-e-0 group-not-only:group-not-first:border-s-0"
@@ -158,7 +163,7 @@ export default {
       "true": "ring-0 focus-visible:ring-0 style-transparent-bg"
     },
     "underline": {
-      "true": "ring-0 focus-visible:ring-0 style-transparent-bg border-b-1 border-b-(--ui-color-design-outline-stroke) rounded-none"
+      "true": "rounded-none ring-0 focus-visible:ring-0 style-transparent-bg border-b-1 border-b-(--ui-color-design-outline-stroke)"
     },
     "leading": {
       "true": ""
@@ -173,35 +178,48 @@ export default {
       "true": "ring ring-inset ring-(--b24ui-border-color)"
     },
     "type": {
-      "file": [
-        "file:me-1.5",
-        "file:text-(--ui-color-design-plain-na-content-secondary)",
-        "file:outline-none"
-      ]
+      "file": "file:me-1.5 file:text-(--ui-color-design-plain-na-content-secondary) file:outline-none"
     }
   },
   "compoundVariants": [
     {
+      "highlight": false,
       "noBorder": false,
       "underline": false,
-      "class": ""
+      "class": {
+        "base": "ring ring-inset ring-(--ui-color-design-outline-stroke) focus-visible:ring-1 focus-visible:ring-inset focus-visible:ring-(--b24ui-border-color) hover:not-disabled:not-data-disabled:ring-1 hover:not-disabled:not-data-disabled:ring-inset hover:not-disabled:not-data-disabled:ring-(--b24ui-border-color) data-[state=open]:ring-1 data-[state=open]:ring-inset data-[state=open]:ring-(--b24ui-border-color)"
+      }
     },
     {
       "highlight": true,
       "noBorder": false,
       "underline": false,
-      "class": "ring ring-inset ring-(--b24ui-border-color)"
+      "class": {
+        "base": "ring ring-inset ring-(--b24ui-border-color) focus-visible:ring-1 focus-visible:ring-inset focus-visible:ring-(--b24ui-border-color) hover:ring-1 hover:ring-inset hover:ring-(--b24ui-border-color) data-[state=open]:ring-1 data-[state=open]:ring-inset data-[state=open]:ring-(--b24ui-border-color)"
+      }
     },
     {
       "noBorder": false,
       "underline": true,
-      "class": "focus-visible:border-(--b24ui-border-color)"
+      "class": {
+        "base": "focus-visible:border-(--b24ui-border-color) hover:border-(--b24ui-border-color) data-[state=open]:border-(--b24ui-border-color)"
+      }
     },
     {
       "highlight": true,
       "noBorder": false,
       "underline": true,
-      "class": "border-b-(--b24ui-border-color)"
+      "class": {
+        "base": "ring-0 border-b-(--b24ui-border-color)"
+      }
+    },
+    {
+      "highlight": true,
+      "noBorder": true,
+      "underline": false,
+      "class": {
+        "base": "ring-0"
+      }
     },
     {
       "type": "file" as typeof type[number],
@@ -255,19 +273,19 @@ export default {
       "leading": true,
       "noPadding": false,
       "size": "md" as typeof size[number],
-      "class": "ps-[34px]"
+      "class": "ps-[32px]"
     },
     {
       "leading": true,
       "noPadding": false,
       "size": "lg" as typeof size[number],
-      "class": "ps-[38px]"
+      "class": "ps-[32px]"
     },
     {
       "leading": true,
       "noPadding": false,
       "size": "xl" as typeof size[number],
-      "class": "ps-[38px]"
+      "class": "ps-[32px]"
     },
     {
       "trailing": true,
@@ -319,6 +337,46 @@ export default {
       "class": {
         "trailingIcon": "size-[21px]"
       }
+    },
+    {
+      "fieldGroup": [
+        "horizontal" as typeof fieldGroup[number],
+        "vertical" as typeof fieldGroup[number]
+      ],
+      "size": [
+        "xl" as typeof size[number],
+        "lg" as typeof size[number],
+        "md" as typeof size[number]
+      ],
+      "rounded": false,
+      "class": "rounded-(--ui-border-radius-md)"
+    },
+    {
+      "fieldGroup": [
+        "horizontal" as typeof fieldGroup[number],
+        "vertical" as typeof fieldGroup[number]
+      ],
+      "size": "sm" as typeof size[number],
+      "rounded": false,
+      "class": "rounded-(--ui-border-radius-sm)"
+    },
+    {
+      "fieldGroup": [
+        "horizontal" as typeof fieldGroup[number],
+        "vertical" as typeof fieldGroup[number]
+      ],
+      "size": "xs" as typeof size[number],
+      "rounded": false,
+      "class": "rounded-(--ui-border-radius-xs)"
+    },
+    {
+      "fieldGroup": [
+        "horizontal" as typeof fieldGroup[number],
+        "vertical" as typeof fieldGroup[number]
+      ],
+      "size": "xss" as typeof size[number],
+      "rounded": false,
+      "class": "rounded-[5px]"
     }
   ],
   "defaultVariants": {

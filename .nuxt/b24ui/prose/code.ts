@@ -4,6 +4,8 @@ const color = [
   "air-primary-alert",
   "air-primary-copilot",
   "air-primary-warning",
+  "air-secondary",
+  "air-tertiary",
   "default",
   "danger",
   "success",
@@ -16,7 +18,7 @@ const color = [
 
 export default {
   "slots": {
-    "base": "px-1.5 py-0.5 font-[family-name:var(--ui-font-family-system-mono)] font-(--ui-font-weight-medium) text-(length:--ui-font-size-sm)/[normal] rounded-(--ui-border-radius-md) inline-block ring-(--b24ui-border-width) ring-inset text-(--b24ui-color) bg-(--b24ui-background) ring-(--b24ui-border-color)"
+    "base": "px-1.5 py-0.5 font-[family-name:var(--ui-font-family-system-mono)] font-(--ui-font-weight-medium) text-(length:--ui-font-size-sm)/[normal] rounded-(--ui-border-radius-md) inline-block ring ring-inset text-(--b24ui-color) bg-(--b24ui-background) ring-(--b24ui-border-color) dark:text-(--ui-color-design-tinted-na-content) dark:bg-(--ui-color-design-tinted-na-bg) dark:ring-(--ui-color-design-outline-na-stroke)"
   },
   "variants": {
     "color": {
@@ -34,6 +36,12 @@ export default {
       },
       "air-primary-warning": {
         "base": "style-filled-warning"
+      },
+      "air-secondary": {
+        "base": "style-filled-black"
+      },
+      "air-tertiary": {
+        "base": "style-outline-no-accent"
       },
       "default": {
         "base": "style-old-default"
@@ -62,6 +70,6 @@ export default {
     }
   },
   "defaultVariants": {
-    "color": "default" as typeof color[number]
+    "color": "air-secondary" as typeof color[number]
   }
 }

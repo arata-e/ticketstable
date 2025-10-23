@@ -152,102 +152,46 @@ export default {
     {
       "position": "top-right" as typeof position[number],
       "size": [
-        "2xs" as typeof size[number],
-        "xs" as typeof size[number],
         "sm" as typeof size[number],
         "md" as typeof size[number],
-        "lg" as typeof size[number],
-        "xl" as typeof size[number],
-        "2xl" as typeof size[number]
+        "lg" as typeof size[number]
       ],
       "inset": true,
       "standalone": false,
       "class": "-translate-y-1/3 translate-x-1/3 transform"
     },
     {
-      "position": "top-right" as typeof position[number],
-      "size": [
-        "2xs" as typeof size[number],
-        "3xl" as typeof size[number]
-      ],
-      "inset": true,
-      "standalone": false,
-      "class": "translate-y-0 translate-x-0 transform"
-    },
-    {
       "position": "bottom-right" as typeof position[number],
       "size": [
-        "2xs" as typeof size[number],
-        "xs" as typeof size[number],
         "sm" as typeof size[number],
         "md" as typeof size[number],
-        "lg" as typeof size[number],
-        "xl" as typeof size[number],
-        "2xl" as typeof size[number]
+        "lg" as typeof size[number]
       ],
       "inset": true,
       "standalone": false,
       "class": "translate-y-1/3 translate-x-1/3 transform"
     },
     {
-      "position": "bottom-right" as typeof position[number],
-      "size": [
-        "2xs" as typeof size[number],
-        "3xl" as typeof size[number]
-      ],
-      "inset": true,
-      "standalone": false,
-      "class": "translate-y-0 translate-x-0 transform"
-    },
-    {
       "position": "top-left" as typeof position[number],
       "size": [
-        "2xs" as typeof size[number],
-        "xs" as typeof size[number],
         "sm" as typeof size[number],
         "md" as typeof size[number],
-        "lg" as typeof size[number],
-        "xl" as typeof size[number],
-        "2xl" as typeof size[number]
+        "lg" as typeof size[number]
       ],
       "inset": true,
       "standalone": false,
       "class": "-translate-y-1/3 -translate-x-1/3 transform"
     },
     {
-      "position": "top-left" as typeof position[number],
-      "size": [
-        "2xs" as typeof size[number],
-        "3xl" as typeof size[number]
-      ],
-      "inset": true,
-      "standalone": false,
-      "class": "-translate-y-0 -translate-x-0 transform"
-    },
-    {
       "position": "bottom-left" as typeof position[number],
       "size": [
-        "2xs" as typeof size[number],
-        "xs" as typeof size[number],
         "sm" as typeof size[number],
         "md" as typeof size[number],
-        "lg" as typeof size[number],
-        "xl" as typeof size[number],
-        "2xl" as typeof size[number]
+        "lg" as typeof size[number]
       ],
       "inset": true,
       "standalone": false,
       "class": "translate-y-1/3 -translate-x-1/3 transform"
-    },
-    {
-      "position": "bottom-left" as typeof position[number],
-      "size": [
-        "2xs" as typeof size[number],
-        "3xl" as typeof size[number]
-      ],
-      "inset": true,
-      "standalone": false,
-      "class": "translate-y-0 -translate-x-0 transform"
     },
     {
       "inverted": true,
