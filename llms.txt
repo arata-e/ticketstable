@@ -113,6 +113,7 @@
 ## Documentation Sets
 
 - [Bitrix24 UI Full Documentation](https://bitrix24.github.io/b24ui/llms-full.txt): This is the full documentation for Bitrix24 UI. It includes all the Markdown files written with the MDC syntax.
+- [b24jssdk documentation](https://github.com/bitrix24/b24jssdk/blob/main/packages/jssdk/README-AI.md): This is the documentation to B24jssdk library for access Bitrix24 API interface.
 
 ## Notes
 
